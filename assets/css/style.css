@@ -2,36 +2,14 @@
     margin: 0;
     padding: 0;
 }
-
-@font-face {
-    font-family: "buckin";
-    src: url('../fonts/Ckhans\ Fonts_Buckin_Bold_Demo.otf');
-}
  
-@font-face {
-    font-family: "merge";
-    src: url('../fonts/Merge\ W00\ Bold.ttf');
-}
-
 @font-face {
     font-family: "gentyDemo";
     src: url('../fonts/GentyDemo-Regular.otf');
 }
-
-@font-face {
-    font-family: "amiger";
-    src: url('../fonts/AMIGER_CARTOON-NORMAL-400-100.OTF');
-}
  
-:root{  
-    --font-buckin:"buckin", sans-serif;  
-    --font-merge:"merge", sans-serif;  
-    --font-gentyDemo:"gentyDemo", sans-serif;  
-    --font-amiger:"amiger", sans-serif;  
- 
-    --gradient1:linear-gradient(96.66deg, #E0B5FC -14.92%, #FFD87D 60.94%, #554CFF 139.9%);
-    --gradient2:linear-gradient(96.66deg, #FFFF7D -14.92%, #E0B5FC 69.46%, #FF4C9D 122.87%); 
-    --gradient3:linear-gradient(96.52deg, #7DE0FF -14.96%, #FF8383 56.76%, #85FF4C 119.1%);
+:root{    
+    --font-gentyDemo:"gentyDemo", sans-serif;     
 }
 
 body{
@@ -99,3 +77,24 @@ body{
         transform: translateX(10%);
     }
 }
+
+.rotate_image{
+    animation: rotate_image 17s linear infinite ;
+}
+
+@keyframes rotate_image {
+    0%{
+        transform:rotate(0deg) ;
+    }
+    100%{
+        transform:rotate(360deg) ;  
+    } 
+}
+ 
+.lampion {  
+    transform-origin: 50% 4px;
+    animation: l15 3s infinite cubic-bezier(0.5,300,0.5,-300);
+  }
+  @keyframes l15 { 
+   100% {transform: rotate(0.05deg)}
+  }
