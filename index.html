@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/logo.png"> 
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <!-- tailwind css cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- css link -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>POPO</title>
+</head>
+
+<body>
+ 
+    <div class="container_site w-full h-auto relative max-w-[100%] overflow-hidden min-h-[100vh] flex flex-col items-center bg-[#EC1C24]">
+    
+        <!-- navbar -->
+         <nav class="absolute top-[20px] w-[90%] max-w-[2000px] rounded-full h-[50px] md:h-[80px] bg-[#9C0000] flex justify-between items-center px-[3%] z-[999]">
+
+            <div class="logo h-full flex items-center gap-[.5rem] md:gap-[1rem]">
+                <div class="h-auto w-auto bg-[#EC1C24] rounded-full overflow-hidden flex justify-center items-center">
+                    <img src="./assets/images/logo.png" alt="logo" class="h-auto object-contain w-[40px] md:w-[53.25px]">
+                </div>
+                <p class="leading-[1] pt-[.2rem] text-[20px] md:text-[31.95px]">POPO</p>
+            </div>
+
+            <div class="social relative flex justify-center items-center w-auto h-full gap-[.5rem] md:gap-[1rem]">
+                <a target="_blank" href="#" class="rounded-full duration-300 hover:scale-110 border-[1.9px] border-[#BAC3ED] w-[35px] h-[35px] md:w-[56.35px] md:h-[56.35px] relative flex justify-center items-center">
+                    <div class="rounded-full border-[1.3px] border-[white] w-[90%] h-[90%] relative flex justify-center items-center">
+                        <img src="./assets/images/twitter.svg" alt="" class="w-[50%] object-contain h-auto">
+                    </div>
+                </a>
+                <a target="_blank" href="#" class="rounded-full duration-300 hover:scale-110 border-[1.9px] border-[#BAC3ED] w-[35px] h-[35px] md:w-[56.35px] md:h-[56.35px] relative flex justify-center items-center">
+                    <div class="rounded-full border-[1.3px] border-[#hite] w-[90%] h-[90%] relative flex justify-center items-center">
+                        <img src="./assets/images/telegram.svg" alt="" class="w-[50%] object-contain h-auto">
+                    </div>
+                </a>
+                <a target="_blank" href="#" class="rounded-full duration-300 hover:scale-110 border-[1.9px] border-[#BAC3ED] w-[35px] h-[35px] md:w-[56.35px] md:h-[56.35px] relative flex justify-center items-center">
+                    <div class="rounded-full border-[1.3px] border-[white] w-[90%] h-[90%] relative flex justify-center items-center">
+                        <img src="./assets/images/sol.png" alt="" class="w-[50%] object-contain h-auto sol_img">
+                    </div>
+                </a>
+
+            </div>
+
+         </nav>
+
+         <!-- hero section -->
+          <section class="h-[700px] xl:h-[1021.53px] w-full relative flex justify-center items-center z-[7]">
+
+            <!-- bg -->
+            <div class="bg w-full h-full z-[0] absolute overflow-hidden">
+                <img src="./assets/images/bg_hero_top1.svg" alt="" class="h-auto object-contain w-[200px]  xl:w-[447.37px] absolute left-[3%] top-[10%]">
+                <img src="./assets/images/bg_hero_top2.svg" alt="" class="h-auto object-contain w-[200px]  xl:w-[447.37px] absolute right-0 top-[10%]">
+
+                <img src="./assets/images/bg_hero.svg" alt="" class="h-[300px] min-[500px]:h-[50vw] lg:h-auto object-cover lg:object-contain  absolute bottom-0 lg:bottom-[0%] left-0 w-[150vw] min-[2000px]:bottom-[-10vw]  lg:w-full">
+            </div>
+
+            <!-- hero content -->
+             <div class="content z-[99] relative w-full xl:w-[50%] h-full md:h-[60%] flex items-center flex-col max-[1024px]:justify-center gap-[1.5rem] xl:gap-[3rem] max-[1024px]:pb-[3rem]">
+                <h2 class="text-[100px] xl:text-[185.81px] leading-[1] uppercase">Popo</h2>
+                <p class="text-[20px] md:text-[37.36px]">China’s national teasure</p>
+                <div class="btns unbounded_font flex items-center gap-[1rem] font-[600] ">
+                    <button class="bg-[#ffffff5b] flex justify-center items-center duration-300 hover:scale-110 px-[1.2rem] h-[40px] md:h-[54px] border-[2px] border-white rounded-full text-[16px] uppercase">
+                        Chart
+                    </button>
+                    <button class="bg-[#fff] flex justify-center items-center duration-300 hover:scale-110 px-[1.2rem] h-[40px] md:h-[54px] border-[2px] border-white text-[#F0000C] rounded-full text-[16px] uppercase">
+                        BUY POPO
+                    </button>
+                </div>
+                <div class="copy_address cursor-pointer flex items-center text-[17px] md:text-[21.83px] gap-[.4rem]">
+                    <p>CA: </p>
+                    <span class="gluten_font">01s7dfdekx014381048482i4u1kh</span>
+                    <img src="./assets/images/copy_icon.svg" alt="" class="h-auto object-contain w-[19.2px]">
+                </div>
+             </div>
+
+            <!-- hero image -->
+             <div class="bg z-[3] absolute bottom-0 left-0 h-full w-full overflow-hidden">
+                <img src="./assets/images/hero_image.png" alt="popo panda" class="h-auto object-contain  absolute bottom-0 left-0 w-[100px] xl:w-[547.77px] float_animation">
+                <div class="absolute bottom-0 right-0 w-[100px] xl:w-[547.77px] float_animation" style="animation-delay: -1s;">
+                    <img src="./assets/images/logo.png" alt="popo panda" class="mirror_img h-auto object-contain  relative   right-0 w-[100px] xl:w-[547.77px]  ">
+                </div>
+             </div>
+
+             <!-- hero support -->
+              <div class="absolute w-auto flex justify-center items-center bottom-[2%] md:bottom-[5%] z-[99] gap-[1rem] max-[500px]:flex-col">
+                <a href="#" class="relative  flex justify-center items-center duration-200 hover:scale-90">
+                    <img src="./assets/images/mexc.png" alt="" class="w-auto relative object-cover h-[10px] md:h-[17px]">
+                </a>
+                <a href="#" class="relative  flex justify-center items-center duration-200 hover:scale-90">
+                    <img src="./assets/images/openSea.png" alt="" class="w-auto relative object-cover h-[20px] md:h-[30px]">
+                </a>
+                <a href="#" class="relative  flex justify-center items-center duration-200 hover:scale-90">
+                    <img src="./assets/images/lBank.png" alt="" class="w-auto relative object-cover h-[10px] md:h-[18px]">
+                </a>
+             
+              </div>
+
+          </section>
+
+        <!-- about section -->
+        <section class="h-[670px] z-[1]  xl:h-[641.81px] w-full relative flex justify-start items-center ">
+
+                <!-- bg -->
+                <div class="bg w-full h-full z-[0] absolute overflow-hidden"> 
+                    <img src="./assets/images/about_image.png" alt="" class="h-[641.81px] object-contain w-auto bottom-[-20%] lg:bottom-0 right-0 absolute">
+                    <img src="./assets/images/about_bg.png" alt="" class="h-[161.4px] object-contain w-auto bottom-0 right-[40%] absolute">
+
+                    <!-- cloud -->
+                     <img src="./assets/images/cloud1.svg" alt="cloud" class="h-auto object-contain absolute top-[46%] min-[500px]:top-[50vw] right-[-10%] lg:top-[-7%] lg:right-[2%] w-[250px] lg:w-[470.31px]">
+                     <img src="./assets/images/cloud2.svg" alt="cloud" class="h-auto object-contain absolute top-[50%] xl:top-[7%] right-[45%] xl:right-[22%] w-[180px] xl:w-[380.31px]">
+                </div>
+    
+                <!-- about content --> 
+
+                <div class="content w-full lg:w-[50%] h-full relative flex flex-col items-start lg:justify-center lg:pl-[5rem] gap-[1.3rem] max-[1024px]:pt-[2rem] max-[1024px]:px-[2rem] max-[1024px]:text-center max-[1024px]:items-center">
+                    <h2 class="text-[40px] lg:text-[70px]">About $popo</h2>
+                    <p class="text-[17px] md:text-[22px] xl:w-[493px]">China’s National Treasure" meme coin is a cryptocurrency inspired by China's beloved symbols, likely the panda, created for humor and social media buzz without substantial intrinsic value</p>
+                    <button class="bg-[#fff] flex justify-center items-center duration-300 hover:scale-110 px-[1.2rem] h-[40px] md:h-[54px] border-[2px] border-white text-[#F0000C] rounded-full text-[16px] uppercase unbounded_font font-bold">
+                        BUY POPO
+                    </button>
+                </div>
+            
+    
+        </section>
+
+
+         <!-- tokenomics section -->
+         <section class="h-[800px] sm:h-[1000px]   xl:h-[980.81px] w-full relative flex justify-center items-center z-[0]">
+           
+
+            <!-- bg -->
+            <div class="bg w-full h-full z-[0] absolute"> 
+                <img src="./assets/images/lentera.png" alt="" class="object-contain absolute top-[-10%] xl:top-[-3%] left-0 h-auto w-[100px] xl:w-[196.47px]"> 
+
+                <!-- cloud -->
+                 <img src="./assets/images/cloud1.svg" alt="cloud" class="h-auto object-contain absolute top-[0%] min-[500px]:top-[50vw] right-[-10%] lg:top-[7%] lg:right-[-12%] w-[250px] lg:w-[470.31px]">
+                 <img src="./assets/images/cloud2.svg" alt="cloud" class="h-auto object-contain absolute bottom-[20%] xl:bottom-[7%] left-[-5%] xl:left-[-9%] w-[180px] xl:w-[380.31px]">
+            </div>
+
+            <!-- content -->
+             <div class="content w-full h-[600px]  relative max-[1024px]:flex-col xl flex items-center justify-center gap-[2rem] lg:gap-[6rem]  max-[1024px]:pb-[2rem]">
+
+                <img src="./assets/images/token_img.png" alt="" class="w-[340px] md:w-[400px] xl:w-[500.94px] h-auto object-contain">
+                
+                <article class="relative tokens w-full md:w-[531px] h-auto xl:h-[464px] flex flex-col justify-between items-center lg:items-start max-[1024px]:text-center max-[1024px]:gap-[1rem]">
+                    <h2 class="text-[50px] lg:text-[70px]">Tokenomics</h2>
+                    <div class="total text-[20px] lg:text-[35.33px]">
+                        <p class="gluten_font">Total Supply</p>
+                        <p>69,000,000,000,000 </p>
+                    </div>
+                    <div class="relative flex h-auto items-center gap-[1rem] gluten_font text-[20px] xl:text-[35.33px]">
+                        <span class="w-[20px] h-[20px] xl:w-[40px] xl:h-[40px] border-[5px] xl:border-[10px] border-white bg-[#EFB970] rounded-full"></span>
+                        <p>100% Community</p>
+                    </div>
+                    
+                    <div class="relative hidden flex h-auto items-center gap-[1rem] gluten_font text-[20px] xl:text-[35.33px]">
+                        <span class="w-[20px] h-[20px] xl:w-[40px] xl:h-[40px] border-[5px] xl:border-[10px] border-white bg-[#5262F3] rounded-full"></span>
+                        <p>8% CEX Listing</p>
+                    </div>
+                    <button class="bg-[#fff] flex justify-center items-center duration-300 hover:scale-110 px-[1.2rem] h-[40px] md:h-[54px] border-[2px] border-white text-[#F0000C] rounded-full text-[16px] uppercase unbounded_font font-bold">BUY POPO</button>
+                </article>
+
+             </div>
+
+             
+        
+             <div class="copy_address cursor-pointer flex items-center text-[17px] md:text-[21.83px] gap-[.4rem] absolute bottom-[2%]">
+                <p>CA: </p>
+                <span class="gluten_font">01s7dfdekx014381048482i4u1kh</span>
+                <img src="./assets/images/copy_icon.svg" alt="" class="h-auto object-contain w-[19.2px]">
+            </div>
+
+        </section>
+
+
+         <!-- roadmap section -->
+         <section class="h-[1100px] sm:h-[1200px]   xl:h-[980.81px] w-full relative flex justify-center items-center z-[0]">
+           
+
+            <!-- bg -->
+            <div class="bg w-full h-full z-[0] absolute flex justify-center"> 
+
+                <!-- bg top -->
+                <img src="./assets/images/top_bg_roadmap.svg" alt="" class="object-contain absolute h-auto w-full max-w-[2000px] top-0 z-[2]"> 
+                <!-- bg walk -->
+                <img src="./assets/images/bg_roadmap.svg" alt="" class="object-contain absolute h-auto w-[95%] max-w-[1500px] right-0 bottom-0 z-[2]"> 
+ 
+                <img src="./assets/images/cloud_roadmap.svg" alt="" class="object-contain absolute h-auto w-[150px] xl:w-[801.43px] right-0 z-0 top-[85%] xl:top-[40%]">
+            </div>
+ 
+            <!-- content roadmap -->
+             <div class="content w-full max-w-[2000px] h-full relative xl:pl-[10rem] xl:pt-[4rem] flex flex-col justify-center max-[1024px]:items-center max-[1024px]:gap-[1rem]">
+                <h2 class="text-[70px]">Roadmap</h2>
+
+                <!-- phase1 -->
+                <div class="phase relative flex flex-col max-[1024px]:items-center w-[258px] gap-[.75rem]">
+                    <img src="./assets/images/phase01.png" alt="phase" class="h-auto object-contain w-[83.09px]">
+                    <h3 class="text-[22px]">Phase 1</h3>
+                    <div class="flex flex-col w-full gluten_font">
+                        <div class="flex gap-[.75rem] items-center">
+                            <span class="w-[14px] h-[14px] bg-[#EFB970] border-[3px] border-white rounded-full"></span>
+                            <p>Launch</p>
+                        </div>
+                        <div class="flex gap-[.75rem]  ">
+                            <span class="w-[18px] h-[14px] bg-[#EFB970] border-[3px] border-white rounded-full"></span>
+                            <p>CoinGecko & Coinmarketcap Listings</p>
+                        </div>
+                        <div class="flex gap-[.75rem] items-center">
+                            <span class="w-[14px] h-[14px] bg-[#EFB970] border-[3px] border-white rounded-full"></span>
+                            <p>1,000+ Holders</p>
+                        </div>
+                        <div class="flex gap-[.75rem] items-center">
+                            <span class="w-[14px] h-[14px] bg-[#EFB970] border-[3px] border-white rounded-full"></span>
+                            <p>Get $Popo Trending</p>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- phase2 -->
+                <div class="phase relative xl:absolute flex flex-col max-[1024px]:items-center w-[258px] gap-[.75rem] xl:bottom-[5%] xl:left-[30%]">
+                    <img src="./assets/images/phase02.png" alt="phase" class="h-auto object-contain w-[83.09px]">
+                    <h3 class="text-[22px]">Phase 2</h3>
+                    <div class="flex flex-col w-full gluten_font">
+                        <div class="flex gap-[.75rem] items-center">
+                            <span class="w-[14px] h-[14px] bg-[#EFB970] border-[3px] border-white rounded-full"></span>
+                            <p>Community Partnerships</p>
+                        </div>
+                        <div class="flex gap-[.75rem] items-center  ">
+                            <span class="w-[14px] h-[14px] bg-[#EFB970] border-[3px] border-white rounded-full"></span>
+                            <p>Cex Listings</p>
+                        </div>
+                        <div class="flex gap-[.75rem] items-center">
+                            <span class="w-[14px] h-[14px] bg-[#EFB970] border-[3px] border-white rounded-full"></span>
+                            <p>6,900+ Holders</p>
+                        </div> 
+                    </div>
+                </div>
+
+                   <!-- phase3 -->
+                   <div class="phase relative xl:absolute  flex flex-col max-[1024px]:items-center w-[258px] gap-[.75rem] xl:bottom-[5%] xl:right-[4%]">
+                    <img src="./assets/images/phase03.png" alt="phase" class="h-auto object-contain w-[83.09px]">
+                    <h3 class="text-[22px]">Phase 3</h3>
+                    <div class="flex flex-col w-full gluten_font">
+                        <div class="flex gap-[.75rem] items-center">
+                            <span class="w-[14px] h-[14px] bg-[#EFB970] border-[3px] border-white rounded-full"></span>
+                            <p>Popo Merch</p>
+                        </div>
+                        <div class="flex items-center gap-[.75rem]  ">
+                            <span class="w-[14px] h-[14px] bg-[#EFB970] border-[3px] border-white rounded-full"></span>
+                            <p>Popo Apps</p>
+                        </div>
+                        <div class="flex gap-[.75rem] items-center">
+                            <span class="w-[14px] h-[14px] bg-[#EFB970] border-[3px] border-white rounded-full"></span>
+                            <p>50,000+ Holders</p>
+                        </div> 
+                    </div>
+                </div>
+
+             </div>
+
+        </section>
+
+
+        <!-- footer -->
+         <footer class="relative w-full h-[776.63px] flex flex-col items-center justify-start text-center pt-[100px] gap-[3rem]">
+            
+            <!-- bg -->
+            <div class="bg w-full h-full z-[0] absolute flex justify-center max-w-[1800px]"> 
+
+                <!-- bg top -->
+                <img src="./assets/images/bg_footer.svg" alt="" class="object-cover xl:object-contain absolute h-[300px] sm:h-[44vw] xl:h-auto w-auto xl:w-full max-w-[1800px] bottom-[10%] xl:bottom-[-5%] z-[2]">  
+
+                <!-- character -->
+                <img src="./assets/images/logo.png" alt="" class="object-contain absolute h-auto w-[150px] xl:w-[298px] bottom-[20%] mirror_img z-[0]">   
+                <img src="./assets/images/logo.png" alt="" class="object-contain absolute h-auto w-[100px] xl:w-[158px] bottom-[20%] left-[-5%] min-[1800px]:left-0 min-[1800px]:bottom-[30%]  z-[0]">  
+
+            </div>
+            
+            <!-- content -->
+            <div class="logo flex items-center gap-[.5rem] md:gap-[1rem]">
+                <div class="h-auto w-auto bg-[#EC1C24] rounded-full overflow-hidden flex justify-center items-center">
+                    <img src="./assets/images/logo.png" alt="logo" class="h-auto object-contain w-[60px] md:w-[77.25px]">
+                </div>
+                <p class="leading-[1] pt-[.4rem] text-[37px] md:text-[46.32px]">POPO</p>
+            </div>
+
+            <p class="w-[80%] xl:w-[722px] text-[22px] min-[1600px]:text-[30px]">
+                Recently, a lot of SOL memecoins have been playing in the crypto backyard. These memes need a ruler; they need a king, and Kong is here for that. 
+            </p>
+
+            <div class="social relative flex justify-center items-center w-auto h-auto gap-[.5rem] md:gap-[1rem]">
+                <a target="_blank" href="#" class="rounded-full duration-300 hover:scale-110 bg-[#660000] border-[1.9px] border-[#BAC3ED] w-[40px] h-[40px] md:w-[56.35px] md:h-[56.35px] relative flex justify-center items-center">
+                    <div class="rounded-full border-[1.3px] border-[white] w-[90%] h-[90%] relative flex justify-center items-center">
+                        <img src="./assets/images/twitter.svg" alt="" class="w-[50%] object-contain h-auto">
+                    </div>
+                </a>
+                <a target="_blank" href="#" class="rounded-full duration-300 hover:scale-110 bg-[#660000] border-[1.9px] border-[#BAC3ED] w-[40px] h-[40px] md:w-[56.35px] md:h-[56.35px] relative flex justify-center items-center">
+                    <div class="rounded-full border-[1.3px] border-[#hite] w-[90%] h-[90%] relative flex justify-center items-center">
+                        <img src="./assets/images/telegram.svg" alt="" class="w-[50%] object-contain h-auto">
+                    </div>
+                </a>
+                <a target="_blank" href="#" class="rounded-full duration-300 hover:scale-110 bg-[#660000] border-[1.9px] border-[#BAC3ED] w-[40px] h-[40px] md:w-[56.35px] md:h-[56.35px] relative flex justify-center items-center">
+                    <div class="rounded-full border-[1.3px] border-[white] w-[90%] h-[90%] relative flex justify-center items-center">
+                        <img src="./assets/images/sol.png" alt="" class="w-[50%] object-contain h-auto sol_img">
+                    </div>
+                </a>
+
+            </div>
+
+         </footer>
+
+
+    </div>
+
+
+    <script>
+        
+    // bg image 
+    document.addEventListener('DOMContentLoaded', function() {
+
+    const imageHero = document.querySelector('.imageHero img');
+    const imageWho = document.querySelector('.imageWho img');
+    const imageContract = document.querySelector('.imageContract img');
+
+    function checkViewportWidth() { 
+        if (window.innerWidth < 500) {
+            imageHero.setAttribute('src', "./assets/images/bg_image_mobile.png")
+            imageWho.setAttribute('src', "./assets/images/bg_image_mobile_left.png")
+            imageContract.setAttribute('src', "./assets/images/bg_image_mobile.png")
+        } else { 
+            imageHero.setAttribute('src', "./assets/images/bg_image.png")
+            imageContract.setAttribute('src', "./assets/images/bg_image.png")
+        }
+    }
+ 
+    checkViewportWidth(); 
+    window.addEventListener('resize', checkViewportWidth);
+
+    });
+
+
+    // copy address
+    const copybtns = document.querySelectorAll(".copy_address");
+    
+    copybtns.forEach(copybtn => {
+        copybtn.addEventListener("click", function() { 
+        let textSpan = copybtn.querySelector('span');
+        let intervalId;
+            let addressText = document.querySelector(".value").getAttribute('data-set');
+            textSpan.innerHTML = 'COPIED';
+
+            if (intervalId) {  
+                clearInterval(intervalId);
+            }
+
+            intervalId = setInterval(() => {
+                textSpan.innerHTML = 'COPY'; 
+                clearInterval(intervalId);  
+            }, 1000);
+
+            navigator.clipboard.writeText(addressText);
+        }); 
+
+    })
+    
+    </script>
+</body>
+</html>
