@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <!-- aos animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- tailwind css cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- css link -->
@@ -64,9 +66,15 @@
 
             <!-- hero content -->
              <div class="content z-[99] relative w-full xl:w-[50%] h-full md:h-[60%] flex items-center flex-col max-[1024px]:justify-center gap-[1.5rem] xl:gap-[3rem] max-[1024px]:pb-[3rem]">
-                <h2 class="text-[100px] xl:text-[185.81px] leading-[1] uppercase">Popo</h2>
-                <p class="text-[20px] md:text-[37.36px]">China’s national teasure</p>
-                <div class="btns unbounded_font flex items-center gap-[1rem] font-[600] ">
+                <h2 class="text-[100px] xl:text-[185.81px] leading-[1] uppercase" data-aos="zoom-in"
+                data-aos-duration="500"
+                data-aos-delay="100">Popo</h2>
+                <p class="text-[20px] md:text-[37.36px]" data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-delay="100">China’s national teasure</p>
+                <div class="btns unbounded_font flex items-center gap-[1rem] font-[600]" data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-delay="300">
                     <button class="bg-[#ffffff5b] flex justify-center items-center duration-300 hover:scale-110 px-[1.2rem] h-[40px] md:h-[54px] border-[2px] border-white rounded-full text-[16px] uppercase">
                         Chart
                     </button>
@@ -74,7 +82,9 @@
                         BUY POPO
                     </button>
                 </div>
-                <div class="copy_address cursor-pointer flex items-center text-[17px] md:text-[21.83px] gap-[.4rem]">
+                <div class="copy_address cursor-pointer flex items-center text-[17px] md:text-[21.83px] gap-[.4rem]" data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-delay="500">
                     <p class="value" data-set="01s7dfdekx014381048482i4u1kh">CA: </p>
                     <span class="gluten_font">01s7dfdekx014381048482i4u1kh</span>
                     <img src="./assets/images/copy_icon.svg" alt="" class="h-auto object-contain w-[19.2px]">
@@ -92,13 +102,19 @@
              <!-- hero support -->
               <div class="absolute w-auto flex justify-center items-center bottom-[2%] md:bottom-[5%] z-[99] gap-[1rem] max-[500px]:flex-col">
                 <a href="#" class="relative  flex justify-center items-center duration-200 hover:scale-90">
-                    <img src="./assets/images/mexc.png" alt="" class="w-auto relative object-cover h-[10px] md:h-[17px]">
+                    <img src="./assets/images/mexc.png" alt="" class="w-auto relative object-cover h-[10px] md:h-[17px]" data-aos="fade-right"
+                    data-aos-duration="500"
+                    data-aos-delay="500">
                 </a>
                 <a href="#" class="relative  flex justify-center items-center duration-200 hover:scale-90">
-                    <img src="./assets/images/openSea.png" alt="" class="w-auto relative object-cover h-[20px] md:h-[30px]">
+                    <img src="./assets/images/openSea.png" alt="" class="w-auto relative object-cover h-[20px] md:h-[30px]" data-aos="fade-right"
+                    data-aos-duration="500"
+                    data-aos-delay="300">
                 </a>
                 <a href="#" class="relative  flex justify-center items-center duration-200 hover:scale-90">
-                    <img src="./assets/images/lBank.png" alt="" class="w-auto relative object-cover h-[10px] md:h-[18px]">
+                    <img src="./assets/images/lBank.png" alt="" class="w-auto relative object-cover h-[10px] md:h-[18px]" data-aos="fade-right"
+                    data-aos-duration="500"
+                    data-aos-delay="100">
                 </a>
              
               </div>
@@ -121,11 +137,16 @@
                 <!-- about content --> 
 
                 <div class="content w-full lg:w-[50%] h-full relative flex flex-col items-start lg:justify-center lg:pl-[5rem] gap-[1.3rem] max-[1024px]:pt-[2rem] max-[1024px]:px-[2rem] max-[1024px]:text-center max-[1024px]:items-center">
-                    <h2 class="text-[40px] lg:text-[70px]">About $popo</h2>
-                    <p class="text-[17px] md:text-[22px] xl:w-[493px]">China’s National Treasure" meme coin is a cryptocurrency inspired by China's beloved symbols, likely the panda, created for humor and social media buzz without substantial intrinsic value</p>
+                    <h2 class="text-[40px] lg:text-[70px]" data-aos="fade-right"
+                    data-aos-duration="500"
+                    data-aos-delay="100">About $popo</h2>
+                    <p class="text-[17px] md:text-[22px] xl:w-[493px]" data-aos="fade-right"
+                    data-aos-duration="500"
+                    data-aos-delay="300">China’s National Treasure" meme coin is a cryptocurrency inspired by China's beloved symbols, likely the panda, created for humor and social media buzz without substantial intrinsic value</p>
                     <button class="bg-[#fff] flex justify-center items-center duration-300 hover:scale-110 px-[1.2rem] h-[40px] md:h-[54px] border-[2px] border-white text-[#F0000C] rounded-full text-[16px] uppercase unbounded_font font-bold">
                         BUY POPO
                     </button>
+                    
                 </div>
             
     
@@ -322,32 +343,15 @@
     </div>
 
 
+    <!-- aos js scroll animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- script -->
     <script>
-        
-    // bg image 
-    document.addEventListener('DOMContentLoaded', function() {
-
-    const imageHero = document.querySelector('.imageHero img');
-    const imageWho = document.querySelector('.imageWho img');
-    const imageContract = document.querySelector('.imageContract img');
-
-    function checkViewportWidth() { 
-        if (window.innerWidth < 500) {
-            imageHero.setAttribute('src', "./assets/images/bg_image_mobile.png")
-            imageWho.setAttribute('src', "./assets/images/bg_image_mobile_left.png")
-            imageContract.setAttribute('src', "./assets/images/bg_image_mobile.png")
-        } else { 
-            imageHero.setAttribute('src', "./assets/images/bg_image.png")
-            imageContract.setAttribute('src', "./assets/images/bg_image.png")
-        }
-    }
- 
-    checkViewportWidth(); 
-    window.addEventListener('resize', checkViewportWidth);
-
-    });
-
-
+          // aos 
+          AOS.init({ 
+           once: true
+        });   
+   
     // copy address
     const copybtns = document.querySelectorAll(".copy_address");
     
