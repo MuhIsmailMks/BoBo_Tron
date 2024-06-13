@@ -75,7 +75,7 @@
                     </button>
                 </div>
                 <div class="copy_address cursor-pointer flex items-center text-[17px] md:text-[21.83px] gap-[.4rem]">
-                    <p>CA: </p>
+                    <p class="value" data-set="01s7dfdekx014381048482i4u1kh">CA: </p>
                     <span class="gluten_font">01s7dfdekx014381048482i4u1kh</span>
                     <img src="./assets/images/copy_icon.svg" alt="" class="h-auto object-contain w-[19.2px]">
                 </div>
@@ -114,8 +114,8 @@
                     <img src="./assets/images/about_bg.png" alt="" class="h-[161.4px] object-contain w-auto bottom-0 right-[40%] absolute">
 
                     <!-- cloud -->
-                     <img src="./assets/images/cloud1.svg" alt="cloud" class="h-auto object-contain absolute top-[46%] min-[500px]:top-[50vw] right-[-10%] lg:top-[-7%] lg:right-[2%] w-[250px] lg:w-[470.31px]">
-                     <img src="./assets/images/cloud2.svg" alt="cloud" class="h-auto object-contain absolute top-[50%] xl:top-[7%] right-[45%] xl:right-[22%] w-[180px] xl:w-[380.31px]">
+                     <img src="./assets/images/cloud1.svg" alt="cloud" class="h-auto object-contain absolute top-[46%] min-[500px]:top-[50vw] right-[-10%] lg:top-[-7%] lg:right-[2%] w-[250px] lg:w-[470.31px] cloud_animation">
+                     <img src="./assets/images/cloud2.svg" alt="cloud" class="h-auto object-contain absolute top-[50%] xl:top-[7%] right-[45%] xl:right-[22%] w-[180px] xl:w-[380.31px] cloud_animation" style="animation-delay: -.7s; animation-duration: 17s;">
                 </div>
     
                 <!-- about content --> 
@@ -141,8 +141,8 @@
                 <img src="./assets/images/lentera.png" alt="" class="object-contain absolute top-[-10%] xl:top-[-3%] left-0 h-auto w-[100px] xl:w-[196.47px]"> 
 
                 <!-- cloud -->
-                 <img src="./assets/images/cloud1.svg" alt="cloud" class="h-auto object-contain absolute top-[0%] min-[500px]:top-[50vw] right-[-10%] lg:top-[7%] lg:right-[-12%] w-[250px] lg:w-[470.31px]">
-                 <img src="./assets/images/cloud2.svg" alt="cloud" class="h-auto object-contain absolute bottom-[20%] xl:bottom-[7%] left-[-5%] xl:left-[-9%] w-[180px] xl:w-[380.31px]">
+                 <img src="./assets/images/cloud1.svg" alt="cloud" class="h-auto object-contain absolute top-[0%] min-[500px]:top-[50vw] right-[-10%] lg:top-[7%] lg:right-[-12%] w-[250px] lg:w-[470.31px] cloud_animation">
+                 <img src="./assets/images/cloud2.svg" alt="cloud" class="h-auto object-contain absolute bottom-[20%] xl:bottom-[7%] left-[-5%] xl:left-[-9%] w-[180px] xl:w-[380.31px] cloud_animation_reverse" style="animation-delay: -.5s;">
             </div>
 
             <!-- content -->
@@ -173,7 +173,7 @@
              
         
              <div class="copy_address cursor-pointer flex items-center text-[17px] md:text-[21.83px] gap-[.4rem] absolute bottom-[2%]">
-                <p>CA: </p>
+                <p class="value" data-set="01s7dfdekx014381048482i4u1kh">CA: </p>
                 <span class="gluten_font">01s7dfdekx014381048482i4u1kh</span>
                 <img src="./assets/images/copy_icon.svg" alt="" class="h-auto object-contain w-[19.2px]">
             </div>
@@ -192,8 +192,9 @@
                 <img src="./assets/images/top_bg_roadmap.svg" alt="" class="object-contain absolute h-auto w-full max-w-[2000px] top-0 z-[2]"> 
                 <!-- bg walk -->
                 <img src="./assets/images/bg_roadmap.svg" alt="" class="object-contain absolute h-auto w-[95%] max-w-[1500px] right-0 bottom-0 z-[2]"> 
- 
-                <img src="./assets/images/cloud_roadmap.svg" alt="" class="object-contain absolute h-auto w-[150px] xl:w-[801.43px] right-0 z-0 top-[85%] xl:top-[40%]">
+
+                <!-- cloud -->
+                <img src="./assets/images/cloud_roadmap.svg" alt="" class="object-contain absolute h-auto w-[150px] xl:w-[801.43px] right-0 z-0 top-[85%] xl:top-[40%] cloud_animation_reverse" style="animation-duration: 30s;">
             </div>
  
             <!-- content roadmap -->
@@ -279,8 +280,8 @@
                 <img src="./assets/images/bg_footer.svg" alt="" class="object-cover xl:object-contain absolute h-[300px] sm:h-[44vw] xl:h-auto w-auto xl:w-full max-w-[1800px] bottom-[10%] xl:bottom-[-5%] z-[2]">  
 
                 <!-- character -->
-                <img src="./assets/images/logo.png" alt="" class="object-contain absolute h-auto w-[150px] xl:w-[298px] bottom-[20%] mirror_img z-[0]">   
-                <img src="./assets/images/logo.png" alt="" class="object-contain absolute h-auto w-[100px] xl:w-[158px] bottom-[20%] left-[-5%] min-[1800px]:left-0 min-[1800px]:bottom-[30%]  z-[0]">  
+                <img src="./assets/images/logo2.png" alt="" class="object-contain absolute h-auto w-[150px] xl:w-[298px] bottom-[20%]  z-[0] float_animation" style="animation-delay: -1s;">   
+                <img src="./assets/images/logo.png" alt="" class="object-contain absolute h-auto w-[100px] xl:w-[158px] bottom-[20%] left-[-5%] min-[1800px]:left-0 min-[1800px]:bottom-[30%] float_animation z-[0]">  
 
             </div>
             
@@ -362,7 +363,7 @@
             }
 
             intervalId = setInterval(() => {
-                textSpan.innerHTML = 'COPY'; 
+                textSpan.innerHTML = '01s7dfdekx014381048482i4u1kh'; 
                 clearInterval(intervalId);  
             }, 1000);
 

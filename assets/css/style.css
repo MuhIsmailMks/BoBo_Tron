@@ -62,7 +62,7 @@ body{
 
 /* animation */
 .float_animation{
-    animation: float_animation 4s linear infinite ;
+    animation: float_animation 3s linear infinite ;
 }
 
 @keyframes float_animation {
@@ -71,5 +71,31 @@ body{
     }
     50%{
         transform: translateY(3%);
+    }
+}
+
+.cloud_animation{
+    animation: cloud_animation 10s linear infinite ;
+}
+
+@keyframes cloud_animation {
+    0%,100%{
+        transform: translateX(10%);
+    }
+    50%{
+        transform: translateX(-10%);
+    }
+}
+
+.cloud_animation_reverse{
+    animation: cloud_animation_reverse 10s linear infinite ;
+}
+
+@keyframes cloud_animation_reverse {
+    0%,100%{
+        transform: translateX(0%);
+    }
+    50%{
+        transform: translateX(10%);
     }
 }
