@@ -156,21 +156,22 @@
           </section>
 
           <!-- supply -->
-           <section class="supply w-full h-auto  relative flex justify-center xl:justify-start  items-center border-b-[2px] border-white">
+           <section class="supply w-full h-auto  relative flex justify-center xl:justify-start  items-center border-b-[2px] border-white flex-col">
+            <img src="./assets/images/bg_supply_mobile.gif" alt="roadmap bg" class="h-full xl:hidden w-full object-cover relative z-0">
+            <img src="./assets/images/suply_bg1.png" alt="roadmap bg" class="h-full xl:hidden w-full object-cover relative z-0">
                 <!-- background image -->
                 <div class="absolute flex justify-center items-center w-full h-full z-[1]">
-                    <img src="./assets/images/suply_bg1.png" alt="roadmap bg" class="h-full hidden w-full object-cover absolute z-0">
-                    <img src="./assets/images/shark.png" alt="shark" class="h-auto w-[200px] md:w-[320px] right-[5%] min-[1600px]:right-[10vw] object-cover absolute z-[1] wobble">
+                  
+                   
+                    <img src="./assets/images/shark.png" alt="shark" class="h-auto w-[200px] md:w-[320px] right-[5%] min-[1600px]:right-[10vw] max-[1024px]:bottom-0 object-cover absolute z-[1] wobble">
 
                 </div>
+ 
 
-                <img src="./assets/images/bg_supply_desktop.gif" alt="roadmap bg" class="h-auto w-full object-cover relative z-0">
-
-                <!-- <video class="w-full h-auto relative video_service" autoplay loop muted playsinline
-                data-aos="fade-left"
-                data-aos-duration="500">
-                    <source src="./assets/images/tes.mp4" type="video/mp4"> 
-                  </video> -->
+                <video class="w-full  max-[1024px]:hidden h-auto relative video_service" autoplay loop muted playsinline
+                >
+                    <source src="./assets/images/supply_bg_desktop.mp4" type="video/mp4"> 
+                  </video>
 
                 <!-- suply container -->
                  <div class="suply_container hidden w-full xl:w-[1000px] max-w-[1500px] h-auto lg:h-[80%] relative flex justify-center xl:justify-start items-center  flex-wrap itex xl:pl-[50px] min-[1600px]:pl-[150px] max-[1024px]:py-[50px] gap-[1rem]" data-aos="fade-up"
