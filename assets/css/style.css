@@ -86,49 +86,59 @@ body{
     }
 }
 
-.cloud_animation{
-    animation: cloud_animation 10s linear infinite ;
+.footer_animation{
+    animation: footer_animation 10s linear infinite ;
 }
 
-@keyframes cloud_animation {
+@keyframes footer_animation {
     0%,100%{
-        transform: translateX(10%);
+        transform: translateX(1%);
     }
     50%{
-        transform: translateX(-10%);
+        transform: translateX(-1%);
     }
-}
-
-.cloud_animation_reverse{
-    animation: cloud_animation_reverse 10s linear infinite ;
-}
-
-@keyframes cloud_animation_reverse {
-    0%,100%{
-        transform: translateX(0%);
-    }
-    50%{
-        transform: translateX(10%);
-    }
-}
-
-.rotate_image{
-    animation: rotate_image 17s linear infinite ;
-}
-
-@keyframes rotate_image {
-    0%{
-        transform:rotate(0deg) ;
-    }
-    100%{
-        transform:rotate(360deg) ;  
-    } 
 }
  
-.lampion {  
-    transform-origin: 50% 4px;
-    animation: l15 3s infinite cubic-bezier(0.5,300,0.5,-300);
+
+.wobble{
+    animation: wobble 3s linear infinite;
   }
-  @keyframes l15 { 
-   100% {transform: rotate(0.05deg)}
+  
+  
+  @keyframes wobble {
+    0% {
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none
+    }
+    15% {
+      -webkit-transform: translate3d(-2%, 0, 0) rotate3d(0, 0, 1, -2deg);
+      -ms-transform: translate3d(-2%, 0, 0) rotate3d(0, 0, 1, -2deg);
+      transform: translate3d(-2%, 0, 0) rotate3d(0, 0, 1, -2deg)
+    }
+    30% {
+      -webkit-transform: translate3d(2%, 0, 0) rotate3d(0, 0, 1, 3deg);
+      -ms-transform: translate3d(2%, 0, 0) rotate3d(0, 0, 1, 3deg);
+      transform: translate3d(2%, 0, 0) rotate3d(0, 0, 1, 3deg)
+    }
+    45% {
+      -webkit-transform: translate3d(-3%, 0, 0) rotate3d(0, 0, 1, -3deg);
+      -ms-transform: translate3d(-3%, 0, 0) rotate3d(0, 0, 1, -3deg);
+      transform: translate3d(-3%, 0, 0) rotate3d(0, 0, 1, -3deg)
+    }
+    60% {
+      -webkit-transform: translate3d(3%, 0, 0) rotate3d(0, 0, 1, 2deg);
+      -ms-transform: translate3d(3%, 0, 0) rotate3d(0, 0, 1, 2deg);
+      transform: translate3d(3%, 0, 0) rotate3d(0, 0, 1, 2deg)
+    }
+    75% {
+      -webkit-transform: translate3d(-2%, 0, 0) rotate3d(0, 0, 1, -1deg);
+      -ms-transform: translate3d(-2%, 0, 0) rotate3d(0, 0, 1, -1deg);
+      transform: translate3d(-2%, 0, 0) rotate3d(0, 0, 1, -1deg)
+    }
+    100% {
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none
+    }
   }
