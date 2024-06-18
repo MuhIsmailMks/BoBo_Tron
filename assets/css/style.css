@@ -101,7 +101,7 @@ body{
  
 
 .wobble{
-    animation: wobble 3s linear infinite;
+    animation: wobble 4s linear infinite;
   }
   
   
@@ -112,29 +112,29 @@ body{
       transform: none
     }
     15% {
-      -webkit-transform: translate3d(-2%, 0, 0) rotate3d(0, 0, 1, -2deg);
-      -ms-transform: translate3d(-2%, 0, 0) rotate3d(0, 0, 1, -2deg);
-      transform: translate3d(-2%, 0, 0) rotate3d(0, 0, 1, -2deg)
+      -webkit-transform: translate3d(-1%, 0, 0) rotate3d(0, 0, 1, -1deg);
+      -ms-transform: translate3d(-1%, 0, 0) rotate3d(0, 0, 1, -1deg);
+      transform: translate3d(-1%, 0, 0) rotate3d(0, 0, 1, -1deg)
     }
     30% {
-      -webkit-transform: translate3d(2%, 0, 0) rotate3d(0, 0, 1, 3deg);
-      -ms-transform: translate3d(2%, 0, 0) rotate3d(0, 0, 1, 3deg);
-      transform: translate3d(2%, 0, 0) rotate3d(0, 0, 1, 3deg)
+      -webkit-transform: translate3d(1%, 0, 0) rotate3d(0, 0, 1, 1deg);
+      -ms-transform: translate3d(1%, 0, 0) rotate3d(0, 0, 1, 1deg);
+      transform: translate3d(1%, 0, 0) rotate3d(0, 0, 1, 1deg)
     }
     45% {
-      -webkit-transform: translate3d(-3%, 0, 0) rotate3d(0, 0, 1, -3deg);
-      -ms-transform: translate3d(-3%, 0, 0) rotate3d(0, 0, 1, -3deg);
-      transform: translate3d(-3%, 0, 0) rotate3d(0, 0, 1, -3deg)
+      -webkit-transform: translate3d(-1%, 0, 0) rotate3d(0, 0, 1, -1deg);
+      -ms-transform: translate3d(-1%, 0, 0) rotate3d(0, 0, 1, -1deg);
+      transform: translate3d(-1%, 0, 0) rotate3d(0, 0, 1, -1deg)
     }
     60% {
-      -webkit-transform: translate3d(3%, 0, 0) rotate3d(0, 0, 1, 2deg);
-      -ms-transform: translate3d(3%, 0, 0) rotate3d(0, 0, 1, 2deg);
-      transform: translate3d(3%, 0, 0) rotate3d(0, 0, 1, 2deg)
+      -webkit-transform: translate3d(1%, 0, 0) rotate3d(0, 0, 1, 2deg);
+      -ms-transform: translate3d(1%, 0, 0) rotate3d(0, 0, 1, 2deg);
+      transform: translate3d(1%, 0, 0) rotate3d(0, 0, 1, 2deg)
     }
     75% {
-      -webkit-transform: translate3d(-2%, 0, 0) rotate3d(0, 0, 1, -1deg);
-      -ms-transform: translate3d(-2%, 0, 0) rotate3d(0, 0, 1, -1deg);
-      transform: translate3d(-2%, 0, 0) rotate3d(0, 0, 1, -1deg)
+      -webkit-transform: translate3d(-1%, 0, 0) rotate3d(0, 0, 1, -1deg);
+      -ms-transform: translate3d(-1%, 0, 0) rotate3d(0, 0, 1, -1deg);
+      transform: translate3d(-1%, 0, 0) rotate3d(0, 0, 1, -1deg)
     }
     100% {
       -webkit-transform: none;
