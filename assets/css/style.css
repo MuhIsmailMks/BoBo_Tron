@@ -4,23 +4,48 @@
 }
  
 @font-face {
-    font-family: "gentyDemo";
-    src: url('../fonts/GentyDemo-Regular.otf');
-}
+    font-family: "boicot";
+    src: url('../font/boicot.regular.ttf');
+} 
  
 :root{    
-    --font-gentyDemo:"gentyDemo", sans-serif;     
+    --font-boicot:"boicot", sans-serif;    
 }
+
+.luckiest_font {
+    font-family: "Luckiest Guy", cursive; 
+  }
+  
 
 body{
     background-repeat: no-repeat;
     background-origin: border-box;
     background-size: cover;
+
+    color:white;
  
-    font-family: var(--font-gentyDemo);
-    color: white;
+ 
+    font-family: var(--font-boicot);  
 }
  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .unbounded_font {
   font-family: "Unbounded", sans-serif; 
 }
