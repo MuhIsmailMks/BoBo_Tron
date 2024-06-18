@@ -1,327 +1,570 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/logo.png"> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/logo.png"
+    />
     <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap"
+      rel="stylesheet"
+    />
     <!-- aos animation -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- tailwind css cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- css link -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Sharky</title>
-</head>
+  </head>
 
-<body>
- 
-    <div class="container_site w-full h-auto relative max-w-[100%] overflow-hidden min-h-[100vh] flex flex-col items-center  ">
+  <body>
+    <div
+      class="container_site w-full h-auto relative max-w-[100%] overflow-hidden min-h-[100vh] flex flex-col items-center"
+    >
+      <!-- hero -->
+      <section
+        class="hero w-full h-[700px] md:h-[60vw] xl:h-[70vw] relative flex justify-center items-center"
+      >
+        <div class="absolute w-[120vw] h-full">
+          <img
+            src="./assets/images/home_image.png"
+            alt=""
+            class="w-full h-full md:h-auto relative object-cover zoom_in"
+          />
+        </div>
+        <img
+          src="./assets/images/hero_text.png"
+          alt=""
+          class="w-[50%] md:w-[500px] h-auto absolute object-cover top-[30px] float_animation"
+          style="animation-duration: 3s;"
+        />
+      </section>
 
-        <!-- hero -->
-         <section class="hero w-full h-[700px] md:h-[60vw] xl:h-[70vw] relative flex justify-center items-center">
-            <div class="absolute w-[120vw] h-full">
-                <img src="./assets/images/home_image.png" alt="" class="w-full h-full md:h-auto relative object-cover zoom_in">
-            </div>
-            <img src="./assets/images/hero_text.png" alt="" class="w-[50%] md:w-[500px] h-auto absolute object-cover top-[30px] float_animation " style="animation-duration: 3s;">
-         </section>
+      <!-- about -->
+      <section
+        class="about w-full h-[350px] md:h-[400px] relative flex justify-center items-center"
+      >
+        <img
+          src="./assets/images/bg_about.png"
+          alt=""
+          class="w-full h-full absolute object-cover"
+        />
 
-          <!-- about -->
-          <section class="about w-full h-[350px] md:h-[400px] relative flex justify-center items-center">
-            <img src="./assets/images/bg_about.png" alt="" class="w-full h-full absolute  object-cover">
+        <!-- content -->
+        <div
+          class="h-full w-full z-[9] relative flex justify-center items-center flex-col"
+        >
+          <!-- social media -->
+          <div
+            class="w-[250px] md:w-full h-auto justify-center flex items-center gap-[.75rem] xl:gap-[2rem] relative xl:absolute xl:top-[-40px] flex-wrap"
+            data-aos="fade-up"
+            data-aos-duration="500"
+            data-aos-delay="100"
+          >
+            <a
+              href="https://ethereum.org/"
+              target="_blank"
+              class="w-[50px] md:h-[60px] xl:h-[80px] h-[50px] md:w-[60px] xl:w-[80px] duration-200 hover:scale-110 relative rounded-full border-[1.5px] border-black bg-[#3461D5] flex justify-center items-center"
+            >
+              <img
+                src="./assets/images/etherium.png"
+                alt=""
+                class="w-[70%] rounded-full h-auto object-contain border-black border-[1px]"
+              />
+            </a>
+            <a
+              href="https://x.com"
+              target="_blank"
+              class="w-[50px] md:h-[60px] xl:h-[80px] h-[50px] md:w-[60px] xl:w-[80px] duration-200 hover:scale-110 relative rounded-full border-[1.5px] border-black bg-[#3461D5] flex justify-center items-center"
+            >
+              <img
+                src="./assets/images/twitter.png"
+                alt=""
+                class="w-[70%] rounded-full h-auto object-contain border-black border-[1px]"
+              />
+            </a>
+            <a
+              href="https://web.telegram.org/"
+              target="_blank"
+              class="w-[50px] md:h-[60px] xl:h-[80px] h-[50px] md:w-[60px] xl:w-[80px] duration-200 hover:scale-110 relative rounded-full border-[1.5px] border-black bg-[#3461D5] flex justify-center items-center"
+            >
+              <img
+                src="./assets/images/telegram.png"
+                alt=""
+                class="w-[70%] rounded-full h-auto object-contain border-black border-[1px]"
+              />
+            </a>
+            <a
+              href="https://coinmarketcap.com/index/"
+              target="_blank"
+              class="w-[50px] md:h-[60px] xl:h-[80px] h-[50px] md:w-[60px] xl:w-[80px] duration-200 hover:scale-110 relative rounded-full border-[1.5px] border-black bg-[#3461D5] flex justify-center items-center"
+            >
+              <img
+                src="./assets/images/social4.png"
+                alt=""
+                class="w-[70%] rounded-full h-auto object-contain border-black border-[1px]"
+              />
+            </a>
+            <a
+              href="https://www.coingecko.com/"
+              target="_blank"
+              class="w-[50px] md:h-[60px] xl:h-[80px] h-[50px] md:w-[60px] xl:w-[80px] duration-200 hover:scale-110 relative rounded-full border-[1.5px] border-black bg-[#3461D5] flex justify-center items-center"
+            >
+              <img
+                src="./assets/images/coingegco.png"
+                alt=""
+                class="w-[70%] rounded-full h-auto object-contain border-black border-[1px]"
+              />
+            </a>
+            <a
+              href="https://www.dextools.io/app"
+              target="_blank"
+              class="w-[50px] md:h-[60px] xl:h-[80px] h-[50px] md:w-[60px] xl:w-[80px] duration-200 hover:scale-110 relative rounded-full border-[1.5px] border-black bg-[#3461D5] flex justify-center items-center"
+            >
+              <img
+                src="./assets/images/dex.png"
+                alt=""
+                class="w-[70%] rounded-full h-auto object-contain border-black border-[1px]"
+              />
+            </a>
+            <a
+              href="https://raydium.io/swap/?inputMint=sol&outputMint=4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R"
+              target="_blank"
+              class="w-[50px] md:h-[60px] xl:h-[80px] h-[50px] md:w-[60px] xl:w-[80px] duration-200 hover:scale-110 relative rounded-full border-[1.5px] border-black bg-[#3461D5] flex justify-center items-center"
+            >
+              <img
+                src="./assets/images/social7.png"
+                alt=""
+                class="w-[70%] rounded-full h-auto object-contain border-black border-[1px]"
+              />
+            </a>
+            <a
+              href="https://jup.ag/"
+              target="_blank"
+              class="w-[50px] md:h-[60px] xl:h-[80px] h-[50px] md:w-[60px] xl:w-[80px] duration-200 hover:scale-110 relative rounded-full border-[1.5px] border-black bg-[#3461D5] flex justify-center items-center"
+            >
+              <img
+                src="./assets/images/social8.png"
+                alt=""
+                class="w-[70%] rounded-full h-auto object-contain border-black border-[1px]"
+              />
+            </a>
+          </div>
 
-            <!-- content -->
-             <div class="h-full w-full z-[9] relative flex justify-center items-center flex-col">
+          <!-- watch video -->
+          <div
+            class="video w-full flex items-center justify-center"
+            data-aos="fade-up"
+            data-aos-duration="500"
+            data-aos-delay="200"
+          >
+            <h2 class="uppercase text-[30px] xl:text-[120px]">WATCH VIDEO</h2>
+            <img
+              src="./assets/images/watch_icon.png"
+              alt="waching"
+              class="w-[100px] xl:w-[200px] h-auto object-contain"
+            />
+          </div>
 
-                <!-- social media -->
-                 <div class="w-[250px] md:w-full h-auto justify-center flex items-center gap-[.75rem] xl:gap-[2rem] relative xl:absolute  xl:top-[-40px] flex-wrap" data-aos="fade-up"
-                 data-aos-duration="500"
-                 data-aos-delay="100">
-                    <a href="https://ethereum.org/" target="_blank" class="w-[50px] md:h-[60px] xl:h-[80px] h-[50px] md:w-[60px] xl:w-[80px] duration-200 hover:scale-110 relative rounded-full border-[1.5px] border-black bg-[#3461D5] flex justify-center items-center">
-                        <img src="./assets/images/etherium.png" alt="" class="w-[70%] rounded-full h-auto object-contain border-black border-[1px]">
-                    </a>
-                    <a href="https://x.com" target="_blank" class="w-[50px] md:h-[60px] xl:h-[80px] h-[50px] md:w-[60px] xl:w-[80px] duration-200 hover:scale-110 relative rounded-full border-[1.5px] border-black bg-[#3461D5] flex justify-center items-center">
-                        <img src="./assets/images/twitter.png" alt="" class="w-[70%] rounded-full h-auto object-contain border-black border-[1px]">
-                    </a>
-                    <a href="https://web.telegram.org/" target="_blank" class="w-[50px] md:h-[60px] xl:h-[80px] h-[50px] md:w-[60px] xl:w-[80px] duration-200 hover:scale-110 relative rounded-full border-[1.5px] border-black bg-[#3461D5] flex justify-center items-center">
-                        <img src="./assets/images/telegram.png" alt="" class="w-[70%] rounded-full h-auto object-contain border-black border-[1px]">
-                    </a>
-                    <a href="https://coinmarketcap.com/index/" target="_blank" class="w-[50px] md:h-[60px] xl:h-[80px] h-[50px] md:w-[60px] xl:w-[80px] duration-200 hover:scale-110 relative rounded-full border-[1.5px] border-black bg-[#3461D5] flex justify-center items-center">
-                        <img src="./assets/images/social4.png" alt="" class="w-[70%] rounded-full h-auto object-contain border-black border-[1px]">
-                    </a>
-                    <a href="https://www.coingecko.com/" target="_blank" class="w-[50px] md:h-[60px] xl:h-[80px] h-[50px] md:w-[60px] xl:w-[80px] duration-200 hover:scale-110 relative rounded-full border-[1.5px] border-black bg-[#3461D5] flex justify-center items-center">
-                        <img src="./assets/images/coingegco.png" alt="" class="w-[70%] rounded-full h-auto object-contain border-black border-[1px]">
-                    </a>
-                    <a href="https://www.dextools.io/app" target="_blank" class="w-[50px] md:h-[60px] xl:h-[80px] h-[50px] md:w-[60px] xl:w-[80px] duration-200 hover:scale-110 relative rounded-full border-[1.5px] border-black bg-[#3461D5] flex justify-center items-center">
-                        <img src="./assets/images/dex.png" alt="" class="w-[70%] rounded-full h-auto object-contain border-black border-[1px]">
-                    </a>
-                    <a href="https://raydium.io/swap/?inputMint=sol&outputMint=4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R" target="_blank" class="w-[50px] md:h-[60px] xl:h-[80px] h-[50px] md:w-[60px] xl:w-[80px] duration-200 hover:scale-110 relative rounded-full border-[1.5px] border-black bg-[#3461D5] flex justify-center items-center">
-                        <img src="./assets/images/social7.png" alt="" class="w-[70%] rounded-full h-auto object-contain border-black border-[1px]">
-                    </a>
-                    <a href="https://jup.ag/" target="_blank" class="w-[50px] md:h-[60px] xl:h-[80px] h-[50px] md:w-[60px] xl:w-[80px] duration-200 hover:scale-110 relative rounded-full border-[1.5px] border-black bg-[#3461D5] flex justify-center items-center">
-                        <img src="./assets/images/social8.png" alt="" class="w-[70%] rounded-full h-auto object-contain border-black border-[1px]">
-                    </a>
-                 </div>
+          <!-- ca -->
+          <div
+            class="contract cursor-pointer copy_address flex justify-center items-center luckiest_font font-thin max-[400px]:text-[3vw] text-[14px] xl:text-[30px] text-nowrap"
+            data-aos="fade-up"
+            data-aos-duration="500"
+            data-aos-delay="400"
+          >
+            <p
+              class="mr-[.5rem] value"
+              data-set="3SWKY5FN4ENQYYJTYQQZGBT7IEV8YD5UNGCWFK3FEVA7"
+            >
+              CA:
+            </p>
+            <span>3SWKY5FN4ENQYYJTYQQZGBT7IEV8YD5UNGCWFK3FEVA7</span>
+          </div>
+        </div>
+      </section>
 
-                <!-- watch video -->
-                <div class="video w-full flex items-center justify-center" data-aos="fade-up"
-                data-aos-duration="500"
-                data-aos-delay="200">
-                    <h2 class="uppercase text-[30px] xl:text-[120px] ">WATCH VIDEO</h2>
-                    <img src="./assets/images/watch_icon.png" alt="waching" class="w-[100px] xl:w-[200px] h-auto object-contain">
-                </div>
+      <!-- roadmap -->
+      <section
+        class="roadmap w-full h-auto max-[1024px]:py-[100px] xl:h-[850px] relative flex justify-center items-center border-t-[2px] border-white"
+      >
+        <!-- background image -->
+        <img
+          src="./assets/images/bg_roadmap.png"
+          alt="roadmap bg"
+          class="h-full w-full object-cover absolute z-0"
+        />
 
-                <!-- ca -->
-                <div class="contract cursor-pointer copy_address flex justify-center items-center luckiest_font font-thin max-[400px]:text-[3vw] text-[14px] xl:text-[30px] text-nowrap" data-aos="fade-up"
-                data-aos-duration="500"
-                data-aos-delay="400">
-                    <p class="mr-[.5rem] value" data-set="3SWKY5FN4ENQYYJTYQQZGBT7IEV8YD5UNGCWFK3FEVA7">
-                        CA:
-                    </p>
-                    <span>3SWKY5FN4ENQYYJTYQQZGBT7IEV8YD5UNGCWFK3FEVA7</span>
-                </div>
+        <!-- title -->
+        <div
+          class="absolute top-0 xl:left-[30%] text-[60px] xl:text-[170px] leading-[0.8] flex flex-col items-end rotate-[-10deg]"
+        >
+          <p
+            class="bg-black"
+            data-aos="fade-left"
+            data-aos-duration="500"
+            data-aos-delay="100"
+          >
+            ROAD
+          </p>
+          <p
+            class="tesxt-[50px] xl:text-[140px]"
+            data-aos="fade-left"
+            data-aos-duration="500"
+            data-aos-delay="100"
+          >
+            MAP
+          </p>
+        </div>
 
-             </div>
+        <!-- roadmap -->
+        <div
+          class="w-full relative h-auto xl:h-full flex-col flex justify-center items-center xl:w-[1300px]"
+        >
+          <img
+            src="./assets/images/roadmap_map.png"
+            alt=""
+            class="relative w-[90%] h-auto object-contain max-[1024px]:mb-[60px]"
+          />
 
-         </section>
+          <!-- roadmap1 -->
+          <div
+            class="w-[400px] max-w-[100%] max-[1204px]:mb-[1.5rem] relative xl:absolute left-0 xl:top-[500px] flex flex-col items-center justify-center lemonade_font uppercase font-thin"
+            data-aos="fade-up"
+            data-aos-duration="500"
+            data-aos-delay="100"
+          >
+            <h2 class="luckiest_font text-[30px] md:text-[35px] md:mb-[1rem]">
+              PRESALE
+            </h2>
+            <p class="text-[16px] md:text-[19px] mb-[.5rem] tracking-wide">
+              launch
+            </p>
+            <p class="text-[16px] md:text-[19px] mb-[.5rem] tracking-wide">
+              gmc and cg listings
+            </p>
+            <p class="text-[16px] md:text-[19px] mb-[.5rem] tracking-wide">
+              1000 HOLDERS
+            </p>
+            <p class="text-[16px] md:text-[19px] mb-[.5rem] tracking-wide">
+              $SHARKY TRENDING EVERYWHERE
+            </p>
+          </div>
 
-         <!-- roadmap -->
-          <section class="roadmap w-full h-auto max-[1024px]:py-[100px]  xl:h-[850px] relative flex justify-center items-center border-t-[2px] border-white">
+          <!-- roadmap2 -->
+          <div
+            class="w-[400px] max-w-[100%] max-[1204px]:mb-[1.5rem] relative xl:absolute xl:left-[360px] xl:top-[570px] flex flex-col items-center justify-center lemonade_font uppercase font-thin"
+            data-aos="fade-up"
+            data-aos-duration="500"
+            data-aos-delay="200"
+          >
+            <h2 class="luckiest_font text-[30px] md:text-[35px] md:mb-[1rem]">
+              MARKETING PUSH
+            </h2>
+            <p class="text-[16px] md:text-[19px] mb-[.5rem] tracking-wide">
+              PARTNERSHIPS
+            </p>
+            <p class="text-[16px] md:text-[19px] mb-[.5rem] tracking-wide">
+              CEX LISTINGS
+            </p>
+            <p class="text-[16px] md:text-[19px] mb-[.5rem] tracking-wide">
+              10.000 HOLDERS
+            </p>
+            <p class="text-[16px] md:text-[19px] mb-[.5rem] tracking-wide">
+              10 MIL MARKETCAP
+            </p>
+          </div>
 
-            <!-- background image -->
-            <img src="./assets/images/bg_roadmap.png" alt="roadmap bg" class="h-full w-full object-cover absolute z-0">
+          <!-- roadmap3 -->
+          <div
+            class="w-[400px] max-w-[100%] max-[1204px]:mb-[1.5rem] relative xl:absolute xl:left-[660px] xl:top-[450px] flex flex-col items-center justify-center lemonade_font uppercase font-thin"
+            data-aos="fade-up"
+            data-aos-duration="500"
+            data-aos-delay="300"
+          >
+            <h2 class="luckiest_font text-[30px] md:text-[35px] md:mb-[1rem]">
+              $SHARKY NFTS
+            </h2>
+            <p class="text-[16px] md:text-[19px] mb-[.5rem] tracking-wide">
+              $SHARKY MERCH STORE
+            </p>
+            <p class="text-[16px] md:text-[19px] mb-[.5rem] tracking-wide">
+              50.000 HOLDERS
+            </p>
+            <p class="text-[16px] md:text-[19px] mb-[.5rem] tracking-wide">
+              100,000 MIL MARKETCAP
+            </p>
+          </div>
 
-            <!-- title -->
-             <div class="absolute top-0 xl:left-[30%] text-[60px] xl:text-[170px] leading-[0.8] flex flex-col items-end rotate-[-10deg]" >
-                <p class="bg-black " data-aos="fade-left"
-                data-aos-duration="500"
-                data-aos-delay="100">ROAD</p> 
-                <p class="tesxt-[50px] xl:text-[140px]" data-aos="fade-left"
-                data-aos-duration="500"
-                data-aos-delay="100">MAP</p>
-            </div>
+          <!-- roadmap4 -->
+          <div
+            class="w-[400px] max-w-[100%] max-[1204px]:mb-[1.5rem] relative xl:absolute xl:right-0 xl:top-[500px] flex flex-col items-center justify-center lemonade_font uppercase font-thin"
+            data-aos="fade-up"
+            data-aos-duration="500"
+            data-aos-delay="400"
+          >
+            <h2 class="luckiest_font text-[30px] md:text-[35px] md:mb-[1rem]">
+              1 SHARKY = 1$
+            </h2>
+            <p class="text-[16px] md:text-[19px] mb-[.5rem] tracking-wide">
+              $SHARKY CARD GAME
+            </p>
+            <p class="text-[16px] md:text-[19px] mb-[.5rem] tracking-wide">
+              $SHARKY COMIC
+            </p>
+            <p class="text-[16px] md:text-[19px] mb-[.5rem] tracking-wide">
+              100,000+ HOLDERS
+            </p>
+          </div>
+        </div>
+      </section>
 
-            <!-- roadmap -->
-             <div class="w-full relative h-auto xl:h-full flex-col flex justify-center items-center xl:w-[1300px]">
-                <img src="./assets/images/roadmap_map.png" alt="" class="relative w-[90%] h-auto object-contain max-[1024px]:mb-[60px]">
+      <!-- supply -->
+      <section
+        class="supply w-full h-auto relative flex justify-center xl:justify-start items-center border-b-[2px] border-white flex-col"
+      >
+        <!-- background image -->
 
-                <!-- roadmap1 -->
-                 <div class="w-[400px] max-w-[100%] max-[1204px]:mb-[1.5rem] relative xl:absolute left-0 xl:top-[500px] flex flex-col items-center justify-center lemonade_font uppercase font-thin" data-aos="fade-up"
-                 data-aos-duration="500"
-                 data-aos-delay="100">
-                    <h2 class="luckiest_font text-[30px] md:text-[35px]  md:mb-[1rem]">PRESALE</h2>
-                    <p class="text-[16px] md:text-[19px] mb-[.5rem] tracking-wide">launch</p>
-                    <p class="text-[16px] md:text-[19px] mb-[.5rem] tracking-wide">gmc and cg listings</p>
-                    <p class="text-[16px] md:text-[19px] mb-[.5rem] tracking-wide">1000 HOLDERS</p>
-                    <p class="text-[16px] md:text-[19px] mb-[.5rem] tracking-wide">$SHARKY TRENDING EVERYWHERE</p>
-                 </div>
+        <video
+          class="w-full h-auto relative video_service"
+          autoplay
+          loop
+          muted
+          playsinline
+        >
+          <source
+            src="./assets/images/supply_bg_desktop.mp4"
+            type="video/mp4"
+            id="video-source"
+          />
+        </video>
 
-                <!-- roadmap2 -->
-                <div class="w-[400px] max-w-[100%] max-[1204px]:mb-[1.5rem] relative xl:absolute xl:left-[360px] xl:top-[570px] flex flex-col items-center justify-center   lemonade_font uppercase font-thin" data-aos="fade-up"
-                data-aos-duration="500"
-                data-aos-delay="200">
-                        <h2 class="luckiest_font text-[30px] md:text-[35px]  md:mb-[1rem]">MARKETING PUSH</h2>
-                        <p class="text-[16px] md:text-[19px] mb-[.5rem] tracking-wide">PARTNERSHIPS</p> 
-                        <p class="text-[16px] md:text-[19px] mb-[.5rem] tracking-wide">CEX LISTINGS</p> 
-                        <p class="text-[16px] md:text-[19px] mb-[.5rem] tracking-wide">10.000 HOLDERS</p> 
-                        <p class="text-[16px] md:text-[19px] mb-[.5rem] tracking-wide">10 MIL MARKETCAP</p> 
-                </div>
+        <img
+          src="./assets/images/suply_bg1.png"
+          alt="roadmap bg"
+          class="h-full xl:hidden w-full object-cover relative z-0"
+        />
 
-                <!-- roadmap3 -->
-                <div class="w-[400px] max-w-[100%] max-[1204px]:mb-[1.5rem] relative xl:absolute xl:left-[660px] xl:top-[450px] flex flex-col items-center justify-center lemonade_font uppercase font-thin" data-aos="fade-up"
-                data-aos-duration="500"
-                data-aos-delay="300">
-                    <h2 class="luckiest_font text-[30px] md:text-[35px]  md:mb-[1rem]">$SHARKY NFTS</h2>
-                    <p class="text-[16px] md:text-[19px] mb-[.5rem] tracking-wide">$SHARKY MERCH STORE</p>  
-                    <p class="text-[16px] md:text-[19px] mb-[.5rem] tracking-wide">50.000 HOLDERS</p>  
-                    <p class="text-[16px] md:text-[19px] mb-[.5rem] tracking-wide">100,000 MIL MARKETCAP</p>  
-               </div>
+        <div
+          class="absolute flex justify-center items-center w-full h-full z-[1]"
+        >
+          <img
+            src="./assets/images/shark.png"
+            alt="shark"
+            class="h-auto w-[200px] md:w-[320px] right-[5%] min-[1600px]:right-[10vw] max-[1024px]:bottom-0 object-cover absolute z-[1] wobble"
+          />
+        </div>
 
-                  <!-- roadmap4 -->
-                  <div class="w-[400px] max-w-[100%] max-[1204px]:mb-[1.5rem] relative xl:absolute xl:right-0 xl:top-[500px] flex flex-col items-center justify-center lemonade_font uppercase font-thin" data-aos="fade-up"
-                  data-aos-duration="500"
-                  data-aos-delay="400">
-                    <h2 class="luckiest_font text-[30px] md:text-[35px]  md:mb-[1rem]">1 SHARKY = 1$</h2>
-                    <p class="text-[16px] md:text-[19px] mb-[.5rem] tracking-wide">$SHARKY CARD GAME</p>
-                    <p class="text-[16px] md:text-[19px] mb-[.5rem] tracking-wide">$SHARKY COMIC</p>
-                    <p class="text-[16px] md:text-[19px] mb-[.5rem] tracking-wide">100,000+ HOLDERS</p> 
-               </div>
+        <!-- suply container -->
+        <div
+          class="suply_container hidden w-full xl:w-[1000px] max-w-[1500px] h-auto lg:h-[80%] relative flex justify-center xl:justify-start items-center flex-wrap itex xl:pl-[50px] min-[1600px]:pl-[150px] max-[1024px]:py-[50px] gap-[1rem]"
+          data-aos="fade-up"
+          data-aos-duration="500"
+          data-aos-delay="100"
+        >
+          <div
+            class="relative w-[160px] h-[140px] md:w-[381.01px] md:h-[345px] flex justify-center items-center"
+            style="animation-delay: -0.3s;"
+          >
+            <img
+              src="./assets/images/suply_billion_bg.svg"
+              alt=""
+              class="w-full h-full object-cover relative"
+            />
+            <p
+              class="absolute uppercase text-[30px] md:text-[90px] text-center leading-[1]"
+            >
+              <span class="mr-[3rem]">supply</span>
+              <span class="ml-[3rem]">billion</span>
+            </p>
+          </div>
 
-             </div>
+          <div
+            class="relative w-[160px] h-[145px] md:w-[381.01px] md:h-[345px] flex justify-center items-center"
+          >
+            <img
+              src="./assets/images/zero_bg.svg"
+              alt=""
+              class="w-full h-full object-cover relative"
+            />
+            <p
+              class="absolute uppercase text-[45px] md:text-[100px] text-center leading-[1] rotate-[10deg] mr-[1rem] md:mr-[3rem] xl:mb-[3rem]"
+            >
+              <span>zero</span>
+              <br />
+              <span class="mr-[3rem]">tax</span>
+            </p>
+          </div>
 
-          </section>
+          <div
+            class="relative w-[155px] h-[139px] md:w-[381.01px] md:h-[345px] flex justify-center items-center"
+            style="animation-delay: 1s;"
+          >
+            <img
+              src="./assets/images/liquid_bg.svg"
+              alt=""
+              class="w-full h-full object-cover relative"
+            />
+            <p
+              class="absolute uppercase text-[30px] md:text-[80px] text-center leading-[1] h-full w-full flex flex-col items-center justify-center"
+            >
+              <span class="rotate-[-10deg]">liquidity</span>
+              <span class="ml-[1rem] md:ml-[3rem] rotate-[-5deg]">burned</span>
+            </p>
+          </div>
 
-          <!-- supply -->
-           <section class="supply w-full h-auto  relative flex justify-center xl:justify-start  items-center border-b-[2px] border-white flex-col"> 
+          <div
+            class="relative w-[150px] h-[138px] md:w-[381.01px] md:h-[345px] flex justify-center items-center"
+            style="animation-delay: -0.5s;"
+          >
+            <img
+              src="./assets/images/mint_bg.svg"
+              alt=""
+              class="w-full h-full object-cover relative"
+            />
+            <p
+              class="absolute uppercase text-[30px] md:text-[70px] text-center leading-[0.8] h-full w-full flex flex-col items-start justify-center pl-[1rem] xl:pl-[4rem] rotate-[-10deg]"
+            >
+              <span class="pl-[2rem]">min</span>
+              <span class="pl-[.25rem]">& freeze</span>
+              <span>revoked</span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer
+        class="w-full h-[300px] xl:h-[400px] relative flex justify-center items-center flex-col luckiest_font text-[18px] xl:text-[25px] overflow-hidden"
+      >
+        <!-- background image -->
+        <div class="absolute flex justify-center items-center h-full w-[110vw]">
+          <img
+            src="./assets/images/footer_bg.png"
+            alt="roadmap bg"
+            class="h-[450px] w-full object-cover absolute z-0 footer_animation"
+          />
 
 
+          <!-- character mobile -->
+             <img
+            src="./assets/images/left_footer.png"
+            alt="roadmap bg"
+            class="h-auto w-[150px] object-cover absolute z-[1] footer_animation left-0 bottom-0" style="animation-duration: 3s;"
+          />
+             <img
+            src="./assets/images/right_footer.png"
+            alt="roadmap bg"
+            class="h-auto w-[150px] object-cover absolute z-[1] footer_animation right-0 bottom-0" style="animation-duration: 3s;"
+          />
+        </div>
 
-                <!-- background image -->
-
-                <video class="w-full   h-auto relative video_service" autoplay loop muted playsinline
-                >
-                    <source src="./assets/images/supply_bg_desktop.mp4" type="video/mp4" id="video-source"> 
-                 </video>
-
-                 <img src="./assets/images/suply_bg1.png" alt="roadmap bg" class="h-full xl:hidden w-full object-cover relative z-0">
-
-                <div class="absolute flex justify-center items-center w-full h-full z-[1]">
-                  
-                   
-                    <img src="./assets/images/shark.png" alt="shark" class="h-auto w-[200px] md:w-[320px] right-[5%] min-[1600px]:right-[10vw] max-[1024px]:bottom-0 object-cover absolute z-[1] wobble">
-
-                </div>
- 
-
-            
-
-                <!-- suply container -->
-                 <div class="suply_container hidden w-full xl:w-[1000px] max-w-[1500px] h-auto lg:h-[80%] relative flex justify-center xl:justify-start items-center  flex-wrap itex xl:pl-[50px] min-[1600px]:pl-[150px] max-[1024px]:py-[50px] gap-[1rem]" data-aos="fade-up"
-                 data-aos-duration="500"
-                 data-aos-delay="100">
-
-                    <div class="relative  w-[160px] h-[140px] md:w-[381.01px] md:h-[345px] flex justify-center items-center " style="animation-delay: -.3s;">
-                        <img src="./assets/images/suply_billion_bg.svg" alt="" class="w-full h-full object-cover relative">
-                        <p class="absolute uppercase text-[30px] md:text-[90px] text-center leading-[1]"> 
-                            <span class="mr-[3rem]">supply</span>
-                            <span class="ml-[3rem]">billion</span>
-                        </p>
-                    </div>
-
-                    <div class="relative  w-[160px] h-[145px] md:w-[381.01px] md:h-[345px] flex justify-center items-center ">
-                        <img src="./assets/images/zero_bg.svg" alt="" class="w-full h-full object-cover relative">
-                        <p class="absolute uppercase text-[45px] md:text-[100px] text-center leading-[1] rotate-[10deg] mr-[1rem] md:mr-[3rem] xl:mb-[3rem]"> 
-                            <span >zero</span>
-                            <br>
-                            <span class="mr-[3rem]">tax</span>
-                        </p>
-                    </div>
-
-                    <div class="relative  w-[155px] h-[139px] md:w-[381.01px] md:h-[345px] flex justify-center items-center " style="animation-delay: 1s;">
-                        <img src="./assets/images/liquid_bg.svg" alt="" class="w-full h-full object-cover relative">
-                        <p class="absolute uppercase text-[30px] md:text-[80px] text-center leading-[1] h-full w-full flex flex-col items-center justify-center "> 
-                            <span class="rotate-[-10deg]">liquidity</span> 
-                            <span class="ml-[1rem] md:ml-[3rem] rotate-[-5deg]">burned</span>
-                        </p>
-                    </div>
-
-                    <div class="relative  w-[150px] h-[138px] md:w-[381.01px] md:h-[345px] flex justify-center items-center " style="animation-delay: -.5s;">
-                        <img src="./assets/images/mint_bg.svg" alt="" class="w-full h-full object-cover relative">
-                        <p class="absolute uppercase text-[30px] md:text-[70px] text-center leading-[0.8] h-full w-full flex flex-col items-start justify-center pl-[1rem] xl:pl-[4rem] rotate-[-10deg]"> 
-                            <span class="pl-[2rem]">min</span> 
-                            <span class="pl-[.25rem]" >& freeze</span>
-                            <span  >revoked</span>
-                        </p>
-                    </div>
-
-                 </div>
-
-           </section>
-
-           <!-- footer -->
-            <footer class=" w-full h-[300px] xl:h-[400px] relative flex justify-center items-center flex-col luckiest_font text-[18px] xl:text-[25px] overflow-hidden">
-                    <!-- background image -->
-                    <div class="absolute flex justify-center items-center h-full w-[110vw]">
-                        <img src="./assets/images/footer_bg.png" alt="roadmap bg" class="h-[450px] w-full object-cover absolute z-0 footer_animation">
-                    </div>
-
-                    <!-- text -->
-                     <p class="relative w-[90%] xl:w-[700px] text-center mb-[3rem]" data-aos="fade-up"
-                     data-aos-duration="500"
-                     data-aos-delay="100">
-                        $SHARKY IS A meme TOKEN WITH NO INTRINSIC VALUE OR
-                            expectation oF FINANCIAL RETURN. THERE IS No FORMAL TEAM OR ROADMAP. THE TOKEN IS COMPLETELY USELESS AND FOR ENTERTAINMENT PURPOSES ONLY.
-                     </p>
-                     <p class="relative w-[90%] xl:w-[1000px] text-center "  >$SHARKY 2024</p>
-                </footer>
-
+        <!-- text -->
+        <p
+          class="relative w-[90%] xl:w-[700px] text-center mb-[3rem]"
+          data-aos="fade-up"
+          data-aos-duration="500"
+          data-aos-delay="100"
+        >
+          $SHARKY IS A meme TOKEN WITH NO INTRINSIC VALUE OR expectation oF
+          FINANCIAL RETURN. THERE IS No FORMAL TEAM OR ROADMAP. THE TOKEN IS
+          COMPLETELY USELESS AND FOR ENTERTAINMENT PURPOSES ONLY.
+        </p>
+        <p class="relative w-[90%] xl:w-[1000px] text-center">$SHARKY 2024</p>
+      </footer>
     </div>
-
 
     <!-- aos js scroll animation -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!-- script -->
     <script>
-          // aos 
-          AOS.init({ 
-           once: true
-        });   
-   
-    // copy address
-    const copybtn = document.querySelector(".copy_address");
-    
-    copybtn.addEventListener("click", function() { 
-        let textSpan = copybtn.querySelector('span');
+      // aos
+      AOS.init({
+        once: true,
+      });
+
+      // copy address
+      const copybtn = document.querySelector(".copy_address");
+
+      copybtn.addEventListener("click", function () {
+        let textSpan = copybtn.querySelector("span");
         let intervalId;
-            let addressText = document.querySelector(".value").getAttribute('data-set');
-            textSpan.innerHTML = 'COPIED';
+        let addressText = document
+          .querySelector(".value")
+          .getAttribute("data-set");
+        textSpan.innerHTML = "COPIED";
 
-            if (intervalId) {  
-                clearInterval(intervalId);
-            }
-            intervalId = setInterval(() => {
-                textSpan.innerHTML = '3SWKY5FN4ENQYYJTYQQZGBT7IEV8YD5UNGCWFK3FEVA7'; 
-                clearInterval(intervalId);  
-            }, 1000);
+        if (intervalId) {
+          clearInterval(intervalId);
+        }
+        intervalId = setInterval(() => {
+          textSpan.innerHTML = "3SWKY5FN4ENQYYJTYQQZGBT7IEV8YD5UNGCWFK3FEVA7";
+          clearInterval(intervalId);
+        }, 1000);
 
-            navigator.clipboard.writeText(addressText);
-        }); 
+        navigator.clipboard.writeText(addressText);
+      });
 
- 
-        document.addEventListener("DOMContentLoaded", function() {
-    let videoServices = document.querySelectorAll('.video_service');
+    //   video on play
+      document.addEventListener("DOMContentLoaded", function () {
+        let videoServices = document.querySelectorAll(".video_service");
 
-    function playVideo(video) {
-        if (video.paused) {
-            video.play().catch(function(error) {
-                console.error("Video play was prevented:", error);
+        function playVideo(video) {
+          if (video.paused) {
+            video.play().catch(function (error) {
+              console.error("Video play was prevented:", error);
             });
+          }
         }
-    }
- 
-    for (let video of videoServices) { 
-        video.addEventListener('play', function() {
+
+        for (let video of videoServices) {
+          video.addEventListener("play", function () {
             video.muted = true;
-        });
- 
-        video.addEventListener('loadeddata', function() {
+          });
+
+          video.addEventListener("loadeddata", function () {
             playVideo(video);
-        });
- 
-        video.muted = true;
-        video.controls = false;
-    }
-});
- 
-document.addEventListener('DOMContentLoaded', function() {
-    let videos = document.querySelectorAll('.video_service');
-    videos.forEach(function(video) {
-        video.addEventListener('canplaythrough', function() {
-            video.play();
-        }, true);
-    });
-});
+          });
 
-function updateVideoSource() {
-        const video = document.querySelector('video.video_service');
-        const source = document.getElementById('video-source');
-        if (window.innerWidth < 1024) {
-            source.src = "./assets/images/supply_bg_mobile.mp4"; // Video untuk layar kecil
-        } else {
-            source.src = "./assets/images/supply_bg_desktop.mp4"; // Video untuk layar besar
+          video.muted = true;
+          video.controls = false;
         }
-        video.load(); // Muat ulang video dengan sumber yang baru
-    }
+      });
 
-    window.addEventListener('load', updateVideoSource);
-    window.addEventListener('resize', updateVideoSource);
+      document.addEventListener("DOMContentLoaded", function () {
+        let videos = document.querySelectorAll(".video_service");
+        videos.forEach(function (video) {
+          video.addEventListener(
+            "canplaythrough",
+            function () {
+              video.play();
+            },
+            true
+          );
+        });
+      });
 
- 
-    
+      function updateVideoSource() {
+        const video = document.querySelector("video.video_service");
+        const source = document.getElementById("video-source");
+        if (window.innerWidth < 1024) {
+          source.src = "./assets/images/supply_bg_mobile.mp4";
+        } else {
+          source.src = "./assets/images/supply_bg_desktop.mp4";
+        }
+        video.load();
+      }
+
+      window.addEventListener("load", updateVideoSource);
+      window.addEventListener("resize", updateVideoSource);
     </script>
-</body>
+  </body>
 </html>
