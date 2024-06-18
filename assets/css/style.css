@@ -74,7 +74,7 @@ body{
 
 /* animation */
 .float_animation{
-    animation: float_animation 3s linear infinite ;
+    animation: float_animation 7s linear infinite ;
 }
 
 @keyframes float_animation {
