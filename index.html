@@ -156,10 +156,19 @@
           </section>
 
           <!-- supply -->
-           <section class="supply w-full h-auto  relative flex justify-center xl:justify-start  items-center border-b-[2px] border-white flex-col">
-            <img src="./assets/images/bg_supply_mobile.gif" alt="roadmap bg" class="h-full xl:hidden w-full object-cover relative z-0">
-            <img src="./assets/images/suply_bg1.png" alt="roadmap bg" class="h-full xl:hidden w-full object-cover relative z-0">
+           <section class="supply w-full h-auto  relative flex justify-center xl:justify-start  items-center border-b-[2px] border-white flex-col"> 
+
+
+
                 <!-- background image -->
+
+                <video class="w-full   h-auto relative video_service" autoplay loop muted playsinline
+                >
+                    <source src="./assets/images/supply_bg_desktop.mp4" type="video/mp4" id="video-source"> 
+                 </video>
+
+                 <img src="./assets/images/suply_bg1.png" alt="roadmap bg" class="h-full xl:hidden w-full object-cover relative z-0">
+
                 <div class="absolute flex justify-center items-center w-full h-full z-[1]">
                   
                    
@@ -168,10 +177,7 @@
                 </div>
  
 
-                <video class="w-full  max-[1024px]:hidden h-auto relative video_service" autoplay loop muted playsinline
-                >
-                    <source src="./assets/images/supply_bg_desktop.mp4" type="video/mp4"> 
-                  </video>
+            
 
                 <!-- suply container -->
                  <div class="suply_container hidden w-full xl:w-[1000px] max-w-[1500px] h-auto lg:h-[80%] relative flex justify-center xl:justify-start items-center  flex-wrap itex xl:pl-[50px] min-[1600px]:pl-[150px] max-[1024px]:py-[50px] gap-[1rem]" data-aos="fade-up"
@@ -300,6 +306,19 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+function updateVideoSource() {
+        const video = document.querySelector('video.video_service');
+        const source = document.getElementById('video-source');
+        if (window.innerWidth < 1024) {
+            source.src = "./assets/images/supply_bg_mobile.mp4"; // Video untuk layar kecil
+        } else {
+            source.src = "./assets/images/supply_bg_desktop.mp4"; // Video untuk layar besar
+        }
+        video.load(); // Muat ulang video dengan sumber yang baru
+    }
+
+    window.addEventListener('load', updateVideoSource);
+    window.addEventListener('resize', updateVideoSource);
 
  
     
