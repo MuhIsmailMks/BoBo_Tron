@@ -7,6 +7,11 @@
     font-family: "boicot";
     src: url('../font/boicot.regular.ttf');
 } 
+
+@font-face {
+    font-family: "lemonade";
+    src: url('../font/Lemonade.Peach.otf');
+} 
  
 :root{    
     --font-boicot:"boicot", sans-serif;    
@@ -14,6 +19,10 @@
 
 .luckiest_font {
     font-family: "Luckiest Guy", cursive; 
+}
+  
+.lemonade_font {
+    font-family: "lemonade", cursive; 
   }
   
 
