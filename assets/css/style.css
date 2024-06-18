@@ -98,6 +98,20 @@ body{
         transform: translateX(-1%);
     }
 }
+
+.zoom_in{
+    animation: zoom_in 20s linear infinite ;
+}
+
+@keyframes zoom_in {
+    0%,100%{
+        transform: scale(0.9);
+    }
+    50%{
+        transform: scale(1);
+    }
+}
+ 
  
 
 .wobble{
