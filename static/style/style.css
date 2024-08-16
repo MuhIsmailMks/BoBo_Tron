@@ -892,7 +892,7 @@ body {
 
 @media (min-width: 1024px) {
     .navigation {
-        justify-content:space-between
+        justify-content:space-between; 
     }
 
     .logo-left .logo {
@@ -1280,6 +1280,10 @@ body {
 @media (min-width: 1024px) {
     .box-list {
         gap:var(--gutter)
+    }
+
+    .hero_img{
+        margin-top: 2rem;
     }
 
     .box-list .data {
