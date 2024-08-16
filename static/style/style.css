@@ -1201,8 +1201,21 @@ body {
 }
 
 @media (max-width: 624px) {
+    .navigation{
+        margin-top: 1rem;
+    }
+
     .logo_text{
-        font-size: 30px;
+        font-size: 5vw;
+    }
+
+    .hero_img{ 
+        width: 90%;
+        margin: 0 auto 2rem;
+    }
+    
+    .box-list{
+        gap: 1rem;
     }
 }
 @media (min-width: 1024px) {
