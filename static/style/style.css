@@ -1008,7 +1008,7 @@ body {
 }
 
 [data-ico=clipboard]:before {
-    background-image: url(/static/media/clipboard.812c5db770fce1bcecef.svg)
+    background-image: url('../media/clipboard.812c5db770fce1bcecef.svg')
 }
 
 .clipboard {
