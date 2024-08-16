@@ -1192,6 +1192,10 @@ body {
 
 
 /* new section */
+.hero_title{
+    font-size: 60px !important;
+}
+
 .logo_text{
     font-size: 40px;
 }
@@ -1203,6 +1207,11 @@ body {
 
     .logo_text{
         font-size: 5vw;
+    }
+
+    .hero_title{
+        text-align: center;
+        font-size: 15vw;
     }
 
     .hero_img{ 
