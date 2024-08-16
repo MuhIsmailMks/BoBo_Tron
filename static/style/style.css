@@ -1232,7 +1232,7 @@ body {
 
 @media (max-width: 804px) {
     .navigation{
-        margin-top: 1rem;
+        margin-top: 2rem;
     }
 
     .logo_web img{
@@ -1277,6 +1277,7 @@ body {
         width: 100%;
     }
 }
+
 @media (min-width: 1024px) {
     .box-list {
         gap:var(--gutter)
