@@ -144,7 +144,7 @@ blockquote,q {
     font-family: Valera;
     font-style: normal;
     font-weight: 400;
-    src: url(/static/media/smidgeH.33cd54cdb0983c73fd13.woff2) format("woff2")
+    src: url('../media/smidgeH.33cd54cdb0983c73fd13.woff2') format("woff2")
 }
 
 @font-face {
@@ -152,8 +152,7 @@ blockquote,q {
     font-family: Milky Nice;
     font-style: normal;
     font-weight: 700;
-    src: url('/static/media/smidgeB.9ececdb6f5ec39044d61.woff2') format("woff2")
-    /* src: url(/static/media/smidgeB.9ececdb6f5ec39044d61.woff2) format("woff2") */
+    src: url('../media/smidgeB.9ececdb6f5ec39044d61.woff2') format("woff2")
 }
 
 h1,h2,h3,h4,h5,h6 {
