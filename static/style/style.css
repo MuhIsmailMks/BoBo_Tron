@@ -1214,6 +1214,10 @@ body {
         font-size: 15vw;
     }
 
+    .about_hero{
+        text-align: center
+    }
+
     .hero_img{ 
         width: 90%;
         margin: 0 auto 2rem;
