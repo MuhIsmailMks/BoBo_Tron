@@ -152,7 +152,8 @@ blockquote,q {
     font-family: Milky Nice;
     font-style: normal;
     font-weight: 700;
-    src: url(/static/media/smidgeB.9ececdb6f5ec39044d61.woff2) format("woff2")
+    src: url('/static/media/smidgeB.9ececdb6f5ec39044d61.woff2') format("woff2")
+    /* src: url(/static/media/smidgeB.9ececdb6f5ec39044d61.woff2) format("woff2") */
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -384,7 +385,8 @@ button:hover {
 }
 
 [data-ico=tg]:before {
-    background-image: url(/static/media/tg.d388e1a5e7090f9a86ff.svg)
+    background-image: url('../media/tg.d388e1a5e7090f9a86ff.svg')
+    /* background-image: url('/static/media/tg.d388e1a5e7090f9a86ff.svg') */
 }
 
 [data-ico=tg][data-theme=yellow]:before {
