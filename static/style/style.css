@@ -1192,6 +1192,22 @@ body {
 
 
 /* new section */
+.logo_web{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+}
+
+.logo_web img{
+    width: 80px;
+    height: auto;
+    object-fit: contain;
+}
+
 .hero_title{
     font-size: 60px !important;
 }
@@ -1200,13 +1216,31 @@ body {
     font-size: 40px;
 }
 
-@media (max-width: 624px) {
+.get_btn{
+    margin-top: 4rem;
+}
+
+.social_container{
+    width: 60%;
+}
+
+.footer_logo img{
+    width: 190px;
+    height: auto;
+    object-fit: contain;
+}
+
+@media (max-width: 804px) {
     .navigation{
         margin-top: 1rem;
     }
 
+    .logo_web img{
+        width: 13vw; 
+    }
+
     .logo_text{
-        font-size: 5vw;
+        font-size: 4vw;
     }
 
     .hero_title{
@@ -1225,6 +1259,22 @@ body {
     
     .box-list{
         gap: 1rem;
+    }
+
+    .hidden_mobile{
+        display: none;
+    }
+
+    .footer_logo{
+        margin-top: 2rem;
+    }
+
+    .footer_logo img{
+        width: 100px; 
+    }
+
+    .social_container{
+        width: 100%;
     }
 }
 @media (min-width: 1024px) {
@@ -1302,3 +1352,52 @@ body {
         transform: translateX(-100%)
     }
 }
+
+
+/* effect */ 
+.social_grup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.social_grup a i,
+.socials a i{
+    transition: .3s ease-out;
+    -webkit-transition: .3s ease-out;
+    -moz-transition: .3s ease-out;
+    -ms-transition: .3s ease-out;
+    -o-transition: .3s ease-out;
+}
+
+.social_grup a:hover i,
+.socials a:hover i{
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+  
+
+.float_animation{
+    animation: float 12s ease-in-out infinite;
+    -webkit-animation: float 12s ease-in-out infinite;
+}
+  
+  @keyframes float {
+  0%,100% {
+    transform: translatey(0px);
+  }
+  30% {
+    transform: translatey(-1vw);
+    -webkit-transform: translatey(-1vw);
+    -moz-transform: translatey(-1vw);
+    -ms-transform: translatey(-1vw);
+    -o-transform: translatey(-1vw);
+  }
+  60%{
+    transform: translatey(1vw);
+  } 
+  }
