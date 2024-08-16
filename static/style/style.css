@@ -876,11 +876,7 @@ body {
     width: 167px
 }
 
-.logo-left .logo:before {
-    background-image: url(/static/media/logo.2883eba54963b6994803.webp);
-    background-position: 0;
-    background-repeat: no-repeat;
-    background-size: cover;
+.logo-left .logo:before { 
     content: "";
     display: block;
     height: 100%;
