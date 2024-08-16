@@ -389,47 +389,47 @@ button:hover {
 }
 
 [data-ico=tg][data-theme=yellow]:before {
-    background-image: url(/static/media/tg-y.1ff621c84b353a2677d7.svg)
+    background-image: url('../media/tg-y.1ff621c84b353a2677d7.svg')
 }
 
 [data-ico=tw]:before {
-    background-image: url(/static/media/tw.346074fa2436cc242e83.svg)
+    background-image: url('../media/tw.346074fa2436cc242e83.svg')
 }
 
 [data-ico=tw][data-theme=yellow]:before {
-    background-image: url(/static/media/tw-y.ee649c28227c2da1d568.svg)
+    background-image: url('../media/tw-y.ee649c28227c2da1d568.svg')
 }
 
 [data-ico=eth]:before {
-    background-image: url(/static/media/etherscan.3c000714ffe76cc31dc2.svg)
+    background-image: url('../media/etherscan.3c000714ffe76cc31dc2.svg')
 }
 
 [data-ico=dextools]:before {
-    background-image: url(/static/media/dextools.d0d8fb4392f7b953aa1f.svg)
+    background-image: url('../media/dextools.d0d8fb4392f7b953aa1f.svg')
 }
 
 [data-ico=dextools][data-theme=yellow]:before {
-    background-image: url(/static/media/dextools-y.fc7e910a97ed6efdefae.svg)
+    background-image: url('../media/dextools-y.fc7e910a97ed6efdefae.svg')
 }
 
 [data-ico=dexscreener]:before {
-    background-image: url(/static/media/dexscreener.5ed2e8482ddc9beca1f5.svg)
+    background-image: url('../media/dexscreener.5ed2e8482ddc9beca1f5.svg')
 }
 
 [data-ico=solscan]:before {
-    background-image: url(/static/media/solscan.d615281219d752d82292.svg)
+    background-image: url('../media/solscan.d615281219d752d82292.svg')
 }
 
 [data-ico=solscan][data-theme=yellow]:before {
-    background-image: url(/static/media/solscan-y.e92bafa1a551aaa2021d.svg)
+    background-image: url('../media/solscan-y.e92bafa1a551aaa2021d.svg')
 }
 
 [data-ico=etherscan]:before {
-    background-image: url(/static/media/etherscan.3c000714ffe76cc31dc2.svg)
+    background-image: url('../media/etherscan.3c000714ffe76cc31dc2.svg')
 }
 
 [data-ico=etherscan][data-theme=yellow]:before {
-    background-image: url(/static/media/etherscan.3c000714ffe76cc31dc2.svg)
+    background-image: url('../media/etherscan.3c000714ffe76cc31dc2.svg')
 }
 
 @keyframes pulse {
