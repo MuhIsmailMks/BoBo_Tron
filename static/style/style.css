@@ -1212,6 +1212,10 @@ body {
     font-size: 60px !important;
 }
 
+.link_btn{
+    margin-top: 2rem;
+}
+
 .logo_text{
     font-size: 40px;
 }
