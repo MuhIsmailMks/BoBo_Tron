@@ -1200,6 +1200,11 @@ body {
     font-size: 40px;
 }
 
+@media (max-width: 624px) {
+    .logo_text{
+        font-size: 30px;
+    }
+}
 @media (min-width: 1024px) {
     .box-list {
         gap:var(--gutter)
