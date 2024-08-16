@@ -423,6 +423,14 @@ button:hover {
     background-image: url(/static/media/solscan-y.e92bafa1a551aaa2021d.svg)
 }
 
+[data-ico=etherscan]:before {
+    background-image: url(/static/media/etherscan.3c000714ffe76cc31dc2.svg)
+}
+
+[data-ico=etherscan][data-theme=yellow]:before {
+    background-image: url(/static/media/etherscan.3c000714ffe76cc31dc2.svg)
+}
+
 @keyframes pulse {
     0% {
         box-shadow: 0 0 0 0 var(--accent)
