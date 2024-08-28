@@ -80,22 +80,24 @@ header::after{
   content: "";
   position: absolute;
   top: 100%;
-
-  width: 55%;
+  width: 60%;
   height: 2vw;
   background-image: url(../images/grass.svg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  
+  animation: left_right 9s ease-in-out infinite;
+  -webkit-animation: left_right 9s ease-in-out infinite;
 }
 
 
 header::before {
-  left: 0%;
+  left: -2%;
 }
 
 header::after {
-  right: 0%;
+  right: -2%;
 }
 
 .gradient_btn {
