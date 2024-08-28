@@ -135,22 +135,25 @@ header::after {
   position: absolute;
   bottom: 0%;
 
-  width: 55%;
+  width: 60%;
   height: 2vw;
   background-image: url(../images/grass_hero.svg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   z-index: 99;
+
+  animation: left_right 12s ease-in-out infinite;
+  -webkit-animation: left_right 12s ease-in-out infinite;
 }
 
 
 .hero::before {
-  left: 0%;
+  left: -4%;
 }
 
 .hero::after {
-  right: 0%;
+  right: -4%;
 }
 
 
