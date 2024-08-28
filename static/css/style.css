@@ -417,8 +417,8 @@ footer::after{
 }
 
 .shake_animation {
-  animation: shake 3s linear infinite;
-  -webkit-animation: shake 3s linear infinite;
+  animation: shake 0.7s linear infinite;
+  -webkit-animation: shake 0.7s linear infinite;
 }
 
 /* Mendefinisikan animasi shake */
