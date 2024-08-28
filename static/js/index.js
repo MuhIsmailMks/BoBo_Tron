@@ -1,20 +1,36 @@
-    // copy address
-    const copybtn = document.querySelector(".contractCopy");
+//  scroll animation Effect
+AOS.init({
+    once: true
+});
+
+// nav handler
+const menu_btn = document.querySelector('nav .menu-button');
+const menu_container = document.querySelector('nav .menu_container');
+
+menu_btn.addEventListener('click', () => {
+    menu_btn.classList.toggle('active')
+    menu_container.classList.toggle('active')
+})
+ 
+
+// copy address
+const copyAddress = document.querySelector('.copy-box');
     
-     copybtn.addEventListener("click", function() { 
-        let textSpan = copybtn.querySelector('span');
-        let intervalId;
-            let addressText = document.querySelector(".value").getAttribute('value');
-            textSpan.innerHTML = '0x4334ef6f3600280A0935964799025BbaE86b4f33';
+let text = document.querySelector('.copy-box__text');
+let btn = document.querySelector('.copy-box__btn');
+let btnText = btn.textContent;
+let timeout;
 
-            if (intervalId) {  
-                clearInterval(intervalId);
-            }
+copyAddress.addEventListener('click', () => { 
+    navigator.clipboard.writeText(text.textContent).then(function () {
+        btn.textContent = 'Copied';
 
-            intervalId = setInterval(() => {
-                textSpan.innerHTML = 'COPY'; 
-                clearInterval(intervalId);  
-            }, 1000);
-
-            navigator.clipboard.writeText(addressText);
-        }); 
+        clearTimeout(timeout);
+        timeout = setTimeout(function () {
+            btn.textContent = btnText;
+        }, 2000);
+    }).catch(function (err) {
+        console.error('Failed to copy text: ', err);
+    });
+    
+})
