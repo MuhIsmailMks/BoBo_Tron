@@ -257,6 +257,56 @@ section{
   -o-border-radius: 100px 300px 50px 100px;
 } */
 
+.hero_link_animation{
+  animation: bounce 2s ease infinite;
+  -webkit-animation: bounce 2s ease infinite;
+}
+
+.hero_link_animation:hover{
+  animation-play-state: paused;
+}
+
+.hero_link_animation img{
+  transition: .2s ease-in;
+  -webkit-transition: .2s ease-in;
+  -moz-transition: .2s ease-in;
+  -ms-transition: .2s ease-in;
+  -o-transition: .2s ease-in;
+}
+
+.hero_link_animation:hover img{
+  transform: scale(1.1) translateY(-10px);
+  -webkit-transform: scale(1.1) translateY(-10px);
+  -moz-transform: scale(1.1) translateY(-10px);
+  -ms-transform: scale(1.1) translateY(-10px);
+  -o-transform: scale(1.1) translateY(-10px);
+}
+
+
+@keyframes bounce {
+  70% {
+    transform: translateY(0);
+  }
+  80% {
+    transform: translateY(-7.5%);
+  }
+  90% {
+    transform: translateY(0);
+  }
+  95% {
+    transform: translateY(-3.5%);
+  }
+  97% {
+    transform: translateY(0);
+  }
+  99% {
+    transform: translateY(-1.5%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
 /* tokenomics */
 .circle{
   width: 20px;
