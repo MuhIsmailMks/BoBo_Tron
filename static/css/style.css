@@ -299,6 +299,10 @@ section{
     width: 15px;
     height: 15px; 
   }
+
+  .token_container h2{ 
+    font-size: 1.5rem;
+  }
 }
 
 
