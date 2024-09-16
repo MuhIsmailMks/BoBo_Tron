@@ -275,7 +275,9 @@ section{
 }
 
 .token_container h2{
-  
+  font-family: "Audiowide", sans-serif; 
+  color: white;
+  font-size: 2rem;
 }
 
 .token_container p{
