@@ -272,6 +272,8 @@ section{
 .token_content{ 
   gap: 1rem;
   flex-direction: column;
+
+  z-index: 10;
 }
 
 .token_container h2{

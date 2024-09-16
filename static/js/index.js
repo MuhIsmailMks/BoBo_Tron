@@ -1,23 +1,23 @@
 //  scroll animation Effect
-AOS.init({
-    once: true
-});
+// AOS.init({
+//     once: true
+// });
 
 // nav handler
-const menu_btn = document.querySelector('nav .menu-button');
-const menu_container = document.querySelector('nav .menu_container');
+// const menu_btn = document.querySelector('nav .menu-button');
+// const menu_container = document.querySelector('nav .menu_container');
 
-menu_btn.addEventListener('click', () => {
-    menu_btn.classList.toggle('active')
-    menu_container.classList.toggle('active')
-})
+// menu_btn.addEventListener('click', () => {
+//     menu_btn.classList.toggle('active')
+//     menu_container.classList.toggle('active')
+// })
  
 
 // copy address
-const copyAddress = document.querySelector('.copy-box');
+const copyAddress = document.querySelector('.copy_btn');
     
 let text = document.querySelector('.copy-box__text');
-let btn = document.querySelector('.copy-box__btn');
+let btn = document.querySelector('.copy-box__text');
 let btnText = btn.textContent;
 let timeout;
 
