@@ -15,6 +15,7 @@
   --bodyClr:#000919;
 }
 
+
 body {
   font-family: "neuropol", sans-serif;
   background-color: var(--bodyClr); 
@@ -115,6 +116,11 @@ section{
   -moz-transform: scale(1.05);
   -ms-transform: scale(1.05);
   -o-transform: scale(1.05);
+}
+
+
+.primaryClr{
+  color: var(--primaryClr);
 }
 
 /* light container */
@@ -261,6 +267,22 @@ section{
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+}
+
+.token_content{ 
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.token_container h2{
+  
+}
+
+.token_container p{
+  color: white;
+  max-width: 90%;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 /* responsive media queries */
