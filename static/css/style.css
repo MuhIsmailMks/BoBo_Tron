@@ -307,8 +307,8 @@ section{
 
 
 .light_animation{
-  animation: light_animation 3s ease-in-out infinite;
-  -webkit-animation: light_animation 3s ease-in-out infinite;
+  animation: light_animation 3s linear infinite;
+  -webkit-animation: light_animation 3s linear infinite;
 }
 
 @keyframes light_animation {
