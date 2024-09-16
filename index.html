@@ -1,622 +1,800 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-    <link rel="icon" type="image/png" sizes="32x32" href="./static/images/logo.png">  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./static/images/logo.png"
+    />
     <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
-    <!-- AOS scroll effect cdn --> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap"
+      rel="stylesheet"
+    />
+    <!-- AOS scroll effect cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
     <!-- tailwind css cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- css link -->
-    <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="stylesheet" href="./static/css/style.css" />
     <title>BoBo Tron</title>
-</head>
-<body class=""> 
- 
-    <div class="w-full min-h-[100vh] h-auto   max-w-[100%] relative overflow-hidden flex flex-col items-center gap-[80px] lg:gap-[100px]">
+  </head>
+  <body class="">
+    <div
+      class="w-full min-h-[100vh] h-auto max-w-[100%] relative overflow-hidden flex flex-col items-center gap-[80px] lg:gap-[100px]"
+    >
+      <!-- navbar -->
+      <nav class="w-full items-center flex_between px-6 pt-6">
+        <!-- menu -->
+        <div
+          class="menu rounded-sm border-[4px] borderClr relative px-2 h-[55px] lg:h-[70px] flex_center cursor-pointer hoverbtn"
+        >
+          <img
+            src="./static/images/menu.png"
+            alt=""
+            class="w-[90px] h-auto object-contain"
+          />
 
-        <!-- navbar -->
-         <nav class="w-full items-center flex_between px-6 pt-6">
-            
-            <!-- menu -->
-            <div class="menu rounded-sm border-[4px] borderClr relative px-2 h-[55px] lg:h-[70px] flex_center cursor-pointer hoverbtn">
-               <img src="./static/images/menu.png" alt="" class="w-[90px] h-auto object-contain">
+          <span class="deconNav"></span>
+        </div>
 
-                <span class="deconNav"></span>
- 
+        <!-- social media -->
+        <div class="social flex_center gap-5">
+          <a
+            href="https://x.com/"
+            target="_blank"
+            class="relative socialMedia p-3 pt-4 rounded-sm border-[4px] borderClr hoverbtn"
+          >
+            <img
+              src="./static/icons/Twitter.svg"
+              alt="twitter"
+              class="w-[20px] md:w-[35px]"
+            />
+
+            <span class="deconNav"></span>
+          </a>
+
+          <a
+            href="https://web.telegram.org"
+            target="_blank"
+            class="relative socialMedia p-3 pt-4 rounded-sm border-[4px] borderClr hoverbtn"
+          >
+            <img
+              src="./static/icons/Telegram.svg"
+              alt="twitter"
+              class="w-[20px] md:w-[35px]"
+            />
+
+            <span class="deconNav"></span>
+          </a>
+        </div>
+      </nav>
+
+      <!-- hero -->
+      <section class="flex_center mt-10 px-3 md:px-6">
+        <div
+          class="content_container border_hero rounded-xl w-full h-auto relative flex_center"
+        >
+          <div
+            class="inner-bg relative border_hero rounded-2xl w-[98%] h-auto flex_center"
+          >
+            <img src="./static/images/hero_img.png" alt="" />
+          </div>
+
+          <div
+            class="inner-content absolute w-full h-full flex_center max-w-[3000px]"
+          >
+            <!-- image center -->
+            <div class="w-[84%] h-auto left-[3%] absolute z-0">
+              <img
+                src="./static/images/heroImgCenter.png"
+                alt="bobotron"
+                class="w-full h-auto relative"
+              />
             </div>
 
-            <!-- social media -->
-             <div class="social flex_center gap-5">
-                
-                <a href="#twitter" target="_blank" class="relative socialMedia p-3 pt-4 rounded-sm border-[4px] borderClr hoverbtn">
-                    
-                    <img src="./static/icons/Twitter.svg" alt="twitter" class="w-[20px] md:w-[35px] ">
-
-                    <span class="deconNav"></span>
- 
-                </a>
-                
-                <a href="#telegram" target="_blank" class="relative socialMedia p-3 pt-4 rounded-sm border-[4px] borderClr hoverbtn">
-                    
-                    <img src="./static/icons/Telegram.svg" alt="twitter" class="w-[20px] md:w-[35px] ">
- 
-                    <span class="deconNav"></span>
- 
-                </a>
-
-             </div>
-
-         </nav>
-
-         <!-- hero -->
-          <section class="flex_center mt-10 px-3 md:px-6">
-            
-            <div class="content_container border_hero rounded-xl w-full h-auto  relative flex_center">
-
-                <div class="inner-bg relative border_hero rounded-2xl w-[98%] h-auto flex_center">
-                    <img src="./static/images/hero_img.png" alt="">
-                </div>
-
-                <div class="inner-content absolute w-full h-full flex_center max-w-[3000px]">
-
-                    <!-- image center -->
-                     <div class="w-[84%] h-auto left-[3%] absolute z-0">
-                        <img src="./static/images/heroImgCenter.png" alt="bobotron" class="w-full h-auto relative">
-                     </div>
-                     
-                     <!-- left img -->
-                     <div class="w-[20%] h-auto left-[3%] absolute z-10">
-                       <a href="#chart">
-                        <img src="./static/images/chart.png" alt="bobotron" class="w-full h-auto relative">
-                       </a>
-                     </div>
-                     
-                     <!-- right img -->
-                     <div class="w-[40%] h-auto right-[0%] bottom-[20%] absolute z-10">
-                       <a href="#buy">
-                        <img src="./static/images/buy.png" alt="bobotron" class="w-full h-auto relative">
-                       </a>
-                     </div>
-
-                </div>
-
+            <!-- left img -->
+            <div class="w-[20%] h-auto left-[3%] absolute z-10">
+              <a href="#chart">
+                <img
+                  src="./static/images/chart.png"
+                  alt="bobotron"
+                  class="w-full h-auto relative"
+                />
+              </a>
             </div>
 
-          </section>
+            <!-- right img -->
+            <div class="w-[40%] h-auto right-[0%] bottom-[20%] absolute z-10">
+              <a href="#buy">
+                <img
+                  src="./static/images/buy.png"
+                  alt="bobotron"
+                  class="w-full h-auto relative"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-          <!-- about -->
-         <section class="flex_col_center gap-7">
-           
+      <!-- about -->
+      <section class="flex_col_center gap-7">
+        <!-- image -->
+        <div class="w-full h-auto flex_center">
+          <img
+            src="./static/images/aboutImg.png"
+            alt="about bobotron"
+            class="w-[70%] object-contain h-auto float_animation"
+          />
+        </div>
+
+        <!-- links -->
+        <div class="w-full h-auto flex_center relative">
+          <!-- border -->
+          <img
+            src="./static/images/linkBorder.png"
+            alt="border"
+            class="w-[90%] h-auto object-contain relative"
+          />
+
+          <!-- links container -->
+          <div
+            class="absolute w-[89%] h-[10vw] lg:h-[65%] bottom-[1vw] lg:bottom-5 flex_between px-5"
+          >
+            <a href="#launch" class="w-[30%] lg:w-[21%] hoverbtn">
+              <img
+                src="./static/images/launch.png"
+                alt=""
+                class="w-[100%] h-auto object-contain"
+              />
+            </a>
+
+            <a href="#about" class="w-[30%] lg:w-[21%] hoverbtn flex_center">
+              <img
+                src="./static/images/about.png"
+                alt=""
+                class="w-[100%] h-auto object-contain"
+              />
+            </a>
+
+            <a
+              href="#blockchain"
+              class="w-[30%] lg:w-[21%] hoverbtn flex justify-end"
+            >
+              <img
+                src="./static/images/blockchain.png"
+                alt=""
+                class="w-[100%] h-auto object-contain"
+              />
+            </a>
+          </div>
+        </div>
+
+        <!-- content -->
+        <div class="w-full h-auto flex_center mt-6">
+          <!-- about content -->
+          <div
+            class="light_container large w-[80%] lg:w-[60%] h-auto lg:h-[23vw] p-2"
+          >
+            <div class="inner_content_light large w-full h-full">
+              <div
+                class="content relative w-full h-full z-10 text-white opacity-80 py-4"
+              >
+                <h2
+                  class="text-[5.5vw] lg:text-[3.5vw] text-center audiowide_font"
+                >
+                  INTRODUCTION
+                </h2>
+
+                <div
+                  class="w-full px-[2vw] text-[12px] lg:text-[1.2vw] tracking-wide max-lg:mt-5"
+                >
+                  <p>
+                    BOBOTRON is a futuristic interpretation of Bobo, a bear most
+                    often depicted in a style based on the design of Matt
+                    Furie's frog illustration named Pepe.
+                  </p>
+
+                  <br />
+
+                  <p>
+                    Although Bobo is often misinterpreted by a vast number of
+                    uneducated crypto degenerates, he is actually considered to
+                    be the patron saint of bearish markets, making him the
+                    ultimate protector.
+                  </p>
+                </div>
+              </div>
+
+              <div class="light flex_center">
+                <div class="light1 light_animation"></div>
+                <div
+                  class="light2 light_animation"
+                  style="animation-delay: -1.5s;"
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- image -->
+          <div
+            class="torch1 absolute left-[-13%] lg:left-[5%] w-[25%] lg:w-[15%] h-full flex_center"
+          >
+            <img
+              src="./static/images/torch.png"
+              alt="torch"
+              class="w-full h-auto"
+              loading="lazy"
+            />
+          </div>
+
+          <div
+            class="torch2 absolute right-[-13%] lg:right-[5%] w-[25%] lg:w-[15%] h-full flex_center"
+          >
+            <div class="w-full mirror">
+              <img
+                src="./static/images/torch.png"
+                alt="torch"
+                class="w-full h-auto"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- tokenomics -->
+      <section class="flex_center flex-col gap-20">
+        <!-- title -->
+        <div class="w-full flex_center">
+          <img
+            src="./static/images/token_title.png"
+            alt="token"
+            class="w-[70%] h-auto object-contain"
+          />
+        </div>
+
+        <!-- token container -->
+        <!-- image -->
+        <div class="w-full flex_center relative">
+          <img
+            src="./static/images/tokenImg.png"
+            alt=""
+            class="w-[80%] h-auto object-contain"
+          />
+        </div>
+
+        <!-- token -->
+        <div
+          class="flex_between max-lg:justify-center w-full pr-6 lg:px-[7vw] flex-wrap max-lg:gap-4 gap-10"
+        >
+          <!-- left -->
+          <div
+            class="w-[87%] lg:w-[40%] min-[1500px]:w-[30%] h-auto relative flex_center flex-col gap-4 lg:gap-10"
+          >
+            <div
+              class="w-full relative h-[170px] bg-[#595F6A] rounded-xl"
+            ></div>
+            <div
+              class="w-full relative h-[170px] bg-[#595F6A] rounded-xl"
+            ></div>
+          </div>
+
+          <!-- right -->
+          <div
+            class="w-[87%] lg:w-[40%] min-[1500px]:w-[30%] h-auto relative flex_center flex-col gap-4 lg:gap-10"
+          >
+            <div
+              class="w-full relative h-[170px] bg-[#595F6A] rounded-xl"
+            ></div>
+            <div
+              class="w-full relative h-[170px] bg-[#595F6A] rounded-xl"
+            ></div>
+          </div>
+        </div>
+
+        <!-- groove out-->
+        <div
+          class="absolute w-[94%] h-[80%] lg:h-[73%] bottom-[6%] lg:bottom-[4.5vw]"
+        >
+          <!-- left -->
+          <div
+            class="w-full h-[62%] lg:h-full absolute left-0 top-0 border-white border-l-2 lg:border-l-4"
+          >
+            <!-- top -->
+            <span
+              class="bg-white left-0 top-0 absolute h-[2px] lg:h-[4px] w-[17%] flex_center"
+            >
+              <div class="circle right-0"></div>
+            </span>
+
+            <!-- bottom -->
+            <span
+              class="bg-white left-0 bottom-0 absolute h-[4px] w-0 lg:w-[3%] flex_center"
+            >
+              <div class="circle lg:right-0"></div>
+            </span>
+          </div>
+
+          <!-- right -->
+          <div
+            class="w-full h-full absolute right-0 top-0 border-r-2 lg:border-r-4 border-white"
+          >
+            <span
+              class="bg-white right-0 top-0 absolute h-[2px] lg:h-[4px] w-[17%] flex_center"
+            >
+              <div class="circle left-0"></div>
+            </span>
+
+            <span
+              class="bg-white right-0 bottom-0 absolute h-[4px] w-[5%] lg:w-[3%] flex_center"
+            >
+              <div class="circle left-0"></div>
+            </span>
+          </div>
+        </div>
+
+        <!-- groove in-->
+        <div
+          class="absolute w-[85%] lg:w-[80%] h-[50%] sm:h-[45%] lg:h-[10%] max-sm:bottom-[22%] sm:bottom-[15%] lg:bottom-[400px]"
+        >
+          <!-- left -->
+          <div
+            class="h-[20%] lg:h-full w-full absolute left-0 top-0 border-white border-l-2 lg:border-l-4"
+          >
+            <!-- top -->
+            <span
+              class="bg-white left-0 top-0 absolute h-[2px] lg:h-[4px] w-[7%] flex_center"
+            >
+              <div class="circle right-0"></div>
+            </span>
+
+            <!-- bottom -->
+            <span class="bg-white left-0 bottom-0 absolute h-[4px] flex_center">
+              <div class="circle"></div>
+            </span>
+          </div>
+
+          <!-- right -->
+          <div
+            class="h-full w-full absolute left-0 top-0 border-white border-r-2 lg:border-r-4"
+          >
+            <span
+              class="bg-white right-0 top-0 absolute h-[2px] lg:h-[4px] w-[7%] flex_center"
+            >
+              <div class="circle left-0"></div>
+            </span>
+
+            <span
+              class="bg-white right-0 bottom-0 absolute h-[4px] w-[0%] flex_center"
+            >
+              <div class="circle"></div>
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- how to buy -->
+      <section class="mt-12 lg:mt-40">
+        <!-- title -->
+        <div class="w-full flex_center">
+          <img
+            src="./static/images/howToTitle.png"
+            alt="token"
+            class="w-[70%] h-auto object-contain"
+          />
+        </div>
+
+        <!-- content how -->
+        <div
+          class="w-full h-auto flex flex-col items-center justify-center lg:items-end pr-6 gap-6 mt-10 lg:mt-32 min-[1500px]:gap-[3vw]"
+        >
+          <!-- image -->
+          <div class="w-[40%] relative lg:absolute z-10 left-0">
+            <img
+              src="./static/images/howToImg.png"
+              alt="how to buy"
+              class="w-full h-auto object-contain"
+            />
+          </div>
+
+          <!-- col 1 -->
+          <div
+            class="w-full lg:w-[70%] h-auto flex justify-end items-center relative"
+          >
+            <!-- about content -->
+            <div
+              class="light_container w-[79%] lg:w-[73%] h-[180px] lg:h-[250px] min-[1500px]:h-[14vw] p-2"
+            >
+              <div class="inner_content_light w-full h-full">
+                <div class="content relative w-full h-full"></div>
+
+                <div class="light flex_center">
+                  <div class="light1 light_animation"></div>
+                </div>
+              </div>
+            </div>
+
             <!-- image -->
-             <div class="w-full h-auto flex_center">
-                <img src="./static/images/aboutImg.png" alt="about bobotron" class="w-[70%] object-contain h-auto float_animation">
-             </div>
+            <div
+              class="torch1 absolute left-[-3%] lg:left-[3%] w-[23%] h-full flex_center"
+            >
+              <img
+                src="./static/images/torch.png"
+                alt="torch"
+                class="w-full h-auto"
+                loading="lazy"
+              />
+            </div>
+          </div>
 
-             <!-- links -->
-              <div class="w-full h-auto flex_center relative" >
-               
-                <!-- border -->
-                <img src="./static/images/linkBorder.png" alt="border" class="w-[90%] h-auto object-contain relative ">
+          <!-- col 2 -->
+          <div
+            class="w-full lg:w-[70%] h-auto flex justify-end items-center relative"
+          >
+            <!-- about content -->
+            <div
+              class="light_container w-[79%] lg:w-[73%] h-[180px] lg:h-[250px] min-[1500px]:h-[14vw] p-2"
+            >
+              <div class="inner_content_light w-full h-full">
+                <div class="content relative w-full h-full"></div>
 
-                <!-- links container -->
-                 <div class="absolute w-[89%] h-[10vw] lg:h-[65%] bottom-[1vw] lg:bottom-5 flex_between px-5">
-
-                    <a href="#launch" class="w-[30%] lg:w-[21%] hoverbtn ">
-                        <img src="./static/images/launch.png" alt="" class="w-[100%] h-auto object-contain">
-                    </a>
-
-                    <a href="#about" class="w-[30%] lg:w-[21%] hoverbtn flex_center">
-                        <img src="./static/images/about.png" alt="" class="w-[100%] h-auto object-contain">
-                    </a>
-
-                    <a href="#blockchain" class="w-[30%] lg:w-[21%] hoverbtn flex justify-end">
-                        <img src="./static/images/blockchain.png" alt="" class="w-[100%] h-auto object-contain">
-                    </a>
-
-                 </div>
-
+                <div class="light flex_center">
+                  <div class="light1 light_animation"></div>
+                </div>
               </div>
-
-              <!-- content -->
-               <div class="w-full h-auto flex_center mt-6">
-
-                <!-- about content -->
-                <div class="light_container large w-[80%] lg:w-[60%] h-auto lg:h-[23vw] p-2  ">
-               
-                    <div class="inner_content_light large w-full h-full ">
-    
-                        <div class="content relative w-full h-full  z-10  text-white opacity-80 py-4">
-                            <h2 class="text-[5.5vw] lg:text-[3.5vw] text-center audiowide_font">INTRODUCTION</h2>
-
-                            <div class="w-full px-[2vw] text-[12px] lg:text-[1.2vw]  tracking-wide max-lg:mt-5">
-                                <p>BOBOTRON is a futuristic interpretation of Bobo, a bear most often depicted in a style based on the design of Matt Furie's frog illustration named Pepe.
-                                </p>
-
-                                <br>
-    
-                                <p>Although Bobo is often misinterpreted by a vast number of uneducated crypto degenerates, he is actually considered to be the patron saint of bearish markets, making him the ultimate protector.</p>
-                            </div>
-
-                        </div>
-    
-                        <div class="light flex_center">
-                            <div class="light1 light_animation"></div>
-                            <div class="light2 light_animation" style="animation-delay: -1.5s;"></div>
-                        </div>
-    
-                   </div>
-    
-                </div>
-
-                <!-- image -->
-                 <div class="torch1 absolute left-[-13%] lg:left-[5%] w-[25%] lg:w-[15%] h-full flex_center">
-                    <img src="./static/images/torch.png" alt="torch" class="w-full h-auto" loading="lazy">
-                 </div>
-                 
-                 <div class="torch2 absolute right-[-13%] lg:right-[5%] w-[25%] lg:w-[15%] h-full flex_center">
-                    <div class="w-full mirror">
-                        <img src="./static/images/torch.png" alt="torch" class="w-full h-auto" loading="lazy">
-                    </div>
-                 </div>
-
-               </div>
-
-         </section>
-
-          <!-- tokenomics -->
-           <section class="flex_center flex-col gap-20">
-              
-            <!-- title -->
-             <div class="w-full flex_center">
-                <img src="./static/images/token_title.png" alt="token" class="w-[70%] h-auto object-contain">
-             </div>
-
-             <!-- token container -->
-              <!-- image -->
-               <div class="w-full flex_center relative">
-                <img src="./static/images/tokenImg.png" alt="" class="w-[80%] h-auto object-contain">
-               </div>
-
-               <!-- token -->
-                <div class="flex_between max-lg:justify-center w-full pr-6  lg:px-[7vw] flex-wrap max-lg:gap-4 gap-10 ">
-
-                    <!-- left -->
-                    <div class="w-[87%] lg:w-[40%] min-[1500px]:w-[30%] h-auto relative flex_center flex-col  gap-4 lg:gap-10 ">
-                        
-                        <div class="w-full relative h-[170px] bg-[#595F6A] rounded-xl  "></div>
-                        <div class="w-full relative h-[170px] bg-[#595F6A] rounded-xl  "></div>
-
-                    </div>
-
-                    <!-- right -->
-                    <div class="w-[87%] lg:w-[40%] min-[1500px]:w-[30%] h-auto relative flex_center flex-col gap-4 lg:gap-10">
-                        
-                        <div class="w-full relative h-[170px] bg-[#595F6A] rounded-xl"></div>
-                        <div class="w-full relative h-[170px] bg-[#595F6A] rounded-xl"></div>
-
-                    </div>
-
-                </div>
-
-                <!-- groove out-->
-                 <div class="absolute w-[94%] h-[80%] lg:h-[73%] bottom-[6%] lg:bottom-[4.5vw]">
-                    
-                    <!-- left -->
-                   <div class="w-full h-[62%] lg:h-full absolute left-0 top-0 border-white border-l-2 lg:border-l-4 ">
-
-                    <!-- top -->
-                    <span class="bg-white left-0 top-0 absolute h-[2px] lg:h-[4px] w-[17%] flex_center">
-                        <div class="circle right-0"></div>
-                     </span>
-
-                     <!-- bottom -->
-                     <span class="bg-white left-0 bottom-0 absolute h-[4px] w-0 lg:w-[3%] flex_center">
-                        <div class="circle  lg:right-0"></div>
-                     </span>
-                   </div>
-
-                    <!-- right -->
-                   <div class="w-full h-full absolute right-0 top-0 border-r-2 lg:border-r-4 border-white">
-                    <span class="bg-white right-0 top-0 absolute h-[2px] lg:h-[4px] w-[17%] flex_center">
-                        <div class="circle left-0"></div>
-                     </span>
-
-                     <span class="bg-white right-0 bottom-0 absolute h-[4px] w-[5%] lg:w-[3%] flex_center">
-                        <div class="circle left-0"></div>
-                     </span>
-                   </div>
-
-                 </div>
-
-                <!-- groove in-->
-                 <div class="absolute w-[85%] lg:w-[80%] h-[50%] sm:h-[45%] lg:h-[10%]  max-sm:bottom-[22%] sm:bottom-[15%] lg:bottom-[400px]">
-                    
-                    <!-- left -->
-                    <div class="h-[20%] lg:h-full w-full absolute left-0 top-0 border-white border-l-2 lg:border-l-4 ">
-                   
-                        <!-- top -->
-                           <span class="bg-white left-0 top-0 absolute h-[2px] lg:h-[4px] w-[7%] flex_center">
-                            <div class="circle right-0"></div>
-                         </span>
-    
-                         <!-- bottom -->
-                         <span class="bg-white left-0 bottom-0 absolute h-[4px]  flex_center">
-                            <div class="circle "></div>
-                         </span>
-
-                    </div>
-    
-                    <!-- right -->
-                    <div class="h-full w-full absolute left-0 top-0 border-white border-r-2 lg:border-r-4">
-
-                        <span class="bg-white right-0 top-0 absolute h-[2px] lg:h-[4px] w-[7%] flex_center">
-                            <div class="circle left-0"></div>
-                         </span>
-    
-                         <span class="bg-white right-0 bottom-0 absolute h-[4px] w-[0%] flex_center">
-                            <div class="circle  "></div>
-                         </span>
-                    </div>
-    
-                </div>
-
-           </section>
-
-
-           <!-- how to buy --> 
-           <section class="mt-12 lg:mt-40" >
-
-            <!-- title -->
-            <div class="w-full flex_center">
-                <img src="./static/images/howToTitle.png" alt="token" class="w-[70%] h-auto object-contain">
-             </div>
- 
- 
-             <!-- content how -->
-              <div class="w-full h-auto flex flex-col items-center justify-center lg:items-end pr-6 gap-6 mt-10 lg:mt-32 min-[1500px]:gap-[3vw]">
-
-                <!-- image -->
-                 <div class="w-[40%] relative lg:absolute z-10 left-0">
-                    <img src="./static/images/howToImg.png" alt="how to buy" class="w-full h-auto object-contain">
-                 </div>
-
-               <!-- col 1 -->
-               <div class="w-full lg:w-[70%] h-auto flex justify-end items-center relative">
-    
-                <!-- about content -->
-                <div class="light_container w-[79%] lg:w-[73%] h-[180px] lg:h-[250px] min-[1500px]:h-[14vw] p-2">
-               
-                    <div class="inner_content_light w-full h-full">
-    
-                        <div class="content relative w-full h-full"> 
-                        </div>
-    
-                        <div class="light flex_center">
-                            <div class="light1 light_animation"></div> 
-                        </div>
-    
-                   </div>
-    
-                </div>
-
-                <!-- image -->
-                 <div class="torch1 absolute left-[-3%] lg:left-[3%] w-[23%] h-full flex_center">
-                    <img src="./static/images/torch.png" alt="torch" class="w-full h-auto" loading="lazy">
-                 </div> 
-
-                </div>
-
-                <!-- col 2 -->
-                <div class="w-full lg:w-[70%] h-auto flex justify-end items-center relative">
-    
-                    <!-- about content -->
-                    <div class="light_container w-[79%] lg:w-[73%] h-[180px] lg:h-[250px] min-[1500px]:h-[14vw] p-2">
-                   
-                        <div class="inner_content_light w-full h-full">
-        
-                            <div class="content relative w-full h-full"> 
-                            </div>
-        
-                            <div class="light flex_center">
-                                <div class="light1 light_animation"></div> 
-                            </div>
-        
-                       </div>
-        
-                    </div>
-    
-                    <!-- image -->
-                     <div class="torch1 absolute left-[-3%] lg:left-[3%] w-[23%] h-full flex_center">
-                        <img src="./static/images/torch.png" alt="torch" class="w-full h-auto" loading="lazy">
-                     </div> 
-    
-                </div>
-
-                  <!-- col 3 -->
-                  <div class="w-full lg:w-[70%] h-auto flex justify-end items-center relative">
-    
-                    <!-- about content -->
-                    <div class="light_container w-[79%] lg:w-[73%] h-[180px] lg:h-[250px] min-[1500px]:h-[14vw] p-2">
-                   
-                        <div class="inner_content_light w-full h-full">
-        
-                            <div class="content relative w-full h-full"> 
-                            </div>
-        
-                            <div class="light flex_center">
-                                <div class="light1 light_animation"></div> 
-                            </div>
-        
-                       </div>
-        
-                    </div>
-    
-                    <!-- image -->
-                     <div class="torch1 absolute left-[-3%] lg:left-[3%] w-[23%] h-full flex_center">
-                        <img src="./static/images/torch.png" alt="torch" class="w-full h-auto" loading="lazy">
-                     </div> 
-    
-                </div>
-
-                  <!-- col 4 -->
-                  <div class="w-full lg:w-[70%] h-auto flex justify-end items-center relative">
-    
-                    <!-- about content -->
-                    <div class="light_container w-[79%] lg:w-[73%] h-[180px] lg:h-[250px] min-[1500px]:h-[14vw] p-2">
-                   
-                        <div class="inner_content_light w-full h-full">
-        
-                            <div class="content relative w-full h-full"> 
-                            </div>
-        
-                            <div class="light flex_center">
-                                <div class="light1 light_animation"></div> 
-                            </div>
-        
-                       </div>
-        
-                    </div>
-    
-                    <!-- image -->
-                     <div class="torch1 absolute left-[-3%] lg:left-[3%] w-[23%] h-full flex_center">
-                        <img src="./static/images/torch.png" alt="torch" class="w-full h-auto" loading="lazy">
-                     </div> 
-    
-                </div>
-
-                
-
-
-              </div>
-
-           </section>
-
-
-              <!-- roadmap --> 
-            <section class="mt-12 lg:mt-40">
-
-                <!-- title -->
-                <div class="w-full flex_center">
-                    <img src="./static/images/roadmapTitle.png" alt="roadmap" class="w-[70%] h-auto object-contain">
-                 </div>
-     
-     
-                 <!-- content how -->
-                  <div class="relative w-full h-auto flex flex-col items-center justify-center lg:items-start pr-6 gap-6 mt-32 min-[1500px]:gap-[3vw] pb-[20vw]">
-    
-                    <!-- image -->
-                     <div class="w-[40%] relative lg:absolute z-10 right-0 bottom-0">
-                        <img src="./static/images/roadmapImg.png" alt="roadmap" class="w-full h-auto object-contain">
-                     </div>
-    
-                    <!-- col 1 -->
-                    <div class="w-full lg:w-[70%] h-auto flex justify-end items-center relative">
-    
-                        <!-- about content -->
-                        <div class="light_container w-[79%] lg:w-[73%] h-[180px] lg:h-[250px] min-[1500px]:h-[14vw] p-2">
-                       
-                            <div class="inner_content_light w-full h-full">
-            
-                                <div class="content relative w-full h-full"> 
-                                </div>
-            
-                                <div class="light flex_center">
-                                    <div class="light1 light_animation"></div> 
-                                </div>
-            
-                           </div>
-            
-                        </div>
-        
-                        <!-- image -->
-                         <div class="torch1 absolute left-[-3%] lg:left-[3%] w-[23%] h-full flex_center">
-                            <img src="./static/images/torch.png" alt="torch" class="w-full h-auto" loading="lazy">
-                         </div> 
-        
-                    </div>
-      
-    
-                     <!-- col 1 -->
-                     <div class="w-full lg:w-[70%] h-auto flex justify-end items-center relative">
-    
-                        <!-- about content -->
-                        <div class="light_container w-[79%] lg:w-[73%] h-[180px] lg:h-[250px] min-[1500px]:h-[14vw] p-2">
-                       
-                            <div class="inner_content_light w-full h-full">
-            
-                                <div class="content relative w-full h-full"> 
-                                </div>
-            
-                                <div class="light flex_center">
-                                    <div class="light1 light_animation"></div> 
-                                </div>
-            
-                           </div>
-            
-                        </div>
-        
-                        <!-- image -->
-                         <div class="torch1 absolute left-[-3%] lg:left-[3%] w-[23%] h-full flex_center">
-                            <img src="./static/images/torch.png" alt="torch" class="w-full h-auto" loading="lazy">
-                         </div> 
-        
-                    </div>
-
-                      <!-- col 1 -->
-                      <div class="w-full lg:w-[70%] h-auto flex justify-end items-center relative">
-    
-                        <!-- about content -->
-                        <div class="light_container w-[79%] lg:w-[73%] h-[180px] lg:h-[250px] min-[1500px]:h-[14vw] p-2">
-                       
-                            <div class="inner_content_light w-full h-full">
-            
-                                <div class="content relative w-full h-full"> 
-                                </div>
-            
-                                <div class="light flex_center">
-                                    <div class="light1 light_animation"></div> 
-                                </div>
-            
-                           </div>
-            
-                        </div>
-        
-                        <!-- image -->
-                         <div class="torch1 absolute left-[-3%] lg:left-[3%] w-[23%] h-full flex_center">
-                            <img src="./static/images/torch.png" alt="torch" class="w-full h-auto" loading="lazy">
-                         </div> 
-        
-                    </div>
-
-                      <!-- col 1 -->
-                      <div class="w-full lg:w-[70%] h-auto flex justify-end items-center relative">
-    
-                        <!-- about content -->
-                        <div class="light_container w-[79%] lg:w-[73%] h-[180px] lg:h-[250px] min-[1500px]:h-[14vw] p-2">
-                       
-                            <div class="inner_content_light w-full h-full">
-            
-                                <div class="content relative w-full h-full"> 
-                                </div>
-            
-                                <div class="light flex_center">
-                                    <div class="light1 light_animation"></div> 
-                                </div>
-            
-                           </div>
-            
-                        </div>
-        
-                        <!-- image -->
-                         <div class="torch1 absolute left-[-3%] lg:left-[3%] w-[23%] h-full flex_center">
-                            <img src="./static/images/torch.png" alt="torch" class="w-full h-auto" loading="lazy">
-                         </div> 
-        
-                    </div>
-    
-    
-                  </div>
-    
-            </section>
-
-
-            <!-- cex & listing -->
-            <section>
-                   <!-- title -->
-                   <div class="w-full flex_center mb-[10vw]">
-                    <img src="./static/images/cex_title.png" alt="roadmap" class="w-[70%] h-auto object-contain">
-                 </div>
-
-
-                <!-- content -->
-                <div class="w-full h-auto flex_center mt-6">
-
-                <!-- about content -->
-                <div class="light_container large w-[80%] lg:w-[60%] h-[250px] lg:h-[23vw] p-2  ">
-               
-                    <div class="inner_content_light large w-full h-full ">
-    
-                        <div class="content relative w-full h-full  z-10  text-white opacity-80 py-4"> 
-
-                        </div>
-    
-                        <div class="light flex_center">
-                            <div class="light1 light_animation"></div>
-                            <div class="light2 light_animation" style="animation-delay: -1.5s;"></div>
-                        </div>
-    
-                   </div>
-    
-                </div>
-
-                <!-- image -->
-                 <div class="torch1 absolute left-[-13%] lg:left-[5%] w-[25%] lg:w-[15%] h-full flex_center">
-                    <img src="./static/images/torch.png" alt="torch" class="w-full h-auto" loading="lazy">
-                 </div>
-                 
-                 <div class="torch2 absolute right-[-13%] lg:right-[5%] w-[25%] lg:w-[15%] h-full flex_center">
-                    <div class="w-full mirror">
-                        <img src="./static/images/torch.png" alt="torch" class="w-full h-auto" loading="lazy">
-                    </div>
-                 </div>
-
-               </div>
-
-
-
-            </section>
-
-          <!-- light box -->
-          <section class="flex_center my-32 hidden">
-
-            <img src="./static/images/hero_text.png" alt="" class="absolute w-[80%] h-auto">
-             
-            <div class="light_container w-[80%] h-[300px] p-2">
-               
-                <div class="inner_content_light w-full h-full">
-
-                    <div class="content relative w-full h-full"></div>
-
-                    <div class="light flex_center">
-                        <div class="light1 light_animation"></div>
-                        <div class="light2 light_animation" style="animation-delay: -1.5s;"></div>
-                    </div>
-
-               </div>
-
             </div>
 
-          </section>
-        
-          <!-- footer -->
-           <footer class="relative w-full flex_center h-[30vw] min-h-[200px]">
+            <!-- image -->
+            <div
+              class="torch1 absolute left-[-3%] lg:left-[3%] w-[23%] h-full flex_center"
+            >
+              <img
+                src="./static/images/torch.png"
+                alt="torch"
+                class="w-full h-auto"
+                loading="lazy"
+              />
+            </div>
+          </div>
 
-            <!-- bobotron image -->
-            <div class="w-[50%] lg:w-[30%] h-auto left-[0%] z-10 absolute">
-                <img src="./static/images/heroImgCenter.png" alt="bobotron" class="w-full h-auto object-contain">
+          <!-- col 3 -->
+          <div
+            class="w-full lg:w-[70%] h-auto flex justify-end items-center relative"
+          >
+            <!-- about content -->
+            <div
+              class="light_container w-[79%] lg:w-[73%] h-[180px] lg:h-[250px] min-[1500px]:h-[14vw] p-2"
+            >
+              <div class="inner_content_light w-full h-full">
+                <div class="content relative w-full h-full"></div>
+
+                <div class="light flex_center">
+                  <div class="light1 light_animation"></div>
+                </div>
+              </div>
             </div>
 
-            <!-- border img -->
-             <div class="absolute left-0 bottom-0 h-auto w-full">
-                <img src="./static/images/footer_border.png" alt="footer" class="w-full h-auto object-cover" loading="lazy">
-             </div>
+            <!-- image -->
+            <div
+              class="torch1 absolute left-[-3%] lg:left-[3%] w-[23%] h-full flex_center"
+            >
+              <img
+                src="./static/images/torch.png"
+                alt="torch"
+                class="w-full h-auto"
+                loading="lazy"
+              />
+            </div>
+          </div>
 
-           </footer>
+          <!-- col 4 -->
+          <div
+            class="w-full lg:w-[70%] h-auto flex justify-end items-center relative"
+          >
+            <!-- about content -->
+            <div
+              class="light_container w-[79%] lg:w-[73%] h-[180px] lg:h-[250px] min-[1500px]:h-[14vw] p-2"
+            >
+              <div class="inner_content_light w-full h-full">
+                <div class="content relative w-full h-full"></div>
 
+                <div class="light flex_center">
+                  <div class="light1 light_animation"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- image -->
+            <div
+              class="torch1 absolute left-[-3%] lg:left-[3%] w-[23%] h-full flex_center"
+            >
+              <img
+                src="./static/images/torch.png"
+                alt="torch"
+                class="w-full h-auto"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- roadmap -->
+      <section class="mt-12 lg:mt-40">
+        <!-- title -->
+        <div class="w-full flex_center">
+          <img
+            src="./static/images/roadmapTitle.png"
+            alt="roadmap"
+            class="w-[70%] h-auto object-contain"
+          />
+        </div>
+
+        <!-- content how -->
+        <div
+          class="relative w-full h-auto flex flex-col items-center justify-center lg:items-start pr-6 gap-6 mt-32 min-[1500px]:gap-[3vw] pb-[20vw]"
+        >
+          <!-- image -->
+          <div class="w-[40%] relative lg:absolute z-10 right-0 bottom-0">
+            <img
+              src="./static/images/roadmapImg.png"
+              alt="roadmap"
+              class="w-full h-auto object-contain"
+            />
+          </div>
+
+          <!-- col 1 -->
+          <div
+            class="w-full lg:w-[70%] h-auto flex justify-end items-center relative"
+          >
+            <!-- about content -->
+            <div
+              class="light_container w-[79%] lg:w-[73%] h-[180px] lg:h-[250px] min-[1500px]:h-[14vw] p-2"
+            >
+              <div class="inner_content_light w-full h-full">
+                <div class="content relative w-full h-full"></div>
+
+                <div class="light flex_center">
+                  <div class="light1 light_animation"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- image -->
+            <div
+              class="torch1 absolute left-[-3%] lg:left-[3%] w-[23%] h-full flex_center"
+            >
+              <img
+                src="./static/images/torch.png"
+                alt="torch"
+                class="w-full h-auto"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          <!-- col 1 -->
+          <div
+            class="w-full lg:w-[70%] h-auto flex justify-end items-center relative"
+          >
+            <!-- about content -->
+            <div
+              class="light_container w-[79%] lg:w-[73%] h-[180px] lg:h-[250px] min-[1500px]:h-[14vw] p-2"
+            >
+              <div class="inner_content_light w-full h-full">
+                <div class="content relative w-full h-full"></div>
+
+                <div class="light flex_center">
+                  <div class="light1 light_animation"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- image -->
+            <div
+              class="torch1 absolute left-[-3%] lg:left-[3%] w-[23%] h-full flex_center"
+            >
+              <img
+                src="./static/images/torch.png"
+                alt="torch"
+                class="w-full h-auto"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          <!-- col 1 -->
+          <div
+            class="w-full lg:w-[70%] h-auto flex justify-end items-center relative"
+          >
+            <!-- about content -->
+            <div
+              class="light_container w-[79%] lg:w-[73%] h-[180px] lg:h-[250px] min-[1500px]:h-[14vw] p-2"
+            >
+              <div class="inner_content_light w-full h-full">
+                <div class="content relative w-full h-full"></div>
+
+                <div class="light flex_center">
+                  <div class="light1 light_animation"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- image -->
+            <div
+              class="torch1 absolute left-[-3%] lg:left-[3%] w-[23%] h-full flex_center"
+            >
+              <img
+                src="./static/images/torch.png"
+                alt="torch"
+                class="w-full h-auto"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          <!-- col 1 -->
+          <div
+            class="w-full lg:w-[70%] h-auto flex justify-end items-center relative"
+          >
+            <!-- about content -->
+            <div
+              class="light_container w-[79%] lg:w-[73%] h-[180px] lg:h-[250px] min-[1500px]:h-[14vw] p-2"
+            >
+              <div class="inner_content_light w-full h-full">
+                <div class="content relative w-full h-full"></div>
+
+                <div class="light flex_center">
+                  <div class="light1 light_animation"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- image -->
+            <div
+              class="torch1 absolute left-[-3%] lg:left-[3%] w-[23%] h-full flex_center"
+            >
+              <img
+                src="./static/images/torch.png"
+                alt="torch"
+                class="w-full h-auto"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- cex & listing -->
+      <section>
+        <!-- title -->
+        <div class="w-full flex_center mb-[10vw]">
+          <img
+            src="./static/images/cex_title.png"
+            alt="roadmap"
+            class="w-[70%] h-auto object-contain"
+          />
+        </div>
+
+        <!-- content -->
+        <div class="w-full h-auto flex_center mt-6">
+          <!-- about content -->
+          <div
+            class="light_container large w-[80%] lg:w-[60%] h-[250px] lg:h-[23vw] p-2"
+          >
+            <div class="inner_content_light large w-full h-full">
+              <div
+                class="content relative w-full h-full z-10 text-white opacity-80 py-4"
+              ></div>
+
+              <div class="light flex_center">
+                <div class="light1 light_animation"></div>
+                <div
+                  class="light2 light_animation"
+                  style="animation-delay: -1.5s;"
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- image -->
+          <div
+            class="torch1 absolute left-[-13%] lg:left-[5%] w-[25%] lg:w-[15%] h-full flex_center"
+          >
+            <img
+              src="./static/images/torch.png"
+              alt="torch"
+              class="w-full h-auto"
+              loading="lazy"
+            />
+          </div>
+
+          <div
+            class="torch2 absolute right-[-13%] lg:right-[5%] w-[25%] lg:w-[15%] h-full flex_center"
+          >
+            <div class="w-full mirror">
+              <img
+                src="./static/images/torch.png"
+                alt="torch"
+                class="w-full h-auto"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- light box -->
+      <section class="flex_center my-32 hidden">
+        <img
+          src="./static/images/hero_text.png"
+          alt=""
+          class="absolute w-[80%] h-auto"
+        />
+
+        <div class="light_container w-[80%] h-[300px] p-2">
+          <div class="inner_content_light w-full h-full">
+            <div class="content relative w-full h-full"></div>
+
+            <div class="light flex_center">
+              <div class="light1 light_animation"></div>
+              <div
+                class="light2 light_animation"
+                style="animation-delay: -1.5s;"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer class="relative w-full flex_center h-[30vw] min-h-[200px]">
+
+        <!-- bobotron image -->
+        <div class="w-[50%] lg:w-[30%] h-auto left-[0%] z-10 absolute walk_animation">
+          <div class="w-full plane_animation">
+           <div class="w-full">
+            <img
+            src="./static/images/heroImgCenter.png"
+            alt="bobotron"
+            class="w-full h-auto object-contain"
+          />
+           </div>
+          </div>
+        </div>
+
+        <!-- border img -->
+        <div class="absolute left-0 bottom-0 h-auto w-full">
+          <img
+            src="./static/images/footer_border.png"
+            alt="footer"
+            class="w-full h-auto object-cover"
+            loading="lazy"
+          />
+        </div>
+      </footer>
     </div>
 
     <!-- gsap -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-     <!-- aos js library animation -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- aos js library animation -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
- 
-    <script src="./static/js/index.js"></script>
 
-</body>
+    <script src="./static/js/index.js"></script>
+  </body>
 </html>
