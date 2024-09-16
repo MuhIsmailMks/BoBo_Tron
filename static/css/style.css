@@ -335,25 +335,25 @@ section{
     -o-transform: rotate(0deg) translateY(0vw);
 }
   10%{
-    transform: rotate(5deg)  translateY(1vw);
-    -webkit-transform: rotate(5deg)  translateY(1vw);
-    -moz-transform: rotate(5deg)  translateY(1vw);
-    -ms-transform: rotate(5deg)  translateY(1vw);
-    -o-transform: rotate(5deg)  translateY(1vw);
+    transform: rotate(3deg)  translateY(1vw);
+    -webkit-transform: rotate(3deg)  translateY(1vw);
+    -moz-transform: rotate(3deg)  translateY(1vw);
+    -ms-transform: rotate(3deg)  translateY(1vw);
+    -o-transform: rotate(3deg)  translateY(1vw);
 }
   15%{
-    transform: rotate(-5deg)  translateY(-1vw);
-    -webkit-transform: rotate(-5deg)  translateY(-1vw);
-    -moz-transform: rotate(-5deg)  translateY(-1vw);
-    -ms-transform: rotate(-5deg)  translateY(-1vw);
-    -o-transform: rotate(-5deg)  translateY(-1vw);
+    transform: rotate(-3deg)  translateY(-1vw);
+    -webkit-transform: rotate(-3deg)  translateY(-1vw);
+    -moz-transform: rotate(-3deg)  translateY(-1vw);
+    -ms-transform: rotate(-3deg)  translateY(-1vw);
+    -o-transform: rotate(-3deg)  translateY(-1vw);
 }
   30%{
-    transform: rotate(5deg)  translateY(1vw);
-    -webkit-transform: rotate(5deg)  translateY(1vw);
-    -moz-transform: rotate(5deg)  translateY(1vw);
-    -ms-transform: rotate(5deg)  translateY(1vw);
-    -o-transform: rotate(5deg)  translateY(1vw);
+    transform: rotate(3deg)  translateY(1vw);
+    -webkit-transform: rotate(3deg)  translateY(1vw);
+    -moz-transform: rotate(3deg)  translateY(1vw);
+    -ms-transform: rotate(3deg)  translateY(1vw);
+    -o-transform: rotate(3deg)  translateY(1vw);
 }
   50%{
     transform: rotate(3deg)  translateY(-1vw);
@@ -363,11 +363,11 @@ section{
     -o-transform: rotate(3deg)  translateY(-1vw);
 }
   70%{
-    transform: rotate(-5deg)  translateY(2vw);
-    -webkit-transform: rotate(-5deg)  translateY(2vw);
-    -moz-transform: rotate(-5deg)  translateY(2vw);
-    -ms-transform: rotate(-5deg)  translateY(2vw);
-    -o-transform: rotate(-5deg)  translateY(2vw);
+    transform: rotate(-2deg)  translateY(2vw);
+    -webkit-transform: rotate(-2deg)  translateY(2vw);
+    -moz-transform: rotate(-2deg)  translateY(2vw);
+    -ms-transform: rotate(-2deg)  translateY(2vw);
+    -o-transform: rotate(-2deg)  translateY(2vw);
 }
   90%{
     transform: rotate(2deg)  translateY(-1vw);
