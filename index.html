@@ -9,6 +9,10 @@
       sizes="32x32"
       href="./static/images/logo.png"/>
 
+          
+    <!-- particle -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -36,7 +40,7 @@
         <nav class="w-full items-center flex_between px-6 pt-6">
 
         <!-- menu -->
-        <div  class="menu rounded-sm border-[2px] lg:border-[4px] borderClr relative px-2 h-[55px] lg:h-[70px] flex_center cursor-pointer hoverbtn"  >
+        <div class="menuBtn rounded-sm border-[2px] lg:border-[4px] borderClr relative px-2 h-[55px] lg:h-[70px] flex_center cursor-pointer hoverbtn"  >
           <img
             src="./static/images/menu.png"
             alt=""
@@ -48,7 +52,8 @@
 
         <!-- social media -->
         <div class="social flex_center gap-5">
-          <a   href="https://x.com/"   target="_blank"
+
+          <a href="https://x.com/"   target="_blank"
             class="relative socialMedia p-3 pt-4 rounded-sm border-[2px] lg:border-[4px] borderClr hoverbtn"   >
             <img
               src="./static/icons/Twitter.svg"
@@ -66,7 +71,90 @@
           </a>
 
         </div>
-      </nav>
+
+      </nav> 
+
+       <!--  menu -->
+         <div class="menu_links_container absolute z-[999] w-full h-auto left-0 top-0 p-[5vw] xl:p-[2vw] overflow-hidden">
+          
+          <div class="flex_between w-full h-auto  relative z-10">
+
+            <div class="social flex_center gap-5">
+              
+              <a  href="https://x.com/"   target="_blank"
+                class="relative socialMedia p-3 pt-4 rounded-sm border-[2px] lg:border-[4px] borderClr hoverbtn"   >
+                <img
+                  src="./static/icons/Twitter.svg"
+                  alt="twitter"
+                  class="w-[20px] md:w-[35px]"
+                />
+    
+                <span class="deconNav"></span>
+              </a>
+    
+              <a  href="https://web.telegram.org"  target="_blank"  class="relative socialMedia p-3 pt-4 rounded-sm border-[2px] lg:border-[4px] borderClr hoverbtn"  >
+                <img
+                  src="./static/icons/Telegram.svg"  alt="twitter"     class="w-[20px] md:w-[35px]"    />
+                   <span class="deconNav"></span>
+              </a>
+
+              <a  href="https://tron.network/"   target="_blank"
+              class="relative socialMedia p-3 pt-4 rounded-sm border-[2px] lg:border-[4px] borderClr hoverbtn"   >
+              <img
+                src="./static/images/tron.png"
+                alt="twitter"
+                class="w-[20px] md:w-[35px]"
+              />
+  
+              <span class="deconNav"></span>
+            </a>
+    
+            </div>
+
+            <div class="flex_center gap-5"> 
+
+              <button  
+                class="relative socialMedia p-3 pt-4 rounded-sm border-[2px] lg:border-[4px] borderClr hoverbtn closeBtn" >
+
+                <img
+                  src="./static/icons/closeBtn.svg"
+                  alt="twitter"
+                  class="w-[20px] md:w-[35px]"
+                />
+    
+                <span class="deconNav"></span>
+                
+              </button>
+     
+    
+            </div>
+
+          </div>
+
+          <div class="links_nav mt-6 relative z-10">
+            <ul class="flex flex-wrap w-full gap-[4vw]">
+              <li>
+                <a href="#about">about</a>
+              </li>
+              <li>
+                <a href="#tokenomics">tokenomics</a>
+              </li>
+              <li>
+                <a href="#howtobuy">how to buy</a>
+              </li>
+              <li>
+                <a href="#roadmap">roadmap</a>
+              </li>
+              <li>
+                <a href="#partnert">partnert</a>
+              </li>
+            </ul>
+          </div>
+
+          <div id="particles-js" class="z-0"></div>
+
+
+         </div>
 
       <!-- hero -->
       <section class="flex_center px-3 md:px-6">
@@ -964,7 +1052,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollSmoother.min.js"></script>
-    
+
+
     <!-- typed -->
     <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
 

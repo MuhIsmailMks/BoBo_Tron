@@ -110,3 +110,82 @@ const observer = new IntersectionObserver((entries, observer) => {
   
   const typeElement = document.querySelector(".typeAnimation");
   observer.observe(typeElement);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  particlesJS("particles-js", {
+    "particles": {
+      "number": {
+        "value": 200, // Jumlah bintang
+        "density": {
+          "enable": true,
+          "value_area": 800
+        }
+      },
+      "color": {
+        "value": "#ffffff" // Warna bintang putih
+      },
+      "shape": {
+        "type": "circle", // Bentuk partikel menjadi lingkaran
+        "stroke": {
+          "width": 0,
+          "color": "#000000"
+        }
+      },
+      "opacity": {
+        "value": 0.8, // Tingkat transparansi bintang
+        "random": true, // Opasitas acak untuk efek berkedip
+        "anim": {
+          "enable": true,
+          "speed": 1, // Kecepatan animasi berkedip
+          "opacity_min": 0.3, // Opasitas minimum untuk berkedip
+          "sync": false
+        }
+      },
+      "size": {
+        "value": 2, // Ukuran bintang
+        "random": true, // Ukuran acak
+        "anim": {
+          "enable": false
+        }
+      },
+      "line_linked": {
+        "enable": false // Tidak ada garis antar partikel
+      },
+      "move": {
+        "enable": true,
+        "speed": 0.5, // Kecepatan gerakan bintang yang sangat lambat
+        "direction": "none", // Bintang bergerak ke segala arah
+        "random": true,
+        "straight": false,
+        "out_mode": "out", // Bintang muncul kembali setelah keluar dari layar
+        "bounce": false
+      }
+    },
+    "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+        "onhover": {
+          "enable": false // Tidak ada interaksi saat hover
+        },
+        "onclick": {
+          "enable": false // Tidak ada interaksi saat klik
+        },
+        "resize": true
+      }
+    },
+    "retina_detect": true
+  });
+  

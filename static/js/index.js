@@ -11,7 +11,20 @@
 //     menu_btn.classList.toggle('active')
 //     menu_container.classList.toggle('active')
 // })
- 
+
+// navbar 
+const menuLinksContainer = document.querySelector('.menu_links_container')
+const menuBtn = document.querySelector('.menuBtn')
+const closeBtn = document.querySelector('.closeBtn')
+
+menuBtn.addEventListener('click', () => {
+    menuLinksContainer.classList.add('active')
+})
+
+closeBtn.addEventListener('click', () => {
+    menuLinksContainer.classList.remove('active')
+})
+
 // about listener
 const fire_btn = document.querySelector('.fire_btn')
 const fireImg = document.querySelector('.fireImg')
