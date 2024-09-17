@@ -51,18 +51,18 @@ window.addEventListener('DOMContentLoaded', () => {
     initRocketAnimation(); 
     initBoxAnimation();
 
-    gsap.fromTo(".aboutImg", 
-        { scale: 0 },  // Mulai dari scale 0
-        { scale: 1,    // Akhiri di scale 1
-          scrollTrigger: {
-            trigger: ".aboutImg", 
-            start: "top 100%", 
-            end: "bottom 0%", 
-            scrub: 2,            
-            ease: "power1.out"    
-          }
-        }
-      );
+    // gsap.fromTo(".aboutImg", 
+    //     { scale: 0 },   
+    //     { scale: 1,    
+    //       scrollTrigger: {
+    //         trigger: ".aboutImg", 
+    //         start: "top 100%", 
+    //         end: "bottom 0%", 
+    //         scrub: 2,            
+    //         ease: "power1.out"    
+    //       }
+    //     }
+    //   );
 
       if (window.innerWidth > 1023) { 
         gsap.fromTo('.howToImg', { scale: '0',  }, {

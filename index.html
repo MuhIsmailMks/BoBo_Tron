@@ -69,18 +69,19 @@
       </nav>
 
       <!-- hero -->
-      <section class="flex_center lg:mt-10 px-3 md:px-6">
-        <div
-          class="content_container border_hero rounded-xl w-full h-auto relative flex_center"
+      <section class="flex_center px-3 md:px-6">
+       
+        <div class="content_container border_hero rounded-xl w-full h-auto relative flex_center"
         >
+
           <div
-            class="inner-bg relative border_hero rounded-2xl w-[98%] h-auto flex_center"
+            class="inner-bg relative border_hero rounded-2xl w-[98%] xl:w-[65%] h-auto flex_center"
           >
             <img src="./static/images/hero_img.png" alt="" />
           </div>
 
           <div
-            class="inner-content absolute w-full h-full flex_center max-w-[3000px]"
+            class="inner-content absolute w-[98%] xl:w-[65%] h-full flex_center max-w-[3000px]"
           >
             <!-- image center -->
             <div class="w-[84%] h-auto left-[3%] absolute z-0">
@@ -113,7 +114,9 @@
               </a>
             </div>
           </div>
+
         </div>
+
       </section>
 
       <!-- about -->
@@ -121,13 +124,29 @@
 
         <!-- image -->
         <div class="w-full h-auto flex_center">
-           <div class="w-[70%] flex_center relative aboutImg">
+
+           <div class="w-[90%] lg:w-[50%] flex_center relative aboutImg">
+
             <img
-            src="./static/images/aboutImg.png"
+              src="./static/images/aboutImg.png"
+              alt="about bobotron"
+              class="w-full object-contain h-auto float_animation relative aboutMainImg"
+              loading="lazy"
+            />
+
+            <div class="absolute w-[30%] h-[20%] z-10  cursor-pointer flex_center bottom-[43%] lg:bottom-[46%]  float_animation fire_btn">
+              <p class="fire ">FIREE</p>
+            </div>
+
+            <img
+            src="./static/images/fire.gif"
             alt="about bobotron"
-            class="w-full object-contain h-auto float_animation "
+            class="w-[80%] object-contain h-auto absolute fireImg"
+            loading="lazy"
           />
+
            </div>
+
         </div>
 
         <!-- links -->
@@ -215,29 +234,54 @@
             <img
               src="./static/images/torch.png"
               alt="torch"
-              class="w-full h-auto"
+              class="w-full h-auto float_animation relative z-10"
               loading="lazy"
             />
+
+           <div class="fires_container absolute left-[-30%] rotate-[-90deg]">
+            <div class="fire_container ">
+              <div class="red flame"></div>
+              <div class="orange flame"></div>
+              <div class="yellow flame"></div>
+              <div class="white flame"></div>
+              <div class="blue circle"></div>
+              <div class="black circle"></div>
+            </div>
+           </div>
+
           </div>
 
-          <div
-            class="torch2 absolute right-[-13%] lg:right-[5%] w-[25%] lg:w-[15%] h-full flex_center"
-          >
-            <div class="w-full mirror">
+          <div  class="torch2 absolute right-[-13%] lg:right-[5%] w-[25%] lg:w-[15%] h-full flex_center"  >
+
+            <div class="w-full mirror relative z-10">
               <img
                 src="./static/images/torch.png"
                 alt="torch"
-                class="w-full h-auto"
+                class="w-full h-auto float_animation" style="animation-delay: -4s;"
                 loading="lazy"
               />
             </div>
+
+            <div class="fires_container absolute right-[-30%] rotate-[90deg]">
+              <div class="fire_container ">
+                <div class="red flame"></div>
+                <div class="orange flame"></div>
+                <div class="yellow flame"></div>
+                <div class="white flame"></div>
+                <div class="blue circle"></div>
+                <div class="black circle"></div>
+              </div>
+             </div>
+
           </div>
+
         </div>
 
       </section>
 
       <!-- tokenomics -->
       <section class="flex_center flex-col gap-20">
+    
         <!-- title -->
         <div class="w-full flex_center">
           <img
@@ -249,12 +293,26 @@
 
         <!-- token container -->
         <!-- image -->
-        <div class="w-full flex_center relative">
+        <div class="w-[80%] lg:w-[40%] flex_center relative">
+        
           <img
             src="./static/images/tokenImg.png"
             alt=""
-            class="w-[80%] h-auto object-contain"
+            class="w-full h-auto object-contain relative"
           />
+
+          <!-- left top -->
+          <span class="absolute bg-[#DE6219]   w-[20%] h-[7%] left-[4%] top-[12%] rotate-[45deg] rounded-xl openClose"></span>
+
+          <!-- right top -->
+          <span class="absolute bg-[#DE6219]   w-[20%] h-[7%] right-[8%] top-[12%] rotate-[-45deg] rounded-xl openClose"></span>
+
+          <!-- left bottom -->
+          <span class="absolute bg-[#DE6219]   w-[23%] h-[7%] left-[5%] bottom-[10%] rotate-[-45deg] rounded-xl openClose"></span>
+
+          <!-- right bottom -->
+          <span class="absolute bg-[#DE6219]   w-[21%] h-[7%] right-[5%] bottom-[12%] rotate-[45deg] rounded-xl openClose"></span>
+
         </div>
 
         <!-- token -->
@@ -317,11 +375,11 @@
         >
           <!-- left -->
           <div
-            class="w-full h-[62%] min-[600px]:h-[75%] lg:h-full absolute left-0 top-0 border-white border-l-2 lg:border-l-4"
+            class="w-full h-[62%] min-[600px]:h-[75%] lg:h-full absolute left-0 top-0 border-white border-l-2 lg:border-l-[3px]"
           >
             <!-- top -->
             <span
-              class="bg-white left-0 top-0 absolute h-[2px] lg:h-[4px] w-[17%] flex_center"
+              class="bg-white left-0 top-0 absolute h-[2px] lg:h-[3px] w-[15%] xl:w-[27%] flex_center"
             >
               <div class="circle right-0"></div>
             </span>
@@ -336,10 +394,10 @@
 
           <!-- right -->
           <div
-            class="w-full h-full absolute right-0 top-0 border-r-2 lg:border-r-4 border-white"
+            class="w-full h-full absolute right-0 top-0 border-r-2 lg:border-r-[3px] border-white"
           >
             <span
-              class="bg-white right-0 top-0 absolute h-[2px] lg:h-[4px] w-[17%] flex_center"
+              class="bg-white right-0 top-0 absolute h-[2px] lg:h-[3px] w-[15%] xl:w-[27%] flex_center"
             >
               <div class="circle left-0"></div>
             </span>
@@ -349,6 +407,7 @@
             >
               <div class="circle left-0"></div>
             </span>
+            
           </div>
         </div>
 
@@ -358,11 +417,11 @@
         >
           <!-- left -->
           <div
-            class="h-[23%] min-[500px]:h-[28%] sm:h-[20%] lg:h-full w-full absolute left-0 top-0 border-white border-l-2 lg:border-l-4"
+            class="h-[23%] min-[500px]:h-[28%] sm:h-[20%] lg:h-full w-full absolute left-0 top-0 border-white border-l-2 lg:border-l-[3px]"
           >
             <!-- top -->
             <span
-              class="bg-white left-0 top-0 absolute h-[2px] lg:h-[4px] w-[7%] flex_center"
+              class="bg-white left-0 top-0 absolute h-[2px] lg:h-[3px] w-[12%] lg:w-[24%] flex_center"
             >
               <div class="circle right-0"></div>
             </span>
@@ -375,10 +434,10 @@
 
           <!-- right -->
           <div
-            class="h-full w-full absolute left-0 top-0 border-white border-r-2 lg:border-r-4"
+            class="h-full w-full absolute left-0 top-0 border-white border-r-2 lg:border-r-[3px]"
           >
             <span
-              class="bg-white right-0 top-0 absolute h-[2px] lg:h-[4px] w-[7%] flex_center"
+              class="bg-white right-0 top-0 absolute h-[2px] lg:h-[3px] w-[12%] lg:w-[24%] flex_center"
             >
               <div class="circle left-0"></div>
             </span>

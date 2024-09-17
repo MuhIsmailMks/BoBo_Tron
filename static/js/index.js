@@ -12,6 +12,16 @@
 //     menu_container.classList.toggle('active')
 // })
  
+// about listener
+const fire_btn = document.querySelector('.fire_btn')
+const fireImg = document.querySelector('.fireImg')
+const aboutMainImg = document.querySelector('.aboutMainImg');
+
+fire_btn.addEventListener('click', () => {
+    fire_btn.classList.add('active')
+    aboutMainImg.classList.add('active')
+    fireImg.classList.add('active')
+})
 
 // copy address
 const copyAddress = document.querySelector('.copy_btn');
