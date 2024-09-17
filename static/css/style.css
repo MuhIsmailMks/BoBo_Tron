@@ -405,11 +405,11 @@ section{
 @media screen and (max-width:1024px) {
 
   .contentContainer h3{ 
-    font-size: 3.25vw; 
+    font-size: 2vw; 
   }
   
   .contentContainer p{
-    font-size: 2vw; 
+    font-size: 1.7vw; 
     letter-spacing: .1vw;
   }
 }
@@ -429,6 +429,28 @@ section{
   .token_container h2{ 
     font-size: 1.5rem;
   }
+
+  /* content */
+  .title_content{
+    
+    gap: 1rem;
+  }
+  .title_content span{
+    width: 15px;
+    height: 15px; 
+
+  }
+
+  
+  .contentContainer h3{ 
+    font-size: 3.5vw; 
+  }
+  
+  .contentContainer p{
+    font-size: 2vw; 
+    letter-spacing: .1vw;
+  }
+  
 }
 
 
