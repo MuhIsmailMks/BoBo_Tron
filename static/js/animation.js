@@ -20,7 +20,7 @@ function initRocketAnimation() {
 }
 
 function initBoxAnimation() { 
-    ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+    // ScrollTrigger.getAll().forEach(trigger => trigger.kill());
     gsap.killTweensOf('.box_fix');
 
     if (window.innerWidth > 1024) { 
@@ -46,23 +46,11 @@ function initBoxAnimation() {
         );
     }
 }
-
-// Fungsi debounce untuk event resize
-function debounce(func, wait = 100) {
-    let timeout;
-    return function(...args) {
-        clearTimeout(timeout);
-        timeout = setTimeout(() => func.apply(this, args), wait);
-    };
-}
-
+ 
 // Jalankan animasi saat DOM siap
 window.addEventListener('DOMContentLoaded', () => {
     initRocketAnimation(); 
     initBoxAnimation();
-
-    
- 
 });
 
 // Tambahkan listener untuk resize
@@ -92,8 +80,7 @@ const observer = new IntersectionObserver((entries, observer) => {
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.5 }); // threshold 0.5 berarti animasi akan dimulai ketika 50% elemen terlihat
-
-  // Pilih elemen yang akan diobservasi
+  }, { threshold: 0.5 }); 
+  
   const typeElement = document.querySelector(".typeAnimation");
   observer.observe(typeElement);
