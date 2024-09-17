@@ -61,10 +61,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initRocketAnimation(); 
     initBoxAnimation();
 
-    // new TypeIt(".typeAnimation", { 
-    //     speed: 175,
-    //     loop: false,
-    //   }).go();
+    
  
 });
 
@@ -74,3 +71,28 @@ window.addEventListener('resize', () => {
     initBoxAnimation();
     ScrollTrigger.refresh();
 });
+
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // Elemen terlihat di viewport, jalankan animasi TypeIt
+        new TypeIt(".typeAnimation", { 
+            strings: [` BOBOTRON is a futuristic interpretation of Bobo, a bear most
+                        often depicted in a style based on the design of Matt
+                        Furie's frog illustration named Pepe.`, ` ` ,` Although Bobo is often misinterpreted by a vast number of
+                        uneducated crypto degenerates, he is actually considered to
+                        be the patron saint of bearish markets, making him the
+                        ultimate protector.`],
+            speed: 5,
+            loop: false,
+          }).go();
+
+        // Hentikan pengamatan setelah animasi dijalankan
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5 }); // threshold 0.5 berarti animasi akan dimulai ketika 50% elemen terlihat
+
+  // Pilih elemen yang akan diobservasi
+  const typeElement = document.querySelector(".typeAnimation");
+  observer.observe(typeElement);
