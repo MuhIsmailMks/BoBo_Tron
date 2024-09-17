@@ -63,7 +63,7 @@ window.addEventListener('resize', () => {
 const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        // Elemen terlihat di viewport, jalankan animasi TypeIt
+        
         new TypeIt(".typeAnimation", { 
             strings: [` BOBOTRON is a futuristic interpretation of Bobo, a bear most
                         often depicted in a style based on the design of Matt
@@ -76,7 +76,7 @@ const observer = new IntersectionObserver((entries, observer) => {
             loop: false,
           }).go();
 
-        // Hentikan pengamatan setelah animasi dijalankan
+          
         observer.unobserve(entry.target);
       }
     });
