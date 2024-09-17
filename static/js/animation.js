@@ -58,7 +58,7 @@ window.addEventListener('DOMContentLoaded', () => {
             trigger: ".aboutImg", 
             start: "top 100%", 
             end: "bottom 0%", 
-            scrub: 4,            
+            scrub: 2,            
             ease: "power1.out"    
           }
         }
