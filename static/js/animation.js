@@ -63,6 +63,19 @@ window.addEventListener('DOMContentLoaded', () => {
           }
         }
       );
+
+      if (window.innerWidth > 1023) { 
+        gsap.fromTo('.howToImg', { scale: '0',  }, {
+          scale: "1" , ease: "none", scrollTrigger: {
+              trigger: '.box_fix',
+              start: "0% 100%",
+              end: "100% 100%", 
+              scrub: 3,
+          }
+      });
+    } 
+
+     
       
 });
 

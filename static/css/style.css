@@ -346,8 +346,36 @@ section{
   overflow: hidden;
 }
 
-/* how to buy */
-.howToBuyContainer .content{
+/* content container */
+.title_content{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  
+  width: 100%;
+  position: relative;
+  gap: 1.25vw;
+}
+
+.title_content span{
+  width: 30px;
+  height: 30px;
+
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title_content span img{
+  width: 100%;
+  object-fit: contain;
+  height: auto;
+  animation: rotate_img 4s infinite linear ;
+  -webkit-animation: rotate_img 4s infinite linear ;
+}
+
+.contentContainer .content{
   z-index: 10;
   position: relative;
   width: 100%;
@@ -358,16 +386,16 @@ section{
   gap: 1rem;
 }
 
-.howToBuyContainer h3{
+.contentContainer h3{
   font-family: "Audiowide", sans-serif; 
   font-size: 2.25vw;
   text-transform: uppercase;
-  color: var(--whiteClr);
+  color: var(--whiteClr); 
 
   line-height: 1;
 }
 
-.howToBuyContainer p{
+.contentContainer p{
   font-size: 1.2vw;
   color: var(--whiteClr);
   letter-spacing: .1vw;
@@ -376,11 +404,11 @@ section{
 /* responsive media queries */
 @media screen and (max-width:1024px) {
 
-  .howToBuyContainer h3{ 
+  .contentContainer h3{ 
     font-size: 3.25vw; 
   }
   
-  .howToBuyContainer p{
+  .contentContainer p{
     font-size: 2vw; 
     letter-spacing: .1vw;
   }
@@ -532,6 +560,16 @@ section{
     left: 50px;
     transform: translateY(0%) scaleX(-1);
   }
+}
+
+@keyframes rotate_img {
+  100%{
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
 }
 
 
