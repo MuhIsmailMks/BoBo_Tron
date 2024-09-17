@@ -564,6 +564,7 @@ a:active {
 .glitch {
   position: relative; 
   background-color: #595F6A;
+  letter-spacing: 1px;
 }
 
 .glitch::before,

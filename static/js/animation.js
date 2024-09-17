@@ -19,11 +19,10 @@ function initRocketAnimation() {
     );
 }
 
-function initBoxAnimation() { 
-    // ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+function initBoxAnimation() {  
     gsap.killTweensOf('.box_fix');
 
-    if (window.innerWidth > 1024) { 
+    if (window.innerWidth > 1023) { 
         ScrollTrigger.create({
             trigger: ".box_fix",  
             pin: true,
@@ -51,6 +50,20 @@ function initBoxAnimation() {
 window.addEventListener('DOMContentLoaded', () => {
     initRocketAnimation(); 
     initBoxAnimation();
+
+    gsap.fromTo(".aboutImg", 
+        { scale: 0 },  // Mulai dari scale 0
+        { scale: 1,    // Akhiri di scale 1
+          scrollTrigger: {
+            trigger: ".aboutImg", 
+            start: "top 100%", 
+            end: "bottom 0%", 
+            scrub: 4,            
+            ease: "power1.out"    
+          }
+        }
+      );
+      
 });
 
 // Tambahkan listener untuk resize
