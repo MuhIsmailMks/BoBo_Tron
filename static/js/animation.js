@@ -83,7 +83,8 @@ const observer = new IntersectionObserver((entries, observer) => {
                         uneducated crypto degenerates, he is actually considered to
                         be the patron saint of bearish markets, making him the
                         ultimate protector.`],
-            speed: 5,
+            speed: 10,
+            waitUntilVisible: true,
             loop: false,
           }).go();
 

@@ -307,6 +307,12 @@ section{
   }
 }
 
+/* about */
+.typeAnimation .ti-cursor{
+  color: transparent !important;
+
+}
+
 /* tokenomics */
 .circle{
   width: 20px;
