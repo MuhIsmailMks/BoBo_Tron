@@ -810,28 +810,6 @@ section{
   100% {transform: rotate(1deg);}
 }
 
-
-
-  
-/* a:link {
-  color: #FFF;
-  text-decoration: none;
-}
- 
-a:visited {
-  color: #FFF;
-  text-decoration: none;
-}
- 
-a:hover {
-  color: #FF00F0;
-  text-decoration: none;
-}
- 
-a:active {
-  color: #4242e6;
-  text-decoration: none;
-} */
  
 .glitch {
   position: relative; 
@@ -915,3 +893,47 @@ a:active {
   100% { clip: rect(38px, 9999px, 49px, 0); }
 }
 
+
+ 
+.sky { 
+  overflow: hidden;
+}
+
+.comets { 
+  width: 150vw;
+  height: 150vh;
+  transform-origin: center;
+  transform: translate3d(-25vw, -25vh, 1px) rotate(65deg) scale(0.75);
+}
+
+.comet {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1px;
+  height: 75vh;
+  background: linear-gradient(#fff, transparent);
+  animation: comet 3s ease-in-out forwards;
+}
+
+@keyframes comet {
+  0% {
+    opacity: 0;
+    transform: translateY(220%) scaleY(0);
+    -webkit-transform: translateY(220%) scaleY(0);
+    -moz-transform: translateY(220%) scaleY(0);
+    -ms-transform: translateY(220%) scaleY(0);
+    -o-transform: translateY(220%) scaleY(0);
+}
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(0) scaleY(1);
+    -webkit-transform: translateY(0) scaleY(1);
+    -moz-transform: translateY(0) scaleY(1);
+    -ms-transform: translateY(0) scaleY(1);
+    -o-transform: translateY(0) scaleY(1);
+}
+}

@@ -183,3 +183,46 @@ const observer = new IntersectionObserver((entries, observer) => {
     "retina_detect": true
   });
   
+
+
+
+// comets
+  const Comets = document.querySelector('.comets')
+
+function createComet () { 
+  if (Comets.children.length > 100) {
+    Comets.children[0].remove()
+  }
+  let cometX = Math.round(Math.random() * window.innerWidth)
+  let cometY = Math.round(Math.random() * window.innerHeight)
+  let comet = document.createElement('div')
+  comet.setAttribute('class', 'comet')
+  comet.style.left = cometX+'px'
+  comet.style.top  = cometY+'px'
+  
+  Comets.append(comet)
+} 
+
+
+let cometInterval;
+
+function startCometAnimation() {
+  cometInterval = setInterval(createComet, 1000);
+}
+
+function stopCometAnimation() {
+  clearInterval(cometInterval);
+}
+ 
+function handleVisibilityChange() {
+  if (document.visibilityState === 'visible') {
+    startCometAnimation();  
+  } else {
+    stopCometAnimation();   
+  }
+}
+ 
+document.addEventListener('visibilitychange', handleVisibilityChange);
+
+// Jalankan animasi komet pertama kali
+startCometAnimation();
