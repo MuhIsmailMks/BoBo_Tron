@@ -417,6 +417,11 @@ section{
 }
 
 /* tokenomics */
+.token_img{
+  animation: rotate_imgToken 10s infinite linear ;
+  -webkit-animation: rotate_imgToken 10s infinite linear ;
+}
+
 .circle{
   width: 20px;
   height: 20px;
@@ -704,6 +709,18 @@ section{
     -ms-transform: rotate(360deg);
     -o-transform: rotate(360deg);
 }
+}
+
+@keyframes rotate_imgToken {
+  0% {
+    transform: rotate(0deg);
+  }
+  77% { /* Animasi 10 detik untuk satu putaran */
+    transform: rotate(360deg);
+  }
+  100% { /* Sisanya 3 detik akan "berhenti" pada posisi terakhir */
+    transform: rotate(360deg);
+  }
 }
 
 
