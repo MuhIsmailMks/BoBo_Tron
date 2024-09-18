@@ -249,6 +249,7 @@ section{
 .links_nav a{
   font-size: 5vw;
   color: var(--primaryClr);
+  text-shadow: -.3vw .5vw 2px black;
   font-family: "Audiowide", sans-serif; 
 
   text-transform: uppercase;
@@ -467,6 +468,7 @@ section{
   justify-content: center;
   align-items: center;
 }
+
 
 .title_content span img{
   width: 100%;
