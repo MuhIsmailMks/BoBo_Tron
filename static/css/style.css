@@ -224,7 +224,7 @@ section{
 }
 
 .menu_links_container{
-  background: var(--bodyClr);
+  background: linear-gradient(#16161d, #161629, #2e253a);
   border-bottom: 2px solid var(--primaryClr);
   transform: translateY(-200%);
   transition: .5s ease-in-out;
@@ -232,6 +232,10 @@ section{
   -moz-transition: .5s ease-in-out;
   -ms-transition: .5s ease-in-out;
   -o-transition: .5s ease-in-out;
+  -webkit-transform: translateY(-200%);
+  -moz-transform: translateY(-200%);
+  -ms-transform: translateY(-200%);
+  -o-transform: translateY(-200%);
 }
 
 .menu_links_container.active{
@@ -903,3 +907,4 @@ a:active {
   95% { clip: rect(42px, 9999px, 97px, 0); }
   100% { clip: rect(38px, 9999px, 49px, 0); }
 }
+

@@ -23,7 +23,15 @@ menuBtn.addEventListener('click', () => {
 
 closeBtn.addEventListener('click', () => {
     menuLinksContainer.classList.remove('active')
-})
+});
+
+document.querySelectorAll('.links_nav a').forEach(function(link) {
+    link.addEventListener('click', function() {   
+      if (menuLinksContainer.classList.contains('active')) {
+        menuLinksContainer.classList.remove('active');
+      }
+    });
+});
 
 // about listener
 const fire_btn = document.querySelector('.fire_btn')

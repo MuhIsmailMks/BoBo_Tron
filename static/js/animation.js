@@ -122,55 +122,49 @@ const observer = new IntersectionObserver((entries, observer) => {
 
 
 
-
-
-
   particlesJS("particles-js", {
     "particles": {
       "number": {
-        "value": 200, // Jumlah bintang
+        "value": 100, // Jumlah bintang
         "density": {
           "enable": true,
-          "value_area": 800
+          "value_area": 500 // Area kepadatan bintang
         }
       },
       "color": {
-        "value": "#ffffff" // Warna bintang putih
+        "value": "#ffffff" // Warna bintang
       },
       "shape": {
-        "type": "circle", // Bentuk partikel menjadi lingkaran
+        "type": "circle", // Bentuk bintang
         "stroke": {
           "width": 0,
           "color": "#000000"
         }
       },
       "opacity": {
-        "value": 0.8, // Tingkat transparansi bintang
-        "random": true, // Opasitas acak untuk efek berkedip
+        "value": 1, // Transparansi awal bintang
+        "random": true, // Bintang akan memiliki tingkat transparansi acak
         "anim": {
           "enable": true,
-          "speed": 1, // Kecepatan animasi berkedip
-          "opacity_min": 0.3, // Opasitas minimum untuk berkedip
-          "sync": false
+          "speed": 2, // Kecepatan kedip bintang
+          "opacity_min": 0.3, // Opasitas minimum saat bintang berkedip
+          "sync": false // Animasi kedip acak antar bintang
         }
       },
       "size": {
-        "value": 2, // Ukuran bintang
-        "random": true, // Ukuran acak
-        "anim": {
-          "enable": false
-        }
+        "value": 2,
+        "random": true // Ukuran bintang acak
       },
       "line_linked": {
-        "enable": false // Tidak ada garis antar partikel
+        "enable": false // Matikan garis penghubung antar partikel
       },
       "move": {
         "enable": true,
-        "speed": 0.5, // Kecepatan gerakan bintang yang sangat lambat
-        "direction": "none", // Bintang bergerak ke segala arah
+        "speed": 0.2, // Kecepatan gerakan bintang
+        "direction": "none",
         "random": true,
         "straight": false,
-        "out_mode": "out", // Bintang muncul kembali setelah keluar dari layar
+        "out_mode": "out",
         "bounce": false
       }
     },
@@ -178,10 +172,10 @@ const observer = new IntersectionObserver((entries, observer) => {
       "detect_on": "canvas",
       "events": {
         "onhover": {
-          "enable": false // Tidak ada interaksi saat hover
+          "enable": false // Tidak ada interaksi hover
         },
         "onclick": {
-          "enable": false // Tidak ada interaksi saat klik
+          "enable": false // Tidak ada interaksi klik
         },
         "resize": true
       }
