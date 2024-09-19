@@ -516,6 +516,10 @@ section{
   letter-spacing: .1vw;
 }
 
+.linksCex .hoverbtn{
+  background-color: black;
+}
+
 /* responsive media queries */
 @media screen and (max-width:1024px) {
 
