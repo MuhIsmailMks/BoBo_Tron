@@ -420,8 +420,8 @@ section{
 
 /* tokenomics */
 .token_img{
-  animation: rotate_imgToken 19s infinite linear ;
-  -webkit-animation: rotate_imgToken 19s infinite linear ;
+  animation: rotate_imgToken 30s infinite linear ;
+  -webkit-animation: rotate_imgToken 30s infinite linear ;
 }
 
 .circle{
