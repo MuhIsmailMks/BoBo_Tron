@@ -1005,24 +1005,29 @@
           />
         </div>
 
-        <!-- content -->
         <div class="w-full h-auto flex_center mt-6">
           <!-- about content -->
           <div
-            class="light_container large w-[80%] lg:w-[60%] h-[250px] lg:h-[23vw] p-2"
+            class="light_container large w-[80%] lg:w-[60%] h-auto min-h-[250px] lg:h-[23vw] p-2"
           >
-            <div class="inner_content_light large w-full h-full">
-              <div
-                class="content relative w-full h-full z-10 text-white opacity-80 py-4"
-              ></div>
+            <div class="inner_content_light large w-full h-full min-h-[250px]">
+
+              <div   class="content relative w-full h-full z-10 text-white opacity-80 py-4"   >
+              
+                
+
+              </div>
 
               <div class="light flex_center">
-                <div class="light1 light_animation"></div>
-                <div
-                  class="light2 light_animation"
-                  style="animation-delay: -1.5s;"
-                ></div>
+                <div class="light1 light_animation">
+
+                </div>
+                <div class="light2 light_animation"
+                  style="animation-delay: -1.5s;">
               </div>
+
+              </div>
+
             </div>
           </div>
 
@@ -1033,47 +1038,49 @@
             <img
               src="./static/images/torch.png"
               alt="torch"
-              class="w-full h-auto"
+              class="w-full h-auto float_animation relative z-10"
               loading="lazy"
             />
+
+           <div class="fires_container absolute left-[-30%] rotate-[-90deg]">
+            <div class="fire_container ">
+              <div class="red flame"></div>
+              <div class="orange flame"></div>
+              <div class="yellow flame"></div>
+              <div class="white flame"></div>
+              <div class="blue circle"></div>
+              <div class="black circle"></div>
+            </div>
+           </div>
+
           </div>
 
-          <div
-            class="torch2 absolute right-[-13%] lg:right-[5%] w-[25%] lg:w-[15%] h-full flex_center"
-          >
-            <div class="w-full mirror">
+          <div  class="torch2 absolute right-[-13%] lg:right-[5%] w-[25%] lg:w-[15%] h-full flex_center"  >
+
+            <div class="w-full mirror relative z-10">
               <img
                 src="./static/images/torch.png"
                 alt="torch"
-                class="w-full h-auto"
+                class="w-full h-auto float_animation" style="animation-delay: -4s;"
                 loading="lazy"
               />
             </div>
+
+            <div class="fires_container absolute right-[-30%] rotate-[90deg]">
+              <div class="fire_container ">
+                <div class="red flame"></div>
+                <div class="orange flame"></div>
+                <div class="yellow flame"></div>
+                <div class="white flame"></div>
+                <div class="blue circle"></div>
+                <div class="black circle"></div>
+              </div>
+             </div>
+
           </div>
+
         </div>
-      </section>
 
-      <!-- light box -->
-      <section class="flex_center my-32 hidden">
-        <img
-          src="./static/images/hero_text.png"
-          alt=""
-          class="absolute w-[80%] h-auto"
-        />
-
-        <div class="light_container w-[80%] h-[300px] p-2">
-          <div class="inner_content_light w-full h-full">
-            <div class="content relative w-full h-full"></div>
-
-            <div class="light flex_center">
-              <div class="light1 light_animation"></div>
-              <div
-                class="light2 light_animation"
-                style="animation-delay: -1.5s;"
-              ></div>
-            </div>
-          </div>
-        </div>
       </section>
 
       <!-- footer -->
@@ -1102,6 +1109,7 @@
           />
         </div>
       </footer>
+
     </div>
 
     <!-- gsap -->

@@ -507,7 +507,7 @@ section{
 }
 
 .contentContainer p{
-  font-size: 1.2vw;
+  font-size: 1.1vw;
   color: var(--whiteClr);
   letter-spacing: .1vw;
 }
@@ -562,9 +562,9 @@ section{
 
   /* content */
   .title_content{
-    
     gap: 1rem;
   }
+
   .title_content span{
     width: 15px;
     height: 15px; 
