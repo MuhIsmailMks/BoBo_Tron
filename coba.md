@@ -76,7 +76,37 @@ data-aos-delay="300"
 
 
 
+<div class="social flex_center gap-5 w-auto">
 
+              <a  href="https://tron.network/"   target="_blank"
+              class="relative socialMedia p-3 pt-4 rounded-sm border-[2px] lg:border-[4px] borderClr hoverbtn"   >
+              <img
+                src="./static/images/tron.png"
+                alt="twitter"
+                class="w-[20px] md:w-[35px]"
+              />
+  
+              <span class="deconNav"></span>
+            </a>
+    
+              <a href="https://x.com/"   target="_blank"
+              class="relative socialMedia p-3 pt-4 rounded-sm border-[2px] lg:border-[4px] borderClr hoverbtn"   >
+              <img
+                src="./static/icons/Twitter.svg"
+                alt="twitter"
+                class="w-[20px] md:w-[35px]"
+              />
+    
+              <span class="deconNav"></span>
+            </a>
+    
+              <a  href="https://web.telegram.org"  target="_blank"  class="relative socialMedia p-3 pt-4 rounded-sm border-[2px] lg:border-[4px] borderClr hoverbtn"  >
+                <img
+                  src="./static/icons/Telegram.svg"  alt="twitter"     class="w-[20px] md:w-[35px]"    />
+                   <span class="deconNav"></span>
+              </a>
+    
+            </div>
 
 
 

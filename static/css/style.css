@@ -30,6 +30,10 @@ body {
   background-size: cover;
 }
 
+.primaryClr_text{
+  color: var(--primaryClr);
+}
+
 .audiowide_font {
   font-family: "Audiowide", sans-serif; 
 }
