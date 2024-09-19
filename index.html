@@ -46,30 +46,37 @@
         <nav class="w-full items-center flex_between px-4 lg:px-6 pt-6">
 
         <!-- menu -->
-        <div class="menuBtn rounded-sm border-[2px] lg:border-[4px] borderClr relative px-2 h-[50px] lg:h-[70px] flex_center cursor-pointer hoverbtn"  >
+        <div data-aos="fade-right"
+        data-aos-duration="600"
+        data-aos-delay="100">
+          <div class="menuBtn rounded-sm border-[2px] lg:border-[4px] borderClr relative px-2 h-[50px] lg:h-[70px] flex_center cursor-pointer hoverbtn"  >
          
+            <img
+              src="./static/images/menu.png"
+              alt=""
+              class="w-[90px] h-auto object-contain"
+            />
+  
+            <span class="deconNav"></span>
+          </div>
+        </div>
+
+
+        <!-- social media -->
+        <div class="social flex_center gap-5" data-aos="fade-left"
+        data-aos-duration="600"
+        data-aos-delay="100">
+
+          <a href="https://x.com/"   target="_blank"
+          class="relative socialMedia p-3 pt-4 rounded-sm border-[2px] lg:border-[4px] borderClr hoverbtn"   >
           <img
-            src="./static/images/menu.png"
-            alt=""
-            class="w-[90px] h-auto object-contain"
+            src="./static/icons/Twitter.svg"
+            alt="twitter"
+            class="w-[20px] md:w-[35px]"
           />
 
           <span class="deconNav"></span>
-        </div>
-
-        <!-- social media -->
-        <div class="social flex_center gap-5">
-
-          <a href="https://x.com/"   target="_blank"
-            class="relative socialMedia p-3 pt-4 rounded-sm border-[2px] lg:border-[4px] borderClr hoverbtn"   >
-            <img
-              src="./static/icons/Twitter.svg"
-              alt="twitter"
-              class="w-[20px] md:w-[35px]"
-            />
-
-            <span class="deconNav"></span>
-          </a>
+        </a>
 
           <a  href="https://web.telegram.org"  target="_blank"  class="relative socialMedia p-3 pt-4 rounded-sm border-[2px] lg:border-[4px] borderClr hoverbtn"  >
             <img
@@ -261,19 +268,26 @@
           <div
             class="absolute w-[89%] h-[10vw] lg:h-[65%] bottom-[1vw] lg:bottom-5 flex_between px-5"
           >
-            <a href="#launch" class="w-[30%] lg:w-[21%] hoverbtn">
-              <img
-                src="./static/images/launch.png"
-                alt=""
-                class="w-[100%] h-auto object-contain"
+           
+          <a href="#launch" class="w-[30%] lg:w-[21%] hoverbtn">
+            <img
+              src="./static/images/launch.png"
+              alt=""
+              class="w-[100%] h-auto object-contain"
+              data-aos="zoom-in"
+              data-aos-duration="600"
+              data-aos-delay="200"
               />
-            </a>
+          </a>
 
             <a href="#about" class="w-[30%] lg:w-[21%] hoverbtn flex_center">
               <img
                 src="./static/images/about.png"
                 alt=""
                 class="w-[100%] h-auto object-contain"
+                data-aos="zoom-in"
+                data-aos-duration="600"
+                data-aos-delay="400"
               />
             </a>
 
@@ -284,9 +298,12 @@
               <img
                 src="./static/images/blockchain.png"
                 alt=""
-                class="w-[100%] h-auto object-contain"
+                class="w-[100%] h-auto object-contain"   data-aos="zoom-in"
+                data-aos-duration="600"
+                data-aos-delay="600"
               />
             </a>
+
           </div>
         </div>
 
@@ -423,11 +440,11 @@
         <div  class="token_container relative flex_between max-lg:justify-center w-full pr-6 lg:px-[7vw] flex-wrap max-lg:gap-4 gap-10"  >
 
           <!-- left -->
-          <div
-            class="w-[87%] lg:w-[40%] min-[1500px]:w-[30%] h-auto relative flex_center flex-col gap-4 lg:gap-10"
-          >
+          <div class="w-[87%] lg:w-[40%] min-[1500px]:w-[30%] h-auto relative flex_center flex-col gap-4 lg:gap-10"  >
 
-            <div  class="token_content w-full relative h-[100px] lg:h-[170px] flex_center bg-[#595F6A] rounded-xl"  >
+            <div class="token_content w-full relative h-[100px] lg:h-[170px] flex_center bg-[#595F6A] rounded-xl"    data-aos="zoom-in"
+              data-aos-duration="600"
+              data-aos-delay="200" >
 
             <div class="copy_btn cursor-pointer z-10 relative">
                 <img src="./static/icons/copyIcon.svg" alt="" class="w-[35px] xl:w-[50px] h-auto object-contain">
@@ -437,7 +454,9 @@
 
             </div>
 
-            <div  class="token_content w-full relative h-[100px] lg:h-[170px] flex_center bg-[#595F6A] rounded-xl"  >
+            <div  class="token_content w-full relative h-[100px] lg:h-[170px] flex_center bg-[#595F6A] rounded-xl"    data-aos="zoom-in"
+              data-aos-duration="600"
+              data-aos-delay="400" >
 
                 <h2>TOTAL SUPPLY</h2>
     
@@ -452,7 +471,9 @@
             class="w-[87%] lg:w-[40%] min-[1500px]:w-[30%] h-auto relative flex_center flex-col gap-4 lg:gap-10"
           >
 
-          <div  class="token_content w-full relative h-[100px] lg:h-[170px] flex_center bg-[#595F6A] rounded-xl"  >
+          <div  class="token_content w-full relative h-[100px] lg:h-[170px] flex_center bg-[#595F6A] rounded-xl"    data-aos="zoom-in"
+              data-aos-duration="600"
+              data-aos-delay="200" >
 
             <h2>LIQUIDITY</h2>
 
@@ -460,7 +481,9 @@
 
         </div>
         
-        <div  class="token_content w-full relative h-[100px] lg:h-[170px] flex_center bg-[#595F6A] rounded-xl"  >
+        <div  class="token_content w-full relative h-[100px] lg:h-[170px] flex_center bg-[#595F6A] rounded-xl"    data-aos="zoom-in"
+              data-aos-duration="600"
+              data-aos-delay="400" >
 
             <h2>0/0 TAXES</h2>
 
@@ -588,7 +611,9 @@
           </div>
 
           <!-- col 1 -->
-          <div class="w-full lg:w-[70%] h-auto flex justify-end items-center relative" >
+          <div class="w-full lg:w-[70%] h-auto flex justify-end items-center relative" data-aos="fade-left"
+          data-aos-duration="600"
+          data-aos-delay="200">
 
             <!-- about content -->
             <div class="light_container w-[79%] lg:w-[73%] h-[180px] lg:h-[250px] min-[1500px]:h-[14vw] p-2"  >
@@ -629,7 +654,9 @@
           </div>
 
           <!-- col 2 -->
-          <div  class="w-full lg:w-[70%] h-auto flex justify-end items-center relative" >
+          <div  class="w-full lg:w-[70%] h-auto flex justify-end items-center relative" data-aos="fade-left"
+          data-aos-duration="600"
+          data-aos-delay="300">
 
             <!-- about content -->
             <div class="light_container w-[79%] lg:w-[73%] h-[180px] lg:h-[250px] min-[1500px]:h-[14vw] p-2"  >
@@ -672,7 +699,9 @@
           </div>
 
           <!-- col 3 -->
-          <div  class="w-full lg:w-[70%] h-auto flex justify-end items-center relative" >
+          <div  class="w-full lg:w-[70%] h-auto flex justify-end items-center relative" data-aos="fade-left"
+          data-aos-duration="600"
+          data-aos-delay="400">
 
             <!-- about content -->
             <div class="light_container w-[79%] lg:w-[73%] h-[180px] lg:h-[250px] min-[1500px]:h-[14vw] p-2"  >
@@ -715,7 +744,9 @@
           </div>
 
           <!-- col 4 -->
-          <div  class="w-full lg:w-[70%] h-auto flex justify-end items-center relative" >
+          <div  class="w-full lg:w-[70%] h-auto flex justify-end items-center relative" data-aos="fade-left"
+          data-aos-duration="600"
+          data-aos-delay="500">
 
             <!-- about content -->
             <div class="light_container w-[79%] lg:w-[73%] h-[180px] lg:h-[250px] min-[1500px]:h-[14vw] p-2"  >
@@ -759,9 +790,8 @@
           
 
         </div> 
-
-      </section>
       
+      </section>
       
 
       <section id="roadmap" class="mt-12 lg:mt-40">
@@ -785,7 +815,9 @@
 
           <!-- col 1 -->
           <div
-            class="w-full lg:w-[70%] h-auto flex justify-end items-center relative col1_start"
+            class="w-full lg:w-[70%] h-auto flex justify-end items-center relative col1_start" data-aos="fade-right"
+            data-aos-duration="600"
+            data-aos-delay="200"
           >
             <!-- about content -->
                <div class="light_container w-[79%] lg:w-[73%] h-[180px] lg:h-[250px] min-[1500px]:h-[14vw] p-2"  >
@@ -825,9 +857,11 @@
             </div>
           </div>
 
-          <!-- col 1 -->
+          <!-- col 2 -->
           <div
-            class="w-full lg:w-[70%] h-auto flex justify-end items-center relative"
+            class="w-full lg:w-[70%] h-auto flex justify-end items-center relative" data-aos="fade-right"
+            data-aos-duration="600"
+            data-aos-delay="300"
           >
             <!-- about content -->
                <div class="light_container w-[79%] lg:w-[73%] h-[180px] lg:h-[250px] min-[1500px]:h-[14vw] p-2"  >
@@ -867,9 +901,11 @@
             </div>
           </div>
 
-          <!-- col 1 -->
+          <!-- col 3 -->
           <div
-            class="w-full lg:w-[70%] h-auto flex justify-end items-center relative"
+            class="w-full lg:w-[70%] h-auto flex justify-end items-center relative" data-aos="fade-right"
+            data-aos-duration="600"
+            data-aos-delay="400"
           >
             <!-- about content -->
                <div class="light_container w-[79%] lg:w-[73%] h-[180px] lg:h-[250px] min-[1500px]:h-[14vw] p-2"  >
@@ -909,9 +945,11 @@
             </div>
           </div>
 
-          <!-- col 1 -->
+          <!-- col 4 -->
           <div
-            class="w-full lg:w-[70%] h-auto flex justify-end items-center relative"
+            class="w-full lg:w-[70%] h-auto flex justify-end items-center relative" data-aos="fade-right"
+            data-aos-duration="600"
+            data-aos-delay="500"
           >
             <!-- about content -->
                <div class="light_container w-[79%] lg:w-[73%] h-[180px] lg:h-[250px] min-[1500px]:h-[14vw] p-2"  >

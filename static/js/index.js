@@ -1,16 +1,9 @@
 //  scroll animation Effect
-// AOS.init({
-//     once: true
-// });
-
-// nav handler
-// const menu_btn = document.querySelector('nav .menu-button');
-// const menu_container = document.querySelector('nav .menu_container');
-
-// menu_btn.addEventListener('click', () => {
-//     menu_btn.classList.toggle('active')
-//     menu_container.classList.toggle('active')
-// })
+window.addEventListener("DOMContentLoaded", () => {
+    AOS.init({
+        once: true
+    });
+})
 
 // navbar 
 const menuLinksContainer = document.querySelector('.menu_links_container')
