@@ -379,13 +379,15 @@ section{
 }
 
 .fire{
-  font-size: 3vw; 
-  color: var(--whiteClr);
-  -webkit-text-stroke: 0.1vw var(--primaryClr);
+  font-size: 3.2vw; 
+  color: var(--primaryClr);
+  -webkit-text-stroke: 0.05vw black;
+  text-shadow: 0 .2vw black; 
+
   text-transform: uppercase;
   font-family: "Audiowide", sans-serif; 
 }
-
+ 
  
 .fire_btn,
 .aboutMainImg{
@@ -521,6 +523,17 @@ section{
     font-size: 1.7vw; 
     letter-spacing: .1vw;
   }
+
+  .fire{
+    font-size: 5.2vw; 
+    color: var(--primaryClr);
+    -webkit-text-stroke: 0.05vw black;
+    text-shadow: 0 .2vw black; 
+  
+    text-transform: uppercase;
+    font-family: "Audiowide", sans-serif; 
+  }
+   
 }
 
 @media screen and (max-width:768px) {
