@@ -91,13 +91,18 @@ const observer = new IntersectionObserver((entries, observer) => {
       if (entry.isIntersecting) {
         
         new TypeIt(".typeAnimation", { 
-            strings: [` BOBOTRON is a futuristic interpretation of Bobo, a bear most
-                        often depicted in a style based on the design of Matt
-                        Furie's frog illustration named Pepe.`, ` ` ,` Although Bobo is often misinterpreted by a vast number of
-                        uneducated crypto degenerates, he is actually considered to
-                        be the patron saint of bearish markets, making him the
-                        ultimate protector.`],
-            speed: 10,
+            strings: [` BOBOTRON is a futuristic interpretation of Bobo, a bear most often depicted in a style based on the design of Matt Furie's frog illustration named Pepe.
+              
+              <br/>
+              <br/>
+
+Although Bobo is often misinterpreted by a vast number of uneducated crypto degenerates, he is actually considered to be the patron saint of bearish markets, making him the ultimate protector.
+
+  <br/>
+              <br/>
+
+If there were to be any character found in popular memes possessing the strength and tenacity required to endure the highs and (even) lows of bullish markets, none could compare to Bobo, for it it he who's able to endure the lowest of lows and hardest of hardships, making him one of the most, if not THE most, resilient of characters found amongst modern memes.`],
+            speed: .1,
             waitUntilVisible: true,
             loop: false,
           }).go();
@@ -106,7 +111,7 @@ const observer = new IntersectionObserver((entries, observer) => {
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.5 }); 
+  }, { threshold: 0.01 }); 
   
   const typeElement = document.querySelector(".typeAnimation");
   observer.observe(typeElement);
