@@ -265,12 +265,10 @@
           />
 
           <!-- links container -->
-          <div
-            class="absolute w-[89%] h-[10vw] lg:h-[65%] bottom-[1vw] lg:bottom-5 flex_center px-5 "
-          >
+          <div  class="absolute w-[89%] h-[10vw] lg:h-[65%] bottom-[1vw] lg:bottom-5 flex_center px-5 gap-[5vw]" >
             
 
-            <a href="#about" class="w-[30%] lg:w-[21%] hoverbtn flex_center">
+            <button data-btn="about" class="chooseBtn w-[30%] lg:w-[21%] hoverbtn flex_center">
               <img
                 src="./static/images/about.png"
                 alt=""
@@ -279,7 +277,18 @@
                 data-aos-duration="600"
                 data-aos-delay="400"
               />
-            </a>
+            </button>
+
+            <button data-btn="intro" class="chooseBtn w-[30%] lg:w-[31%] hoverbtn flex_center">
+              <img
+                src="./static/images/introBtn.png"
+                alt=""
+                class="w-[100%] h-auto object-contain"
+                data-aos="zoom-in"
+                data-aos-duration="600"
+                data-aos-delay="400"
+              />
+            </button>
 
             <a
               href="#blockchain"
@@ -295,6 +304,7 @@
             </a>
 
           </div>
+
         </div>
 
         <!-- content -->
@@ -306,18 +316,20 @@
           >
             <div class="inner_content_light large w-full h-full min-h-[250px]  lg:min-h-[400px]">
 
-              <div   class="content relative w-full h-full z-10 text-white opacity-80 py-4"   >
+              <div data-content="" class="content relative w-full h-full z-10 text-white opacity-80 py-4"   >
+
                 <h2
                   class="text-[5.5vw] lg:text-[3.5vw] text-center audiowide_font "
                 >
                   INTRODUCTION
                 </h2>
 
-                <div
-                  class="w-full h-full px-[2vw] text-[12px] lg:text-[1.2vw] tracking-wide max-lg:mt-5"
-                >
-                  <p class="typeAnimation text-center"> 
+                <div class="w-full h-full px-[2vw] text-[12px] lg:text-[1.2vw] tracking-wide max-lg:mt-5 max-h-[500px] lg:max-h-[30vw] overflow-auto textAbout text-center">
+
+                  <p class="typeAnimation "> 
                   </p>
+
+                  <p class="text_container"></p>
  
                 </div>
 
@@ -385,7 +397,7 @@
         </div>
 
           <!-- content -->
-          <div class="w-full h-auto flex_center mt-6">
+          <div class="w-full h-auto flex_center mt-6 hidden">
       
             <!-- about content -->
             <div
@@ -424,7 +436,7 @@
       <br>
       <br>
 
-      If needed, his entire form can be reconstructed in moments, ensuring he returns with all the knowledge and experience he’s gained, completely untouched by the loss. This ability to constantly evolve and upgrade makes BOBOTRON a superior, indomitable force—surpassing all previous incarnations of Bobo in strength, resilience, and intelligence. He’s not just a bear; he’s the future. 
+      If needed, his entire forxm can be reconstructed in moments, ensuring he returns with all the knowledge and experience he’s gained, completely untouched by the loss. This ability to constantly evolve and upgrade makes BOBOTRON a superior, indomitable force—surpassing all previous incarnations of Bobo in strength, resilience, and intelligence. He’s not just a bear; he’s the future. 
                     </p>
    
                   </div>

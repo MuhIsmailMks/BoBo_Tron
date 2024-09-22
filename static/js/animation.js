@@ -87,6 +87,7 @@ window.addEventListener('resize', () => {
 });
 
 const observer = new IntersectionObserver((entries, observer) => {
+  
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         
@@ -96,12 +97,13 @@ const observer = new IntersectionObserver((entries, observer) => {
               <br/>
               <br/>
 
-Although Bobo is often misinterpreted by a vast number of uneducated crypto degenerates, he is actually considered to be the patron saint of bearish markets, making him the ultimate protector.
+              Although Bobo is often misinterpreted by a vast number of uneducated crypto degenerates, he is actually considered to be the patron saint of bearish markets, making him the ultimate protector.
 
-  <br/>
-              <br/>
+                <br/>
+                            <br/>
 
-If there were to be any character found in popular memes possessing the strength and tenacity required to endure the highs and (even) lows of bullish markets, none could compare to Bobo, for it it he who's able to endure the lowest of lows and hardest of hardships, making him one of the most, if not THE most, resilient of characters found amongst modern memes.`],
+              If there were to be any character found in popular memes possessing the strength and tenacity required to endure the highs and (even) lows of bullish markets, none could compare to Bobo, for it it he who's able to endure the lowest of lows and hardest of hardships, making him one of the most, if not THE most, resilient of characters found amongst modern memes.`
+        ],
             speed: .1,
             waitUntilVisible: true,
             loop: false,
