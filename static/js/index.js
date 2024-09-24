@@ -123,4 +123,36 @@ copyAddress.addEventListener('click', () => {
         console.error('Failed to copy text: ', err);
     });
     
-})
+}) 
+
+
+
+// load lottie
+function reloadLottie() {
+  const container = document.getElementById('lottie-container');
+  const lottieElement = document.querySelector('.dotlottiePlayer');
+ 
+  const src = lottieElement.getAttribute('src');
+  const speed = lottieElement.getAttribute('speed');
+  const loop = lottieElement.getAttribute('loop');
+  const autoplay = lottieElement.getAttribute('autoplay');
+  const className = lottieElement.getAttribute('class');
+
+  // Hapus elemen lama
+  container.innerHTML = '';
+
+  // Buat elemen baru
+  const newLottie = document.createElement('dotlottie-player');
+  newLottie.setAttribute('src', src);
+  newLottie.setAttribute('speed', speed);
+  newLottie.setAttribute('loop', loop);
+  newLottie.setAttribute('autoplay', autoplay);
+  newLottie.setAttribute('class', className);
+ 
+  container.appendChild(newLottie);
+  
+}
+ 
+window.addEventListener('resize', () => {
+  reloadLottie();
+});
