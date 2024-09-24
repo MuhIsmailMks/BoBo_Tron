@@ -46,23 +46,96 @@ function initBoxAnimation() {
     }
 }
  
+
+function leftTorch1() { 
+  gsap.killTweensOf('.leftTorch');
+  
+  const XValueResponsive = window.innerWidth < 1024 ? '1vw' : '10vw'; 
+
+  gsap.fromTo('.leftTorch', 
+      { x: '-10vw' }, 
+      { x: XValueResponsive, 
+        ease: "none", 
+        scrollTrigger: {
+          trigger: '.aboutContent',
+          start: "50% 100%",
+          end: "100% 50%",
+          scrub: 3,
+        }
+      }
+  );
+}
+
+function rightTorch1() { 
+  gsap.killTweensOf('.rightTorch');
+  
+  const XValueResponsive = window.innerWidth < 1024 ? '-1vw' : '-10vw'; 
+
+  gsap.fromTo('.rightTorch', 
+      { x: '10vw' }, 
+      { x: XValueResponsive, 
+        ease: "none", 
+        scrollTrigger: {
+          trigger: '.aboutContent',
+          start: "0% 100%",
+          end: "100% 50%",
+          scrub: 3,
+        }
+      }
+  );
+}
+
+
+function leftTorch2() { 
+  gsap.killTweensOf('.leftTorch2');
+  
+  const XValueResponsive = window.innerWidth < 1024 ? '1vw' : '10vw'; 
+
+  gsap.fromTo('.leftTorch2', 
+      { x: '-10vw' }, 
+      { x: XValueResponsive, 
+        ease: "none", 
+        scrollTrigger: {
+          trigger: '.cex_partnert',
+          start: "50% 100%",
+          end: "100% 50%",
+          scrub: 3,
+        }
+      }
+  );
+}
+
+
+function rightTorch2() { 
+  gsap.killTweensOf('.rightTorch2');
+  
+  const XValueResponsive = window.innerWidth < 1024 ? '-1vw' : '-10vw'; 
+
+  gsap.fromTo('.rightTorch2', 
+      { x: '10vw' }, 
+      { x: XValueResponsive, 
+        ease: "none", 
+        scrollTrigger: {
+          trigger: '.cex_partnert',
+          start: "0% 100%",
+          end: "100% 50%",
+          scrub: 3,
+        }
+      }
+  );
+}
+
+
+ 
 // Jalankan animasi saat DOM siap
 window.addEventListener('DOMContentLoaded', () => {
     initRocketAnimation(); 
     initBoxAnimation();
-
-    // gsap.fromTo(".aboutImg", 
-    //     { scale: 0 },   
-    //     { scale: 1,    
-    //       scrollTrigger: {
-    //         trigger: ".aboutImg", 
-    //         start: "top 100%", 
-    //         end: "bottom 0%", 
-    //         scrub: 2,            
-    //         ease: "power1.out"    
-    //       }
-    //     }
-    //   );
+    leftTorch1();
+    rightTorch1();
+    leftTorch2();
+    rightTorch2();
+    
 
       if (window.innerWidth > 1023) { 
         gsap.fromTo('.howToImg', { scale: '0',  }, {
@@ -92,17 +165,28 @@ const observer = new IntersectionObserver((entries, observer) => {
       if (entry.isIntersecting) {
         
         new TypeIt(".typeAnimation", { 
-            strings: [` BOBOTRON is a futuristic interpretation of Bobo, a bear most often depicted in a style based on the design of Matt Furie's frog illustration named Pepe.
-              
-              <br/>
-              <br/>
+            strings: [`   BOBOTRON is the ultimate fusion of tradition and innovation—a futuristic cyborg bear that blends the timeless essence of BOBO with cutting-edge technology. He is the natural evolution of BOBO, enhanced by advanced AI and robotics, representing the pinnacle of modern design. In every sense, BOBOTRON embodies the future, far surpassing the limitations of his predecessors.
 
-              Although Bobo is often misinterpreted by a vast number of uneducated crypto degenerates, he is actually considered to be the patron saint of bearish markets, making him the ultimate protector.
+      <br>
+      <br>
 
-                <br/>
-                            <br/>
+      As a highly advanced, AI-driven version of his former self, BOBOTRON’s form is endlessly adaptable. His appearance can shift and evolve, all while retaining the core principles of his original design. This allows for limitless variations, making BOBOTRON a dynamic, ever-evolving figure... one who can transform without ever losing his identity.
 
-              If there were to be any character found in popular memes possessing the strength and tenacity required to endure the highs and (even) lows of bullish markets, none could compare to Bobo, for it it he who's able to endure the lowest of lows and hardest of hardships, making him one of the most, if not THE most, resilient of characters found amongst modern memes.`
+      <br>
+      <br>
+
+      What truly sets BOBOTRON apart is his immortality. His consciousness is interwoven with a vast hive mind powered by artificial intelligence, making him indestructible. No matter what happens to his physical form, he can never be erased. His essence endures, eternally preserved within the collective intelligence of the network, ensuring that BOBOTRON will live on, unbroken, forever.
+ 
+      
+      <br>
+      <br>
+
+      In the rare event that BOBOTRON sustains damage, his body can be seamlessly repaired or completely regenerated, thanks to advanced modular technology. Every component is designed for rapid interchangeability, allowing him to swap out damaged parts effortlessly. Alternatively, he can be rebuilt entirely from the ground up, while preserving every detail of his core identity—his memories, instincts, and essence remain fully intact.
+
+      <br>
+      <br>
+
+      If needed, his entire forxm can be reconstructed in moments, ensuring he returns with all the knowledge and experience he’s gained, completely untouched by the loss. This ability to constantly evolve and upgrade makes BOBOTRON a superior, indomitable force—surpassing all previous incarnations of Bobo in strength, resilience, and intelligence. He’s not just a bear; he’s the future. `
         ],
             speed: .1,
             waitUntilVisible: true,

@@ -19,6 +19,9 @@
     <!-- particle -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
+     <!-- lottie -->
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -309,7 +312,7 @@
         </div>
 
         <!-- content -->
-        <div class="w-full h-auto flex_center mt-6">
+        <div class="w-full h-auto flex_center mt-6 aboutContent">
       
           <!-- about content -->
           <div
@@ -322,7 +325,7 @@
                 <h2
                   class="text-[5.5vw] lg:text-[3.5vw] text-center audiowide_font "
                 >
-                  INTRODUCTION
+                  ABOUT
                 </h2>
 
                 <div class="w-full h-full px-[2vw] text-[12px] lg:text-[1.2vw] tracking-wide max-lg:mt-5 max-h-[500px] lg:max-h-[30vw] overflow-auto textAbout text-center">
@@ -337,11 +340,13 @@
               </div>
 
               <div class="light flex_center">
+
                 <div class="light1 light_animation"></div>
                 <div
                   class="light2 light_animation"
                   style="animation-delay: -1.5s;"
-                ></div>
+                >
+              </div>
               </div>
 
             </div>
@@ -349,7 +354,7 @@
 
           <!-- image -->
           <div
-            class="torch1 absolute left-[-13%] lg:left-[5%] w-[25%] lg:w-[15%] h-full flex_center"
+            class="torch1 absolute left-[-13%] lg:left-[-3%] w-[25%] lg:w-[15%] h-full flex_center leftTorch"
           >
             <img
               src="./static/images/torch.png"
@@ -371,7 +376,7 @@
 
           </div>
 
-          <div  class="torch2 absolute right-[-13%] lg:right-[5%] w-[25%] lg:w-[15%] h-full flex_center"  >
+          <div  class="torch2 absolute right-[-13%] lg:right-[-3%] w-[25%] lg:w-[15%] h-full flex_center rightTorch"  >
 
             <div class="w-full mirror relative z-10">
               <img
@@ -729,12 +734,15 @@
             <!-- image -->
           <div class="w-[80%] lg:w-[40%]  h-[97%] relative lg:absolute z-10 left-0">
 
-             <div class="w-full flex_center h-auto   box_fix">
-                  <img
+             <div class="w-full flex_center h-auto   box_fix  ">
+                  <!-- <img
                   src="./static/images/howToImg.png"
                   alt="how to buy"
                   class="w-[80%] h-auto object-contain howToImg"
-                />
+                /> -->
+
+                <dotlottie-player src="https://lottie.host/5791ad74-94c8-44a4-a34b-825a91aca4e7/NlbSebNiWu.json" background="transparent" speed="1" class="w-[80%] h-[60vw] lg:h-[40vw] object-contain howToImg" loop autoplay></dotlottie-player>
+
              </div>
 
 
@@ -1231,16 +1239,40 @@
 
           <!-- image -->
           <div
-            class="torch1 absolute left-[-13%] lg:left-[5%] w-[25%] lg:w-[15%] h-full flex_center"
-          >
+          class="torch1 absolute left-[-13%] lg:left-[-3%] w-[25%] lg:w-[15%] h-full flex_center leftTorch2"
+        >
+          <img
+            src="./static/images/torch.png"
+            alt="torch"
+            class="w-full h-auto float_animation relative z-10"
+            loading="lazy"
+          />
+
+         <div class="fires_container absolute left-[-30%] rotate-[-90deg]">
+          <div class="fire_container ">
+            <div class="red flame"></div>
+            <div class="orange flame"></div>
+            <div class="yellow flame"></div>
+            <div class="white flame"></div>
+            <div class="blue circle"></div>
+            <div class="black circle"></div>
+          </div>
+         </div>
+
+        </div>
+
+        <div  class="torch2 absolute right-[-13%] lg:right-[-3%] w-[25%] lg:w-[15%] h-full flex_center rightTorch2"  >
+
+          <div class="w-full mirror relative z-10">
             <img
               src="./static/images/torch.png"
               alt="torch"
-              class="w-full h-auto float_animation relative z-10"
+              class="w-full h-auto float_animation" style="animation-delay: -4s;"
               loading="lazy"
             />
+          </div>
 
-           <div class="fires_container absolute left-[-30%] rotate-[-90deg]">
+          <div class="fires_container absolute right-[-30%] rotate-[90deg]">
             <div class="fire_container ">
               <div class="red flame"></div>
               <div class="orange flame"></div>
@@ -1251,31 +1283,7 @@
             </div>
            </div>
 
-          </div>
-
-          <div  class="torch2 absolute right-[-13%] lg:right-[5%] w-[25%] lg:w-[15%] h-full flex_center"  >
-
-            <div class="w-full mirror relative z-10">
-              <img
-                src="./static/images/torch.png"
-                alt="torch"
-                class="w-full h-auto float_animation" style="animation-delay: -4s;"
-                loading="lazy"
-              />
-            </div>
-
-            <div class="fires_container absolute right-[-30%] rotate-[90deg]">
-              <div class="fire_container ">
-                <div class="red flame"></div>
-                <div class="orange flame"></div>
-                <div class="yellow flame"></div>
-                <div class="white flame"></div>
-                <div class="blue circle"></div>
-                <div class="black circle"></div>
-              </div>
-             </div>
-
-          </div>
+        </div>
 
         </div>
 
@@ -1363,6 +1371,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollSmoother.min.js"></script>
 
+   
 
     <!-- typed -->
     <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
