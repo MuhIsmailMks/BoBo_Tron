@@ -59,7 +59,7 @@ buttons.forEach(button => {
     const paragraph2 = contentDiv.querySelector('.typeAnimation');
     
     if(btnData === 'about') {
-      heading.textContent = 'ABOUT US';
+      heading.textContent = 'ABOUT';
       paragraph2.classList.add('hidden')
       paragraph.innerHTML = `   BOBOTRON is the ultimate fusion of tradition and innovation—a futuristic cyborg bear that blends the timeless essence of BOBO with cutting-edge technology. He is the natural evolution of BOBO, enhanced by advanced AI and robotics, representing the pinnacle of modern design. In every sense, BOBOTRON embodies the future, far surpassing the limitations of his predecessors.
 
