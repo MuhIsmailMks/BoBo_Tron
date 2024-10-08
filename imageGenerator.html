@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./static/images/logo.png"/>
+    <!-- AOS scroll effect cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <!-- tailwind css cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./static/css/style.css" />
+    <link rel="stylesheet" href="./static/css/imageMaker.css" />
+    <title>Image Generator</title>
+  </head>
+  <body>
+    
+    <div class="relative px-[3vw] py-6 max-w-[2000px] mx-auto">
+        <a href="./index.html" class="relative flex items-center gap-4 backBtn pl-[3vw]">
+            <img src="./static/icons/backArrow.svg" alt="" class="w-[30px] h-auto object-contain backArrow absolute left-0 duration-200">
+            <img src="./static/images/backText.png" alt="" class="h-[50px] w-auto object-contain border-[#be000d] border-[3px] rounded-2xl relative py-4 px-6">
+        </a>
+    </div>
+
+    <!-- meme generator -->
+    <section  class="flex min-[1200px]:flex flex-col items-center max-w-[100%] relative py-[10vw]"  >
+      <!-- input image -->
+
+      <div  id="uploadImageContainer"
+        class="w-[95%] max-w-[1500px] flex h-[550px] uploadImageContainer cursor-pointer relative justify-center items-center rounded-[20px]">
+        <input
+          type="file"
+          id="imageInput"
+          accept="image/*"
+          class="w-full h-full cursor-pointer absolute z-10 opacity-0"
+        />
+
+        <div
+          class="absolute top-[5%] flex flex-col items-center z-[5] text-white text-center px-5"
+        >
+          <img
+            src="./static/icons/uploadIcon.svg"
+            alt="upload"
+            class="w-[50px] h-auto object-contain"
+          />
+          <p class="text-[1.5em]">Drag & drop an image here,</p>
+          <p class="text-[1.5em]">or click to select one</p>
+          <p class="text-[.95em] lowercase">
+            (Only *.jpeg and *.png images will be accepted)
+          </p>
+        </div>
+
+        <img
+          src="./static/images/bgGenerator.png"
+          alt=""
+          class="bottom-0 w-[80%] h-auto object-contain absolute z-0"
+        />
+      </div>
+
+      <div
+        id="memeMakerContainer"
+        class="memeMakerContainer hidden w-[95%] min-[1400px]:w-[85vw] max-w-[1500px] max-[3000px]:min-h-[40vw] min-[3000px]:min-h-[1200px]"
+      >
+        <!-- canvas -->
+        <div
+          id="canvasContainer"
+          class="w-full lg:w-[70%] min-h-full h-auto z-10 relative flex justify-center items-center"
+        >
+          <div
+            id="imageContainer"
+            class="imageContainer relative h-auto max-h-[90%] overflow-hidden w-full"
+          >
+            <img
+              id="previewImage"
+              src="./static/images/aboutImg.png"
+              alt=""
+              class="w-full h-auto object-contain select-none"
+            />
+          </div>
+        </div>
+
+        <!-- buttons settings -->
+        <div class="settingContainer">
+          <div
+            class="settingContainerRow relative flex flex-col items-center gap-4 lg:gap-10 px-3 w-full"
+          >
+            <div
+              class="choiseBtnContainer w-full flex justify-between rounded-full h-[40px]"
+            >
+              <button data-btn="head" class="active">
+                <img
+                  src="./static/images/button/headBtn.png"
+                  alt=""
+                  class="h-[36%] w-auto object-contain"
+                />
+              </button>
+              <button data-btn="accessories">
+                <img
+                  src="./static/images/button/accessBtn.png"
+                  alt=""
+                  class="h-[30%] w-auto object-contain"
+                />
+              </button>
+              <button data-btn="extras">
+                <img
+                  src="./static/images/button/extasBtn.png"
+                  alt=""
+                  class="h-[36%] w-auto object-contain"
+                />
+              </button>
+            </div>
+
+            <!-- choise meme -->
+            <!-- head -->
+            <div id="head" class="choiseMemes active w-full h-auto">
+              <div class="choiseMemeContainer">
+                <div
+                  data-image="head01"
+                  class="relative cursor-pointer addImage"
+                  data-class="v2"
+                >
+                  <img src="./static/images/Head/head01.png" alt="" />
+                </div>
+
+                <div
+                  data-image="head02"
+                  class="relative cursor-pointer addImage"
+                  data-class="v2"
+                >
+                  <img src="./static/images/Head/head02.png" alt="" />
+                </div>
+
+                <div
+                  data-image="head03"
+                  class="relative cursor-pointer addImage"
+                  data-class="v2"
+                >
+                  <img src="./static/images/Head/head03.png" alt="" />
+                </div>
+
+                <div
+                  data-image="head04"
+                  class="relative cursor-pointer addImage"
+                  data-class="v2"
+                >
+                  <img src="./static/images/Head/head04.png" alt="" />
+                </div>
+
+                <div
+                  data-image="head05"
+                  class="relative cursor-pointer addImage"
+                  data-class="v2"
+                >
+                  <img src="./static/images/Head/head05.png" alt="" />
+                </div>
+
+                <div
+                  data-image="head06"
+                  class="relative cursor-pointer addImage"
+                  data-class="v1"
+                >
+                  <img src="./static/images/Head/head06.png" alt="" />
+                </div>
+
+                <div
+                  data-image="head07"
+                  class="relative cursor-pointer addImage"
+                  data-class="v1"
+                >
+                  <img src="./static/images/Head/head07.png" alt="" />
+                </div>
+
+                <div
+                  data-image="head08"
+                  class="relative cursor-pointer addImage"
+                  data-class="v1"
+                >
+                  <img src="./static/images/Head/head08.png" alt="" />
+                </div>
+
+                <div
+                  data-image="head09"
+                  class="relative cursor-pointer addImage"
+                  data-class="v1"
+                >
+                  <img src="./static/images/Head/head09.png" alt="" />
+                </div>
+
+                <div
+                  data-image="head10"
+                  class="relative cursor-pointer addImage"
+                  data-class="v2"
+                >
+                  <img src="./static/images/Head/head10.png" alt="" />
+                </div>
+
+                <div
+                  data-image="head11"
+                  class="relative cursor-pointer addImage"
+                  data-class="v1"
+                >
+                  <img src="./static/images/Head/head11.png" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <!-- accessories -->
+            <div id="accessories" class="choiseMemes w-full h-auto">
+              <div class="choiseMemeContainer">
+                <div
+                  data-image="access1"
+                  class="relative cursor-pointer addImage"
+                  data-class="v1"
+                >
+                  <img src="./static/images/Accessories/access01.png" alt="" />
+                </div>
+
+                <div
+                  data-image="access2"
+                  class="relative cursor-pointer addImage"
+                  data-class="v1"
+                >
+                  <img src="./static/images/Accessories/access02.png" alt="" />
+                </div>
+
+                <div
+                  data-image="access3"
+                  class="relative cursor-pointer addImage"
+                  data-class="v1"
+                >
+                  <img src="./static/images/Accessories/access03.png" alt="" />
+                </div>
+
+                <div
+                  data-image="access4"
+                  class="relative cursor-pointer addImage"
+                  data-class="v1"
+                >
+                  <img src="./static/images/Accessories/access04.png" alt="" />
+                </div>
+
+                <div
+                  data-image="access5"
+                  class="relative cursor-pointer addImage"
+                  data-class="v1"
+                >
+                  <img src="./static/images/Accessories/access05.png" alt="" />
+                </div>
+
+                <div
+                  data-image="access6"
+                  class="relative cursor-pointer addImage"
+                  data-class="v1"
+                >
+                  <img src="./static/images/Accessories/access06.png" alt="" />
+                </div>
+
+                <div
+                  data-image="access7"
+                  class="relative cursor-pointer addImage"
+                  data-class="v1"
+                >
+                  <img src="./static/images/Accessories/access07.png" alt="" />
+                </div>
+
+                <div
+                  data-image="access8"
+                  class="relative cursor-pointer addImage"
+                  data-class="v1"
+                >
+                  <img src="./static/images/Accessories/access08.png" alt="" />
+                </div>
+
+                <div
+                  data-image="access9"
+                  class="relative cursor-pointer addImage"
+                  data-class="v1"
+                >
+                  <img src="./static/images/Accessories/access09.png" alt="" />
+                </div>
+
+                <div
+                  data-image="access10"
+                  class="relative cursor-pointer addImage"
+                  data-class="v1"
+                >
+                  <img src="./static/images/Accessories/access10.png" alt="" />
+                </div>
+
+                <div
+                  data-image="access11"
+                  class="relative cursor-pointer addImage"
+                  data-class="v1"
+                >
+                  <img src="./static/images/Accessories/access11.png" alt="" />
+                </div>
+
+                <div
+                  data-image="access12"
+                  class="relative cursor-pointer addImage"
+                  data-class="v1"
+                >
+                  <img src="./static/images/Accessories/access12.png" alt="" />
+                </div>
+
+                <div
+                  data-image="access13"
+                  class="relative cursor-pointer addImage"
+                  data-class="v1"
+                >
+                  <img src="./static/images/Accessories/access13.png" alt="" />
+                </div>
+
+                <div
+                  data-image="access14"
+                  class="relative cursor-pointer addImage"
+                  data-class="v1"
+                >
+                  <img src="./static/images/Accessories/access14.png" alt="" />
+                </div>
+
+                <div
+                  data-image="access15"
+                  class="relative cursor-pointer addImage"
+                  data-class="v1"
+                >
+                  <img src="./static/images/Accessories/access15.png" alt="" />
+                </div>
+
+                <div
+                  data-image="access16"
+                  class="relative cursor-pointer addImage"
+                  data-class="v1"
+                >
+                  <img src="./static/images/Accessories/access16.png" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <!-- extras -->
+            <div id="extras" class="choiseMemes w-full h-auto">
+              <div class="choiseMemeContainer">
+                <div
+                  data-image="extra01"
+                  class="relative cursor-pointer addImage"
+                  data-class="v2"
+                >
+                  <img src="./static/images/Extras/extra01.png" alt="" />
+                </div>
+
+                <div
+                  data-image="extra02"
+                  class="relative cursor-pointer addImage"
+                  data-class="v1"
+                >
+                  <img src="./static/images/Extras/extra02.png" alt="" />
+                </div>
+
+                <div
+                  data-image="extra03"
+                  class="relative cursor-pointer addImage"
+                  data-class="v2"
+                >
+                  <img src="./static/images/Extras/extra03.png" alt="" />
+                </div>
+
+                <div
+                  data-image="extra04"
+                  class="relative cursor-pointer addImage"
+                  data-class="v2"
+                >
+                  <img src="./static/images/Extras/extra04.png" alt="" />
+                </div>
+
+                <div
+                  data-image="extra05"
+                  class="relative cursor-pointer addImage"
+                  data-class="v2"
+                >
+                  <img src="./static/images/Extras/extra05.png" alt="" />
+                </div>
+
+                <div
+                  data-image="extra06"
+                  class="relative cursor-pointer addImage"
+                  data-class="v2"
+                >
+                  <img src="./static/images/Extras/extra06.png" alt="" />
+                </div>
+
+                <div
+                  data-image="extra07"
+                  class="relative cursor-pointer addImage"
+                  data-class="v1"
+                >
+                  <img src="./static/images/Extras/extra07.png" alt="" />
+                </div>
+
+                <div
+                  data-image="extra08"
+                  class="relative cursor-pointer addImage"
+                  data-class="v2"
+                >
+                  <img src="./static/images/Extras/extra08.png" alt="" />
+                </div>
+
+                <div
+                  data-image="extra09"
+                  class="relative cursor-pointer addImage"
+                  data-class="v2"
+                >
+                  <img src="./static/images/Extras/extra09.png" alt="" />
+                </div>
+
+                <div
+                  data-image="extra10"
+                  class="relative cursor-pointer addImage"
+                  data-class="v2"
+                >
+                  <img src="./static/images/Extras/extra10.png" alt="" />
+                </div>
+
+                <div
+                  data-image="extra11"
+                  class="relative cursor-pointer addImage"
+                  data-class="v1"
+                >
+                  <img src="./static/images/Extras/extra11.png" alt="" />
+                </div>
+
+                <div
+                  data-image="extra12"
+                  class="relative cursor-pointer addImage"
+                  data-class="v2"
+                >
+                  <img src="./static/images/Extras/extra12.png" alt="" />
+                </div>
+
+                <div
+                  data-image="extra13"
+                  class="relative cursor-pointer addImage"
+                  data-class="v2"
+                >
+                  <img src="./static/images/Extras/extra13.png" alt="" />
+                </div>
+
+                <div
+                  data-image="extra14"
+                  class="relative cursor-pointer addImage"
+                  data-class="v2"
+                >
+                  <img src="./static/images/Extras/extra14.png" alt="" />
+                </div>
+
+                <div
+                  data-image="extra15"
+                  class="relative cursor-pointer addImage"
+                  data-class="v2"
+                >
+                  <img src="./static/images/Extras/extra15.png" alt="" />
+                </div>
+
+                <div
+                  data-image="extra16"
+                  class="relative cursor-pointer addImage"
+                  data-class="v2"
+                >
+                  <img src="./static/images/Extras/extra16.png" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <!-- start and download -->
+            <div
+              class="btnChoise w-full flex justify-center items-center gap-4"
+            >
+              <button id="restartButton" class=" ">
+                <img
+                  src="./static/images/button/startOver.png"
+                  alt=""
+                  class="w-[50%] h-auto object-contain"
+                />
+              </button>
+
+              <button id="downloadBtn">
+                <img
+                  src="./static/images/button/donwload.png"
+                  alt=""
+                  class="w-[80%] h-auto object-contain"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <script src="./static/js/generator.js"></script>
+    <script src="./static/js/addImage.js"></script>
+
+    <!-- download canvas -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="./static/js/download.js" defer></script>
+  </body>
+</html>

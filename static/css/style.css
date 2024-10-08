@@ -8,6 +8,11 @@
   font-family: "neuropol";
   src: url("../fonts/Neuropol.otf") format("truetype");
 }
+
+.hiddenElement{
+  display: none !important;
+  opacity: 0;
+}
  
 html{
   scroll-behavior: smooth;
@@ -17,6 +22,9 @@ html{
   --primaryClr:#be000d;
   --whiteClr:rgb(231, 231, 231);
   --bodyClr:#000919;
+  
+  --seconClr:#f7d857;
+  --thirdClr:#b7924e; 
 }
 
 
@@ -1029,4 +1037,10 @@ section{
 .textAbout::-webkit-scrollbar-thumb {
   background-color: var(--primaryClr);
   border-radius: 5px; 
+}
+
+
+/* link to page */
+.toPage{
+  background: linear-gradient(180deg, #0e0041 0%, #000919 100%);
 }
