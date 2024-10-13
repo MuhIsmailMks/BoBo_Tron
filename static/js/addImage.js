@@ -15,9 +15,10 @@ const contentElements = document.querySelectorAll('.choiseMemes');
 
 choiseButtons.forEach(button => {
     button.addEventListener('click', () => { 
-     choiseButtons.forEach(btn => btn.classList.remove('active')); 
+     choiseButtons.forEach(btn => btn.classList.
+    
+        remove('active')); 
         button.classList.add('active');
-
         
         const btnData = button.getAttribute('data-btn');
 

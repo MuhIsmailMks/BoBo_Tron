@@ -314,6 +314,5 @@ function handleVisibilityChange() {
 }
  
 document.addEventListener('visibilitychange', handleVisibilityChange);
-
-// Jalankan animasi komet pertama kali
+ 
 startCometAnimation();
