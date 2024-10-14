@@ -15,12 +15,7 @@ document.getElementById('downloadBtn').addEventListener('click', function() {
     });
   
     // Gunakan html2canvas untuk screenshot
-    html2canvas(document.getElementById('canvasContainer'), {
-      scale: 1,
-      allowTaint: true,
-      backgroundColor: null,
-      useCORS: false 
-    }).then(function(canvas) {
+    html2canvas(document.getElementById('canvasContainer')).then(function(canvas) {
         var link = document.createElement('a');
         link.download = 'bobotronMeme.png';
         link.href = canvas.toDataURL();

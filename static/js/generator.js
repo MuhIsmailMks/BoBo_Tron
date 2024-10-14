@@ -45,7 +45,7 @@ function makeDraggable(draggableOverlay) {
     
   // draggable function
   draggableOverlay.addEventListener('mousedown', (e) => {
-    if (isRotating || isResizing) return; // Jika sedang melakukan rotasi atau resize, tidak bisa drag
+    if (isRotating || isResizing) return; 
 
     isDragging = true;
 
