@@ -37,8 +37,7 @@ fire_btn.addEventListener('click', () => {
     aboutMainImg.classList.add('active')
     fireImg.classList.add('active')
 });
-
-// about
+ 
 // Ambil semua tombol dengan class "chooseBtn"
 const buttons = document.querySelectorAll('.chooseBtn');
 
