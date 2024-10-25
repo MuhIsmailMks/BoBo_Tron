@@ -1,6 +1,3 @@
-
-
-// add image
 // Ambil semua elemen dengan class 'addImage'
 const addImageElements = document.querySelectorAll('.addImage');
 
