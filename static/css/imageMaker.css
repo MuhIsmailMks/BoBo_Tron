@@ -349,7 +349,7 @@
 
 /* media screen */
 @media screen and (min-width:1700px) {
-    .bgChoiseBtn,
+    .choiseMemes .bgChoiseBtn,
     .choiseMemes .addImage{
         height: 90px;
         width: 90px;
@@ -364,7 +364,7 @@
     border-width: 2px;
   }
 
-  .bgChoiseBtn,
+  .choiseMemes .bgChoiseBtn,
   .choiseMemes .addImage{
     height: 70px;
     width: 20%;
@@ -381,7 +381,7 @@
   }
  
 
-  .bgChoiseBtn,
+  .choiseMemes .bgChoiseBtn,
   .choiseMemes .addImage{
     height: 60px; 
     max-width: 90px;
@@ -410,7 +410,7 @@
 }
 
 @media screen and (max-width:786px) {
-  .bgChoiseBtn,
+  .choiseMemes .bgChoiseBtn,
   .choiseMemes .addImage{
     height: 80px;
     width: 22%;
@@ -449,7 +449,7 @@
     justify-content: start;
   }
 
-  .bgChoiseBtn,
+  .choiseMemes .bgChoiseBtn,
   .choiseMemes .addImage {
     aspect-ratio: 1 / 1; 
     flex: none; 
@@ -459,6 +459,9 @@
     width: 100px;
 
     min-width: 120px;
+  }
+
+  .choiseMemes .addImage{
     padding: .55rem;
   }
 
