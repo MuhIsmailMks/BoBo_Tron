@@ -1,5 +1,6 @@
 const randomBtn = document.getElementById('randomBtn');
 const canvasContainers = document.getElementById('canvasContainer');
+const backgroundImage = document.getElementById('backgroundImage');
 const mouthImage = document.getElementById('mouthImage');
 const eyeImage = document.getElementById('eyeImage'); 
 const headphonesImg = document.getElementById('headphoneImage'); 
@@ -10,6 +11,18 @@ const mouthList = [
     "./static/images/Head/head03.png",
     "./static/images/Head/head10.png",
     "./static/images/Head/head04.png"
+];
+
+const backgroundList = [
+    "./static/images/background/bg1.webp", 
+    "./static/images/background/bg2.webp", 
+    "./static/images/background/bg3.webp", 
+    "./static/images/background/bg4.webp", 
+    "./static/images/background/bg5.webp", 
+    "./static/images/background/bg6.webp", 
+    "./static/images/background/bg7.webp", 
+    "./static/images/background/bg8.webp", 
+    "./static/images/background/bg9.webp" 
 ];
 
 const eyeList = [
@@ -29,6 +42,7 @@ const headphonesList = [
 let lastMouthImage = "";  
 let lastEyeImage = "";   
 let lastHeadphoneImage = "";   
+let lastBackgroundImage = "";   
  
 function getRandomImage(list, lastImage) {
     let randomImage;
@@ -41,13 +55,15 @@ function getRandomImage(list, lastImage) {
 randomBtn.addEventListener('click', (e) => {
     e.preventDefault();
  
-    const letters = '0123456789ABCDEF';
-    let color = '#';
-    for (let i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random()
-            * 16)];
-    };
-    canvasContainers.style.backgroundColor = color;
+    // color
+    // const letters = '0123456789ABCDEF';
+    // let color = '#';
+    // for (let i = 0; i < 6; i++) {
+    //     color += letters[Math.floor(Math.random()
+    //         * 16)];
+    // };
+    // canvasContainers.style.backgroundColor = color;
+
  
     // mouth
     const newMouthImage = getRandomImage(mouthList, lastMouthImage);
@@ -63,13 +79,23 @@ randomBtn.addEventListener('click', (e) => {
     const newheadphoneImage = getRandomImage(headphonesList, lastHeadphoneImage);
     headphonesImg.src = newheadphoneImage;
     lastHeadphoneImage = newheadphoneImage;
+ 
+    // background
+    const newBackgroundImage = getRandomImage(backgroundList, lastBackgroundImage);
+    backgroundImage.src = newBackgroundImage;
+    lastBackgroundImage = newBackgroundImage;
+
+    backgroundImage.style.opacity = 1   
 });
 
 
 restartButtonRandom.addEventListener('click', () => { 
     eyeImage.src = '';
     mouthImage.src = '';
-    canvasContainers.style.backgroundColor = '#000919';
+    headphonesImg.src = '';
+    backgroundImage.src = ''; 
+
+    backgroundImage.style.opacity = 0; 
 })
 
 // comic1

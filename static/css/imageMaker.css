@@ -90,8 +90,8 @@
      background-color: transparent;
      color: var(--seconClr);
 
-     width: 150px;
-     height: 70px;
+     width: 140px;
+     height: 65px;
 
      font-size: .95rem;
      border-radius: 10px;
@@ -99,7 +99,7 @@
      -moz-border-radius: 10px;
      -ms-border-radius: 10px;
      -o-border-radius: 10px;
-     border: 4px solid var(--primaryClr);
+     border: 3px solid var(--primaryClr);
  
      transition: 0.1s ease-in;
      -webkit-transition: 0.1s ease-in;
@@ -261,8 +261,10 @@
   .choiseMemes.active{
     display: flex;
   }
+  
 
-  .choiseMemes .addImage{
+  .choiseMemes .bgChoiseBtn,
+  .choiseMemes .addImage{ 
     border: 1px solid var(--primaryClr);
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -273,7 +275,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: .25rem 0;
     height: 70px;
     width: 70px;
     transition: .2s;
@@ -284,7 +285,11 @@
     position: relative; 
 }
 
- 
+.choiseMemes .addImage{
+  padding: .25rem 0;
+}
+
+ .bgChoiseBtn::before,
 .addImage::before{
     content: "✓";
     position: absolute;
@@ -306,10 +311,12 @@
     opacity: 0;
 }
 
+.bgChoiseBtn.active::before,
 .addImage.active::before{
     opacity: 1;
 }
 
+.bgChoiseBtn:hover,
 .addImage:hover{
     transform: scale(.95);
     -webkit-transform: scale(.95);
@@ -318,21 +325,31 @@
     -o-transform: scale(.95);
 }
 
+
 .addImage img{
     width: 90%;
     max-height: 90%; 
     object-fit: contain;
 }
- 
 
+.bgChoiseBtn img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
 
- 
 
 
 
 
 /* media screen */
 @media screen and (min-width:1700px) {
+    .bgChoiseBtn,
     .choiseMemes .addImage{
         height: 90px;
         width: 90px;
@@ -340,6 +357,14 @@
 }
 
 @media screen and (max-width:1400px) {
+  
+  .btnChoise button{
+    width: 120px;
+    height: 50px;
+    border-width: 2px;
+  }
+
+  .bgChoiseBtn,
   .choiseMemes .addImage{
     height: 70px;
     width: 20%;
@@ -354,13 +379,12 @@
   .choiseBtnContainer button{ 
     font-size: .8rem;
   }
+ 
 
-  .choiseMemes .addImage{
-    max-width: 90px;
-  }
-
+  .bgChoiseBtn,
   .choiseMemes .addImage{
     height: 60px; 
+    max-width: 90px;
   }
   
 }
@@ -386,6 +410,7 @@
 }
 
 @media screen and (max-width:786px) {
+  .bgChoiseBtn,
   .choiseMemes .addImage{
     height: 80px;
     width: 22%;
@@ -424,6 +449,7 @@
     justify-content: start;
   }
 
+  .bgChoiseBtn,
   .choiseMemes .addImage {
     aspect-ratio: 1 / 1; 
     flex: none; 

@@ -30,10 +30,10 @@
 
     <!-- meme generator -->
     <section  class="flex min-[1200px]:flex flex-col items-center max-w-[100%] relative py-[10vw]"  >
-      <!-- input image -->
 
-      <div  id="uploadImageContainer"
-        class="w-[95%] max-w-[1500px] flex h-[550px] uploadImageContainer cursor-pointer relative justify-center items-center rounded-[20px]">
+      <!-- input image -->
+      <div id="uploadImageContainer"
+        class="w-[95%] hidden max-w-[1500px]  h-[550px] uploadImageContainer cursor-pointer relative justify-center items-center rounded-[20px]">
         <input
           type="file"
           id="imageInput"
@@ -65,15 +65,19 @@
 
       <div
         id="memeMakerContainer"
-        class="memeMakerContainer w-[95%] min-[1400px]:w-[85vw] max-w-[1500px] max-[3000px]:min-h-[40vw] min-[3000px]:min-h-[1200px]"
+        class="memeMakerContainer w-[95%] min-[1400px]:w-[85vw] max-w-[1500px] xl:min-h-[40vw] min-[1400px]:h-[700px] min-[2000px]:min-h-0 min-[2000px]:h-[800px]"
       >
         <!-- canvas -->
-        <div
-          id="canvasContainer"
-          class="w-full lg:w-[70%] min-h-full h-auto z-10 relative flex justify-center items-center"
-        >
+        <div id="canvasContainer"  class="w-full lg:w-[70%] min-h-full h-auto z-10 relative flex justify-center items-center" >
+
+        <!-- background -->
+        <div class="absolute bottom-0 right-0 w-[100%] h-[100%] randomImg z-0">
+          <img src="" alt="" class="w-full h-full object-cover opacity-0" id="backgroundImage">
+         </div>
+
+
         <!-- main image -->
-          <div  id="imageContainer" class="imageContainer relative h-max-h-[90%] overflow-hidden w-full flex_center"
+          <div id="imageContainer" class="imageContainer relative h-max-h-[90%] overflow-hidden w-full flex_center"
           >
             <img
               id="previewImage"
@@ -83,20 +87,23 @@
             />
           </div>
 
-          <!-- mouth -->
-           <div class="mouth absolute bottom-[25%] right-[36.5%] w-[8%] h-auto object-contain randomImg">
-            <img src="./static/images/Head/head02.png" alt="" class="w-full h-auto" id="mouthImage">
+         <!-- head part -->
+          <div class="w-full h-full absolute left-0 top-0">
+             <!-- mouth -->
+           <div class="mouth absolute bottom-[25%] min-[1400px]:bottom-[30%] min-[1600px]:bottom-[27%] min-[2000px]:bottom-[30%] right-[36.5%] w-[8%] h-auto object-contain randomImg">
+            <img src="" alt="" class="w-full h-auto" id="mouthImage">
            </div>
 
            <!-- eye -->
-           <div class="eyeImage absolute top-[42%] w-[45%] right-[24%] h-auto object-contain randomImg">
-            <img src="./static/images/Head/head08.png" alt="" class="w-full h-auto" id="eyeImage">
+           <div class="eyeImage absolute top-[42%] min-[1400px]:top-[43.5%] min-[1600px]:top-[43%] w-[45%] right-[24%] h-auto object-contain randomImg">
+            <img src="" alt="" class="w-full h-auto" id="eyeImage">
            </div>
            
            <!-- headphone -->
            <div class="headphoneImage absolute top-[46%] w-[35%] left-[24%] h-auto object-contain randomImg">
-            <img src="./static/images/Accessories/access05.png" alt="" class="w-full h-auto" id="headphoneImage">
+            <img src="" alt="" class="w-full h-auto" id="headphoneImage">
            </div>
+          </div>
 
         </div>
 
@@ -129,6 +136,14 @@
                   class="h-[36%] w-auto object-contain"
                 />
               </button>
+              <button data-btn="background">
+                <img
+                  src="./static/images/button/backgroundBtn.png"
+                  alt=""
+                  class="h-[33%] w-auto object-contain"
+                />
+              </button>
+
             </div>
 
             <!-- choise meme -->
@@ -491,9 +506,76 @@
               </div>
             </div>
 
+            <div id="background" class="choiseMemes w-full h-auto">
+             <div class="choiseMemeContainer">
+
+              <div data-image="bg0"
+                class="relative cursor-pointer bgChoiseBtn noneBgImage active"
+                data-class="v2"  >
+                  <img src="./static/images/background/bgNone.png" alt="" />
+              </div>
+
+              <div data-image="bg1"
+                class="relative cursor-pointer bgChoiseBtn"
+                data-class="v2"  >
+                  <img src="./static/images/background/bg1.webp" alt="" />
+              </div>
+
+              <div data-image="bg2"
+                class="relative cursor-pointer bgChoiseBtn"
+                data-class="v2"  >
+                  <img src="./static/images/background/bg2.webp" alt="" />
+              </div>
+
+              <div data-image="bg3"
+                class="relative cursor-pointer bgChoiseBtn"
+                data-class="v2"  >
+                  <img src="./static/images/background/bg3.webp" alt="" />
+              </div>
+
+              <div data-image="bg4"
+                class="relative cursor-pointer bgChoiseBtn"
+                data-class="v2"  >
+                  <img src="./static/images/background/bg4.webp" alt="" />
+              </div>
+
+              <div data-image="bg5"
+                class="relative cursor-pointer bgChoiseBtn"
+                data-class="v2"  >
+                  <img src="./static/images/background/bg5.webp" alt="" />
+              </div>
+
+              <div data-image="bg6"
+                class="relative cursor-pointer bgChoiseBtn"
+                data-class="v2"  >
+                  <img src="./static/images/background/bg6.webp" alt="" />
+              </div>
+
+              <div data-image="bg7"
+                class="relative cursor-pointer bgChoiseBtn"
+                data-class="v2"  >
+                  <img src="./static/images/background/bg7.webp" alt="" />
+              </div>
+
+              <div data-image="bg8"
+                class="relative cursor-pointer bgChoiseBtn"
+                data-class="v2"  >
+                  <img src="./static/images/background/bg8.webp" alt="" />
+              </div>
+
+              <div data-image="bg9"
+                class="relative cursor-pointer bgChoiseBtn"
+                data-class="v2"  >
+                  <img src="./static/images/background/bg9.webp" alt="" />
+              </div>
+
+             </div>
+            </div>
+
+
             <!-- start and download -->
             <div
-              class="btnChoise w-full flex justify-center items-center gap-4 flex-wrap"
+              class="btnChoise w-full flex justify-center items-center gap-4 flex-wrap "
             >
               <button id="restartButton" class=" ">
                 <img
@@ -536,5 +618,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <!-- <script src="./static/js/inspect.js"></script> --> 
     <script src="./static/js/download.js" defer></script>
+
   </body>
+  
 </html>

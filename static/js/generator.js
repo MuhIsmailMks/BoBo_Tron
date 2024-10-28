@@ -362,9 +362,28 @@ function stopResizeTouch() {
       }
     }
   });
-  
-
 }
+
+
+// background
+const bgChoiseBtns = document.querySelectorAll('.bgChoiseBtn');
+const backgroundCanvas = document.getElementById('backgroundImage')
+const noneBgImage = document.querySelector('.noneBgImage')
+
+bgChoiseBtns.forEach(bgChoiseBtn => {
+  bgChoiseBtn.addEventListener('click', (e) => {
+    
+      bgChoiseBtns.forEach(btn => btn.classList.remove('active'));
+      bgChoiseBtn.classList.add('active');
+
+      const imageSrc = bgChoiseBtn.querySelector('img').getAttribute('src'); 
+
+      backgroundCanvas.setAttribute('src', imageSrc);
+      backgroundCanvas.style.display = "block";
+      
+      backgroundCanvas.style.opacity = 1   
+  });
+})
 
 // Apply draggable functionality to all elements with class draggableOverlay
 document.querySelectorAll('.draggableOverlay').forEach(makeDraggable);
@@ -381,7 +400,12 @@ restartButton.addEventListener('click', () => {
     
     drag.remove();
     
-  })
+  });
+
+  bgChoiseBtns.forEach((bgChoise) => {
+    bgChoise.classList.remove('active')
+  });
+  noneBgImage.classList.add('active');
 })
 
 
